@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<prism:PrismApplication xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:prism="http://prismlibrary.com"
+             xmlns:dictionaries="clr-namespace:Template.Mobile.Resources.Dictionaries;assembly=Template.Mobile"
+             mc:Ignorable="d"
+             x:Class="Template.Mobile.App">
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <dictionaries:Colors />
+                <dictionaries:Converters />
+                <dictionaries:Styles />
+                <dictionaries:Templates />
+                <dictionaries:Values />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+
+
+    </Application.Resources>
+</prism:PrismApplication>
