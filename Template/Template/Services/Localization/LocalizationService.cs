@@ -6,9 +6,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using Nito.AsyncEx;
 using Shiny;
+using Template.Helpers;
 using Template.Resources.Text;
 using Template.Services.Settings;
-using Template.Utils;
 
 namespace Template.Services.Localization
 {

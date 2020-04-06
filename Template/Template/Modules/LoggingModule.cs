@@ -8,9 +8,9 @@ using Microsoft.AppCenter.Crashes;
 using Microsoft.Extensions.DependencyInjection;
 using Shiny;
 using Shiny.Logging;
+using Template.Helpers;
 using Template.Services.Settings;
 using Template.Services.Settings.App;
-using Template.Utils;
 
 namespace Template.Modules
 {
