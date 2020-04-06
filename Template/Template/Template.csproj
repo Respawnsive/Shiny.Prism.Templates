@@ -52,8 +52,26 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Resources\Dictionaries\Templates.xaml.cs">
+      <DependentUpon>Templates.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Dictionaries\Values.xaml.cs">
+      <DependentUpon>Values.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Dictionaries\Converters.xaml.cs">
+      <DependentUpon>Converters.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Dictionaries\Styles.xaml.cs">
+      <DependentUpon>Styles.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
     </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Dictionaries\Colors.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
