@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Target Name="CopyConfigFiles" AfterTargets="PrepareForBuild">
+    <!-- Insert tasks to run before build here -->
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\Services\Settings\App\$(Configuration)\appsettings.json" DestinationFolder="$(MSBuildProjectDirectory)\Services\Settings\App\" />
+    <Message Text="#Replaced appsetting.json... OK" />
+  </Target>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Services\Settings\App\appsettings.json" />
+    <None Remove="Services\Settings\App\Debug\appsettings.json" />
+    <None Remove="Services\Settings\App\Release\appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Services\Settings\App\appsettings.json" />
+    <EmbeddedResource Include="Services\Settings\App\Debug\appsettings.json" />
+    <EmbeddedResource Include="Services\Settings\App\Release\appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Acr.UserDialogs" Version="7.1.0.442" />
+    <PackageReference Include="Nito.AsyncEx" Version="5.0.0" />
+    <PackageReference Include="Prism.DryIoc.Extensions" Version="7.2.0.898" />
+    <PackageReference Include="Prism.Forms.Extended" Version="7.2.0.898" />
+    <PackageReference Include="Prism.Plugin.Popups" Version="7.2.0.759" />
+    <PackageReference Include="ReactiveUI.Fody" Version="11.3.1" />
+    <PackageReference Include="Shiny.Core" Version="1.1.0.1473" />
+    <PackageReference Include="Shiny.Logging.AppCenter" Version="1.1.0.1473" />
+    <PackageReference Include="Shiny.Prism" Version="7.2.0.898" />
+    <PackageReference Include="Xamarin.Essentials.Interfaces" Version="1.5.2" />
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.530" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Template.Resources\Template.Resources.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>
