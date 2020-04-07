@@ -10,17 +10,26 @@ using System.Threading.Tasks;
 
 namespace Template.Resources.Text
 {
-    public class ResxTextProvider : IResxTextProvider
+    /// <summary>
+    /// Resx text provider
+    /// </summary>
+    /// <typeparam name="T">Should be a Resx Designer class with a ResourceManager property</typeparam>
+    public class ResxTextProvider<T> : IResxTextProvider<T> where T : class
     {
         private readonly ResourceManager _resourceManager;
 
-        public ResxTextProvider(ResourceManager resourceManager, int priority)
+        public ResxTextProvider() : this(null)
         {
-            _resourceManager = resourceManager;
+            
+        }
+
+        public ResxTextProvider(int? priority)
+        {
+            _resourceManager = new ResourceManager(typeof(T));
             Priority = priority;
         }
 
-        public int Priority { get; }
+        public int? Priority { get; }
 
         public Task<IDictionary<string, string>> GetLocalizationsAsync(CultureInfo cultureInfo, CancellationToken token = default)
         {

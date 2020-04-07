@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Linq;
 using Prism.Events;
 using Prism.Ioc;
 using Template.Mobile.Views;
@@ -34,7 +35,7 @@ namespace Template.Mobile
             // Ensure we always break here while debugging!
             Debugger.Break();
 #else
-            Utils.Logger.Write(navigationError.Exception)(
+            Helpers.Logger.Write(navigationError.Exception)(
                 new[] {(nameof(navigationError.NavigationUri), navigationError.NavigationUri)}
                     .Concat(navigationError.Parameters
                         .Select(x => (x.Key, x.Value.ToString())))

@@ -10,7 +10,8 @@
                 prism:ViewModelLocator.AutowireViewModel="True"
                 x:DataType="viewModels:MainViewModel"
                 mc:Ignorable="d"
-                x:Class="Template.Mobile.Views.MainView">
+                x:Class="Template.Mobile.Views.MainView"
+                Title="{Binding Title}">
 
     <StackLayout>
         <!-- Place new controls here -->

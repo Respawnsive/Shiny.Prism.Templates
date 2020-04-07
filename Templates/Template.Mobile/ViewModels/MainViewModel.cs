@@ -7,6 +7,7 @@ namespace Template.Mobile.ViewModels
     {
         public MainViewModel(INavigationService navigationService) : base(navigationService)
         {
+            Title = this["MainView_Title"];
             MyText = "Wellcome";
         }
 

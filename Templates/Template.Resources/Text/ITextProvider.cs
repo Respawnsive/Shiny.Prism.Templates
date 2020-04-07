@@ -7,7 +7,7 @@ namespace Template.Resources.Text
 {
     public interface ITextProvider
     {
-        int Priority { get; }
+        int? Priority { get; }
 
         Task<IDictionary<string, string>> GetLocalizationsAsync(CultureInfo cultureInfo, CancellationToken token = default);
     }
