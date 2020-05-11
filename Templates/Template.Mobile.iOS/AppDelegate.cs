@@ -1,6 +1,9 @@
 ﻿using System;
 using Foundation;
 using Microsoft.Extensions.DependencyInjection;
+using Sharpnado.MaterialFrame.iOS;
+using Sharpnado.Presentation.Forms.iOS;
+using Shiny;
 using UIKit;
 
 namespace Template.Mobile.iOS
@@ -22,9 +25,17 @@ namespace Template.Mobile.iOS
         {
             this.ShinyFinishedLaunching(new Startup(), ConfigureServices);
 
-            global::Xamarin.Forms.Forms.Init(); 
-            Rg.Plugins.Popup.Popup.Init();
+            //Forms Init
+            global::Xamarin.Forms.Forms.Init();
 
+            //Plugins Init
+            global::Xamarin.Forms.FormsMaterial.Init();
+            Rg.Plugins.Popup.Popup.Init();
+            Xamarin.Forms.Nuke.FormsHandler.Init();
+            iOSMaterialFrameRenderer.Init();
+            SharpnadoInitializer.Initialize();
+
+            //Launch FormsApp
             LoadApplication(new Mobile.App());
 
             return base.FinishedLaunching(app, options);

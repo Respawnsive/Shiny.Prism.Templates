@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:ContentPageBase x:Class="Template.Mobile.Views.Debug_ThemingPage"
+                       xmlns="http://xamarin.com/schemas/2014/forms"
+                       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                       xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                       mc:Ignorable="d"
+                       xmlns:ctrl="clr-namespace:Template.Mobile.CustomCtrl"
+                       xmlns:materialFrame="clr-namespace:Sharpnado.MaterialFrame;assembly=Sharpnado.MaterialFrame"
+                       xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+                       xmlns:viewModels="clr-namespace:Template.Mobile.ViewModels;assembly=Template.Mobile"
+                       xmlns:views="clr-namespace:Template.Mobile.Views;assembly=Template.Mobile"
+                       Title="Theming Page"
+                       x:TypeArguments="viewModels:Debug_ThemingPageViewModel"
+                       x:DataType="viewModels:Debug_ThemingPageViewModel"
+                       prism:ViewModelLocator.AutowireViewModel="True"
+                       BackgroundImageSource="{DynamicResource DynamicBackgroundImageSource}">
+
+    <ScrollView>
+        <StackLayout Spacing="16" Padding="16">
+            <!--  Place new controls here  -->
+            <materialFrame:MaterialFrame StyleId="5555">
+                <StackLayout>
+                    <Label Style="{StaticResource TextHeadline}" Text="ThemePicker" />
+                    <Picker Title="Choose a Theme"
+                            SelectedItem="{Binding SelectedTheme}"
+                            ItemsSource="{Binding Themes}" />
+                </StackLayout>
+            </materialFrame:MaterialFrame>
+            <materialFrame:MaterialFrame StyleId="5555">
+                <StackLayout>
+                    <Label Style="{StaticResource TextHeadline}" Text="Base Controls" />
+                    <ActivityIndicator HorizontalOptions="Center"
+                                       IsEnabled="True"
+                                       IsRunning="True" />
+                    <ProgressBar Progress="100" />
+                    <Button Text="Button base" />
+                    <Editor Placeholder="Editor base" />
+                    <Entry Placeholder="Entry base" />
+                    <Slider />
+                    <Label Style="{StaticResource TextBody}" Text="UncompleteMaterial (base) :" />
+                    <CheckBox />
+                    <DatePicker />
+                    <TimePicker />
+                    <Stepper />
+                    <Label Style="{StaticResource TextBody}" Text="CustomMaterialRenderers :" />
+                    <ctrl:CustomMaterialStepper />
+                    <ctrl:CustomMaterialDatePicker Title="CustomMaterialDatePicker"/>
+                    <ctrl:CustomMaterialDatePicker Title="CustomMaterialDatePicker" IsEnabled="False" />
+
+                </StackLayout>
+            </materialFrame:MaterialFrame>
+            <materialFrame:MaterialFrame StyleId="5555">
+                <StackLayout>
+                    <Label Style="{StaticResource TextHeadline}" Text="TextHeadline" />
+                    <Label Style="{StaticResource TextTitle}" Text="TextTitle" />
+                    <Label Style="{StaticResource TextSubheadline}" Text="TextSubheadline" />
+                    <Label Style="{StaticResource TextSubhead}" Text="TextSubhead" />
+                    <Label Style="{StaticResource TextSubheadSecondary}" Text="TextSubheadSecondary" />
+                    <Label Style="{StaticResource TextBody}" Text="TextBody" />
+                    <Label Style="{StaticResource TextBodySecondary}" Text="TextBodySecondary" />
+                    <Label Style="{StaticResource TextCaption}" Text="TextCaption" />
+                    <Label Style="{StaticResource TextSmallCaption}" Text="TextSmallCaption" />
+                    <Label Style="{StaticResource TextCaptionSecondary}" Text="TextCaptionSecondary" />
+                    <Label Style="{StaticResource TextCenter}" Text="TextCenter" />
+                    <Label Style="{StaticResource TextSubheadCenter}" Text="TextSubheadCenter" />
+                    <Label Style="{StaticResource TextSubheadSecondaryCenter}" Text="TextSubheadSecondaryCenter" />
+                    <Label Style="{StaticResource TextError}" Text="TextError" />
+                    <Label Style="{StaticResource TextSnackbar}" Text="TextSnackbar" />
+                    <Label Style="{StaticResource TextHeader}" Text="TextHeader" />
+                </StackLayout>
+            </materialFrame:MaterialFrame>
+            <materialFrame:MaterialFrame StyleId="5555">
+                <StackLayout>
+                    <Label Style="{StaticResource TextHeadline}" Text="Image test" />
+                    <Image WidthRequest="240"
+                           HeightRequest="94"
+                           Margin="20"
+                           HorizontalOptions="Center"
+                           Source="splash_centered.png" />
+                </StackLayout>
+            </materialFrame:MaterialFrame>
+        </StackLayout>
+    </ScrollView>
+</views:ContentPageBase>

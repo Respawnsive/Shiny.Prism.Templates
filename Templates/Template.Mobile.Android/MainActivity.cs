@@ -4,11 +4,12 @@ using Android.Content;
 using Android.Content.PM;
 using Android.OS;
 using Android.Runtime;
+using Sharpnado.Presentation.Forms.Droid;
 using Shiny;
 
 namespace Template.Mobile.Droid
 {
-    [Activity(Label = "Template", Icon = "@mipmap/icon", Theme = "@style/Theme.App", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "Template", Icon = "@drawable/appicon", Theme = "@style/Theme.App", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -18,11 +19,18 @@ namespace Template.Mobile.Droid
 
             base.OnCreate(savedInstanceState);
 
+            //Forms Init
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+
+            //Plugins Init
+            global::Xamarin.Forms.FormsMaterial.Init(this, savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             UserDialogs.Init(this);
             Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
+            Android.Glide.Forms.Init(this);
+            SharpnadoInitializer.Initialize();
 
+            //Launch FormsApp
             LoadApplication(new Mobile.App());
 
             this.ShinyOnCreate();

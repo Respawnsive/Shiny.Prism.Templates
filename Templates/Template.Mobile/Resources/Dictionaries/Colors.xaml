@@ -1,5 +1,54 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                    x:Class="Template.Mobile.Resources.Dictionaries.Colors">
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary x:Class="Template.Mobile.Resources.Dictionaries.Colors"
+                    xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <!--  Tip : Install VS Extension "Inline Color Picker (by Nokola) to visualize & pick colors directly in xaml files  -->
+
+    <Color x:Key="DarkSurface">#121212</Color>
+    <Color x:Key="LightSurface">#02FF0266</Color>
+    <Color x:Key="AcrylicSurface">#E4E4E4</Color>
+
+    <Color x:Key="DarkElevation2dp">#212121</Color>
+    <Color x:Key="DarkElevation4dp">#272727</Color>
+    <Color x:Key="DarkElevation8dp">#2D2D2D</Color>
+    <Color x:Key="DarkElevation12dp">#323232</Color>
+    <Color x:Key="DarkElevation16dp">#353535</Color>
+    <Color x:Key="DarkElevation24dp">#373737</Color>
+
+    <Color x:Key="PrimaryColor">#BB2734</Color>
+    <Color x:Key="SecondaryColor">##27bbaf</Color>
+
+    <Color x:Key="OnPrimaryColor">#000000</Color>
+    <Color x:Key="OnSecondaryColor">#000000</Color>
+
+    <Color x:Key="OnSurfaceColor">#FFFFFF</Color>
+
+    <Color x:Key="AcrylicFrameBackgroundColor">#F1F1F1</Color>
+
+    <Color x:Key="NavigationBarLightColor">#FFFFFF</Color>
+    <Color x:Key="BarTextColor">#FFFFFF</Color>
+
+    <Color x:Key="BlackC90">#414142</Color>
+    <Color x:Key="BlackC50">#939598</Color>
+    <Color x:Key="BlackC25">#C8C8C8</Color>
+    <Color x:Key="BlackC05">#F1F1F2</Color>
+    <Color x:Key="Black.20">#33000000</Color>
+    <Color x:Key="Blue">#008DA8</Color>
+    <Color x:Key="Red">#EE3524</Color>
+    <Color x:Key="Orange">#F6A01A</Color>
+    <Color x:Key="White">#F8F8F8</Color>
+
+    <Color x:Key="Primary">#121212</Color>
+    <Color x:Key="Accent">#FFBB2734</Color>
+    <Color x:Key="TransparentAccent">#00121212</Color>
+
+    <Color x:Key="TextPrimaryDarkColor">#FFFFFF</Color>
+    <Color x:Key="TextSecondaryDarkColor">#C0C0C0</Color>
+    <Color x:Key="TextTernaryDarkColor">#A0A0A0</Color>
+
+    <Color x:Key="TextPrimaryLightColor">#B0000000</Color>
+    <Color x:Key="TextSecondaryLightColor">#80000000</Color>
+    <Color x:Key="TextTernaryLightColor">#C8C8C8</Color>
+
 </ResourceDictionary>

@@ -1,5 +1,13 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary x:Class="Template.Mobile.Resources.Dictionaries.Converters"
+                    xmlns="http://xamarin.com/schemas/2014/forms"
                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                    x:Class="Template.Mobile.Resources.Dictionaries.Converters">
+                    xmlns:LocalConverters="clr-namespace:Template.Mobile.Converters"
+                    xmlns:SharpnadoConverters="clr-namespace:Sharpnado.Presentation.Forms.Converters;assembly=Sharpnado.Presentation.Forms">
+
+    <SharpnadoConverters:IsNotNullConverter x:Key="IsNotNullConverter" />
+    <SharpnadoConverters:IsNullConverter x:Key="IsNullConverter" />
+    <LocalConverters:WithoutExtensionConverter x:Key="WithoutExtensionConverter" />
+    <LocalConverters:IntEnumConverter x:Key="IntEnumConverter" />
+
 </ResourceDictionary>

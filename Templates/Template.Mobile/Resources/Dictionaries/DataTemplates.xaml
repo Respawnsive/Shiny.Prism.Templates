@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary x:Class="Template.Mobile.Resources.Dictionaries.DataTemplates"
+                    xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:dictionaries="clr-namespace:Template.Mobile.Resources.Dictionaries;assembly=Template.Mobile"
+                    xmlns:models="clr-namespace:Template.Mobile.Models">
+
+    <ResourceDictionary.MergedDictionaries>
+        <dictionaries:Colors />
+        <dictionaries:Converters />
+        <dictionaries:Values />
+        <dictionaries:Styles />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!--  DataTemplateSelectors  -->
+
+
+    <!--  DataTemplate  -->
+
+    <DataTemplate x:Key="MenuItemTemplate" x:DataType="models:MenuItemModel">
+        <!--  Binding context is a MenuItem  -->
+        <ViewCell>
+            <StackLayout Margin="5"
+                         Padding="5"
+                         HorizontalOptions="FillAndExpand"
+                         Orientation="Horizontal">
+
+                <Image WidthRequest="32"
+                       HeightRequest="32"
+                       Aspect="AspectFit"
+                       Source="{Binding ItemImageSource}" />
+
+                <Label Style="{StaticResource TextTitle}"
+                       VerticalOptions="Center"
+                       IsEnabled="{Binding IsActive}"
+                       Text="{Binding Title}" />
+
+            </StackLayout>
+        </ViewCell>
+    </DataTemplate>
+
+    <!--<DataTemplate x:Key="SillyDataTemplate">
+        <ViewCell>
+            <views:SillySquareCell effects:ViewEffect.TouchFeedbackColor="{StaticResource Accent}"
+                                           effects:TapCommandEffect.Tap="{Binding OnItemTappedCommand}"
+                                           effects:TapCommandEffect.TapParameter="{Binding .}" />
+        </ViewCell>
+    </DataTemplate>
+
+    <DataTemplate x:Key="AlternateSillyDataTemplate">
+        <ViewCell>
+            <views:AlternateSillySquareCell effects:ViewEffect.TouchFeedbackColor="{StaticResource Accent}"
+                                                    effects:TapCommandEffect.Tap="{Binding OnItemTappedCommand}"
+                                                    effects:TapCommandEffect.TapParameter="{Binding .}" />
+        </ViewCell>
+    </DataTemplate>
+
+    <views:SillyDudeTemplateSelector x:Key="DudeTemplateSelector"
+                                             AlternateSillySquare="{StaticResource AlternateSillyDataTemplate}"
+                                             SillySquare="{StaticResource SillyDataTemplate}" />-->
+
+
+</ResourceDictionary>

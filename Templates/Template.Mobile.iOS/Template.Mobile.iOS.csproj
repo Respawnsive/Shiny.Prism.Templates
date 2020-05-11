@@ -27,6 +27,8 @@
     <MtouchArch>x86_64</MtouchArch>
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>Apple Development: Jerome Liger (PPVW2MK6ZH)</CodesignKey>
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -68,6 +70,36 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\Font\Roboto-Bold.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Font\Roboto-BoldItalic.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Font\Roboto-ExtraBold.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Font\Roboto-ExtraBoldItalic.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Font\Roboto-Italic.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Font\Roboto-Light.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Font\Roboto-LightItalic.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Font\Roboto-Regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Font\Roboto-SemiBold.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Font\Roboto-SemiBoldItalic.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </BundleResource>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -127,13 +159,19 @@
       <Version>7.1.0.442</Version>
     </PackageReference>
     <PackageReference Include="Prism.Forms.Extended">
-      <Version>7.2.0.898</Version>
+      <Version>7.2.0.1054</Version>
     </PackageReference>
     <PackageReference Include="Prism.Microsoft.DependencyInjection.Extensions">
-      <Version>7.2.0.898</Version>
+      <Version>7.2.0.1054</Version>
     </PackageReference>
     <PackageReference Include="Prism.Plugin.Popups">
-      <Version>7.2.0.759</Version>
+      <Version>7.2.0.1046</Version>
+    </PackageReference>
+    <PackageReference Include="Resizetizer.NT">
+      <Version>0.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Sharpnado.Presentation.Forms">
+      <Version>1.6.0</Version>
     </PackageReference>
     <PackageReference Include="Shiny.Core">
       <Version>1.1.0.1473</Version>
@@ -142,18 +180,28 @@
       <Version>1.1.0.1473</Version>
     </PackageReference>
     <PackageReference Include="Shiny.Prism">
-      <Version>7.2.0.898</Version>
+      <Version>7.2.0.1054</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Essentials.Interfaces">
-      <Version>1.5.2</Version>
+      <Version>1.5.3.1</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="4.5.0.530" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.5.2" />
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.726" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.1" />
+    <PackageReference Include="Xamarin.Forms.Nuke">
+      <Version>8.4.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms.Visual.Material">
+      <Version>4.6.0.726</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Template.Mobile\Template.Mobile.csproj">
       <Project>{fdbca5b6-1604-4494-99b7-a0693064b35c}</Project>
       <Name>Template.Mobile</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Template.Resources\Template.Resources.csproj">
+      <Project>{e3c601c5-fdad-455e-a210-53081b9c1532}</Project>
+      <Name>Template.Resources</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

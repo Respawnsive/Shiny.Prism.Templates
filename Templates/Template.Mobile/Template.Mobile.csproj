@@ -31,20 +31,19 @@
   <ItemGroup>
     <PackageReference Include="Acr.UserDialogs" Version="7.1.0.442" />
     <PackageReference Include="Nito.AsyncEx" Version="5.0.0" />
-    <PackageReference Include="Prism.Forms.Extended" Version="7.2.0.898" />
-    <PackageReference Include="Prism.Microsoft.DependencyInjection.Extensions" Version="7.2.0.898" />
-    <PackageReference Include="Prism.Plugin.Popups" Version="7.2.0.759" />
-    <PackageReference Include="ReactiveUI.Fody" Version="11.3.1" />
+    <PackageReference Include="Prism.Forms.Extended" Version="7.2.0.1054" />
+    <PackageReference Include="Prism.Microsoft.DependencyInjection.Extensions" Version="7.2.0.1054" />
+    <PackageReference Include="Prism.Plugin.Popups" Version="7.2.0.1046" />
+    <PackageReference Include="ReactiveUI.Fody" Version="11.3.8" />
+    <PackageReference Include="Resizetizer.NT" Version="0.2.0" />
+    <PackageReference Include="Sharpnado.Presentation.Forms" Version="1.6.0" />
     <PackageReference Include="Shiny.Core" Version="1.1.0.1473" />
     <PackageReference Include="Shiny.Logging.AppCenter" Version="1.1.0.1473" />
-    <PackageReference Include="Shiny.Prism" Version="7.2.0.898" />
-    <PackageReference Include="Xamarin.Essentials.Interfaces" Version="1.5.2" />
-    <PackageReference Include="Xamarin.Forms" Version="4.5.0.530" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.5.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Models\" />
+    <PackageReference Include="Shiny.Prism" Version="7.2.0.1054" />
+    <PackageReference Include="Xamarin.Essentials.Interfaces" Version="1.5.3.1" />
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.726" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.1" />
+    <PackageReference Include="Xamarin.Forms.Visual.Material" Version="4.6.0.726" />
   </ItemGroup>
 
   <ItemGroup>
@@ -55,8 +54,8 @@
     <Compile Update="Resources\Dictionaries\Colors.xaml.cs">
       <DependentUpon>Colors.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Resources\Dictionaries\Templates.xaml.cs">
-      <DependentUpon>Templates.xaml</DependentUpon>
+    <Compile Update="Resources\Dictionaries\Fonts.xaml.cs">
+      <DependentUpon>Fonts.xaml</DependentUpon>
     </Compile>
     <Compile Update="Resources\Dictionaries\Values.xaml.cs">
       <DependentUpon>Values.xaml</DependentUpon>
@@ -67,20 +66,50 @@
     <Compile Update="Resources\Dictionaries\Styles.xaml.cs">
       <DependentUpon>Styles.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Resources\Dictionaries\DataTemplates.xaml.cs">
+      <DependentUpon>DataTemplates.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Resources\Text\MobileTextResources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>MobileTextResources.resx</DependentUpon>
     </Compile>
-    <Compile Update="Views\MainView.xaml.cs">
-      <DependentUpon>MainView.xaml</DependentUpon>
+    <Compile Update="Views\Debug_ThemingPage.xaml.cs">
+      <DependentUpon>Debug_ThemingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Debug_ImagesListPage.xaml.cs">
+      <DependentUpon>Debug_ImagesListPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Resources\Dictionaries\Colors.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Dictionaries\Fonts.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Dictionaries\Values.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Dictionaries\Converters.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Dictionaries\Styles.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Dictionaries\DataTemplates.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Resources\Text\MobileTextResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>MobileTextResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Debug_ImagesListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\MDPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
 </Project>

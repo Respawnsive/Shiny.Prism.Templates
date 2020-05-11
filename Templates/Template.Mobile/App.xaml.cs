@@ -1,12 +1,15 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.Linq;
 using Prism.Events;
 using Prism.Ioc;
+using Template.Mobile.Helpers;
+using Template.Mobile.ViewModels;
 using Template.Mobile.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
+//[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Template.Mobile
 {
     [AutoRegisterForNavigation]
@@ -18,14 +21,23 @@ namespace Template.Mobile
 
         protected override void OnInitialized()
         {
-            InitializeComponent();
-            
-            NavigationService.NavigateAsync($"/{nameof(MainView)}");
+            try
+            {
+                InitializeComponent();
+
+                ResourcesHelper.ApplyTheme(AppTheme.Acrylic);
+
+                NavigationService.NavigateAsync($"{nameof(MDPage)}/{nameof(NavigationPage)}/{nameof(Debug_ImagesListPage)}");
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            //REGISTER ALL THE PAGES FOR PRISM NAVIGATION
+            //REGISTER ALL USED GENERIC PAGES (not AutoRegistered) IN CONTAINER, FOR PRISM NAVIGATION
             containerRegistry.RegisterForNavigation<NavigationPage>();
         }
 
