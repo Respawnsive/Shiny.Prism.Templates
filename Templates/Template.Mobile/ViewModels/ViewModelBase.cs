@@ -8,8 +8,8 @@ using Prism.Navigation;
 using ReactiveUI;
 using ReactiveUI.Fody.Helpers;
 using Shiny;
+using Shiny.Localization;
 using Template.Mobile.Services.Dialogs;
-using Template.Mobile.Services.Localization;
 using Template.Mobile.Services.Settings;
 
 namespace Template.Mobile.ViewModels
@@ -27,8 +27,8 @@ namespace Template.Mobile.ViewModels
         {
             NavigationService = navigationService;
             SettingsService = ShinyHost.Resolve<ISettingsService>();
-            //DialogsService = ShinyHost.Resolve<IDialogService>();
-            //LocalizationService = ShinyHost.Resolve<ILocalizationService>();
+            DialogsService = ShinyHost.Resolve<IDialogService>();
+            LocalizationManager = ShinyHost.Resolve<ILocalizationManager>();
 
             NavigateBackCommand = ExecutionAwareCommand.FromTask(NavigateBackAsync)
                 .OnIsExecutingChanged(OnIsExecutingChanged);
@@ -42,13 +42,13 @@ namespace Template.Mobile.ViewModels
 
         protected ISettingsService SettingsService { get; }
 
-        protected ILocalizationService LocalizationService { get; }
+        protected ILocalizationManager LocalizationManager { get; }
 
         #endregion
 
         #region Properties
 
-        public string this[string name] => LocalizationService.GetText(name);
+        public string this[string name] => LocalizationManager.GetText(name);
 
         private int _busyCounter;
         protected int BusyCounter

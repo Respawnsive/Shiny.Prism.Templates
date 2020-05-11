@@ -38,6 +38,7 @@
     <PackageReference Include="Resizetizer.NT" Version="0.2.0" />
     <PackageReference Include="Sharpnado.Presentation.Forms" Version="1.6.0" />
     <PackageReference Include="Shiny.Core" Version="1.1.0.1570" />
+    <PackageReference Include="Shiny.Localization" Version="1.0.0" />
     <PackageReference Include="Shiny.Logging.AppCenter" Version="1.1.0.1570" />
     <PackageReference Include="Shiny.Prism" Version="7.2.0.1054" />
     <PackageReference Include="Xamarin.Essentials.Interfaces" Version="1.5.3.1" />
