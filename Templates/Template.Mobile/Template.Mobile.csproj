@@ -30,11 +30,14 @@
 
   <ItemGroup>
     <PackageReference Include="Acr.UserDialogs" Version="7.1.0.442" />
+    <PackageReference Include="HttpTracer" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="3.1.4" />
     <PackageReference Include="Nito.AsyncEx" Version="5.0.0" />
     <PackageReference Include="Prism.Forms.Extended" Version="7.2.0.1054" />
     <PackageReference Include="Prism.Microsoft.DependencyInjection.Extensions" Version="7.2.0.1054" />
     <PackageReference Include="Prism.Plugin.Popups" Version="7.2.0.1046" />
     <PackageReference Include="ReactiveUI.Fody" Version="11.4.1" />
+    <PackageReference Include="Refit.HttpClientFactory" Version="5.1.67" />
     <PackageReference Include="Resizetizer.NT" Version="0.2.0" />
     <PackageReference Include="Sharpnado.Presentation.Forms" Version="1.6.0" />
     <PackageReference Include="Shiny.Core" Version="1.1.0.1570" />
@@ -110,6 +113,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\MDPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\SamplePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

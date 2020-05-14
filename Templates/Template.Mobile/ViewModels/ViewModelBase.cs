@@ -27,7 +27,7 @@ namespace Template.Mobile.ViewModels
         {
             NavigationService = navigationService;
             SettingsService = ShinyHost.Resolve<ISettingsService>();
-            DialogsService = ShinyHost.Resolve<IDialogService>();
+            //DialogsService = ShinyHost.Resolve<IDialogService>();
             LocalizationManager = ShinyHost.Resolve<ILocalizationManager>();
 
             NavigateBackCommand = ExecutionAwareCommand.FromTask(NavigateBackAsync)

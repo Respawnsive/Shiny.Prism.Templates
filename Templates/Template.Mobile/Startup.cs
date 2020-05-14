@@ -1,11 +1,7 @@
-﻿using System.Globalization;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Shiny;
-using Shiny.Localization.Resx;
 using Shiny.Prism;
 using Template.Mobile.Modules;
-using Template.Mobile.Resources.Text;
-using Template.Resources.Text;
 
 namespace Template.Mobile
 {
@@ -25,10 +21,11 @@ namespace Template.Mobile
             // Add Dialogs
             services.RegisterModule<DialogsModule>();
 
+            // Add APIs
+            services.RegisterModule<ApiModule>();
+
             // Add Localization
-            services.UseLocalization<ResxTextProvider<MobileTextResources>>(options =>
-                options.AddTextProvider<ResxTextProvider<TextResources>>()
-                    .WithDefaultInvariantCulture(CultureInfo.CreateSpecificCulture("fr")));
+            services.RegisterModule<LocalizationModule>();
         }
     }
 }

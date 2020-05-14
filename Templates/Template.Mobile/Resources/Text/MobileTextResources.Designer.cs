@@ -59,5 +59,14 @@ namespace Template.Mobile.Resources.Text {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Exemple.
+        /// </summary>
+        public static string SamplePage_Title {
+            get {
+                return ResourceManager.GetString("SamplePage_Title", resourceCulture);
+            }
+        }
     }
 }
