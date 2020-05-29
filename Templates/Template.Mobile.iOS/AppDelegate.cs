@@ -23,20 +23,27 @@ namespace Template.Mobile.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            this.ShinyFinishedLaunching(new Startup(), ConfigureServices);
+            try
+            {
+                this.ShinyFinishedLaunching(new Startup(), ConfigureServices);
 
-            //Forms Init
-            global::Xamarin.Forms.Forms.Init();
+                //Forms Init
+                global::Xamarin.Forms.Forms.Init();
 
-            //Plugins Init
-            global::Xamarin.Forms.FormsMaterial.Init();
-            Rg.Plugins.Popup.Popup.Init();
-            Xamarin.Forms.Nuke.FormsHandler.Init();
-            iOSMaterialFrameRenderer.Init();
-            SharpnadoInitializer.Initialize();
+                //Plugins Init
+                global::Xamarin.Forms.FormsMaterial.Init();
+                Rg.Plugins.Popup.Popup.Init();
+                Xamarin.Forms.Nuke.FormsHandler.Init();
+                iOSMaterialFrameRenderer.Init();
+                SharpnadoInitializer.Initialize();
 
-            //Launch FormsApp
-            LoadApplication(new Mobile.App());
+                //Launch FormsApp
+                LoadApplication(new Mobile.App());
+            }
+            catch(Exception ex)
+            {
+
+            }
 
             return base.FinishedLaunching(app, options);
         }

@@ -7,6 +7,7 @@ using System.Text;
 using Android.App;
 using Android.Content;
 using Android.Content.Res;
+using Android.Graphics;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
@@ -21,6 +22,9 @@ using Xamarin.Forms.Platform.Android;
 [assembly: ExportRenderer(typeof(CustomMaterialDatePicker), typeof(AndroidMaterialDatePickerRenderer), new[] { typeof(VisualMarker.MaterialVisual) })]
 namespace Template.Mobile.Droid.Renderers
 {
+    /// <summary>
+    /// Renderer for PlaceHolder and PlaceHolderColor (not included yet in MaterialDatePicker Base)
+    /// </summary>
     public class AndroidMaterialDatePickerRenderer : MaterialDatePickerRenderer
     {
 
@@ -29,39 +33,37 @@ namespace Template.Mobile.Droid.Renderers
 
         }
 
+        MaterialPickerTextInputLayout InputLayout;
+        protected override MaterialPickerTextInputLayout CreateNativeControl()
+        {
+            InputLayout = base.CreateNativeControl();
+            return InputLayout;
+        }
+
         protected override void OnElementChanged(ElementChangedEventArgs<Xamarin.Forms.DatePicker> e)
         {
             base.OnElementChanged(e);
             if (e.NewElement == null) return;
 
             var custompicker = e.NewElement as CustomMaterialDatePicker;
-            var formsTitle = custompicker.Title;
-            var formsColor = custompicker.TitleColor;
-            if (Control != null)
+            if (custompicker != null && InputLayout != null)
             {
-                //Get the MaterialPickerEditText corresponding to DatePicker EditText
-                //Create the ColorStateList from FormsColor "TintColor"
-                int[][] states = new int[][]
-                  {
-                    new int[] { Android.Resource.Attribute.StateEnabled}, // enabled
-                    new int[] {-Android.Resource.Attribute.StateEnabled}, // disabled
-                    new int[] {Android.Resource.Attribute.StateFocused}, // focused
-                    new int[] {-Android.Resource.Attribute.StateFocused}, // unfocused
-                    new int[] {Android.Resource.Attribute.StateSelected}, // selected
-                    new int[] {-Android.Resource.Attribute.StateSelected}, // unselected
-                  };
+                InputLayout.HintEnabled = true;
+                InputLayout.Hint = custompicker.PlaceHolder;
+                InputLayout.ApplyTheme(custompicker.TextColor, custompicker.PlaceHolderColor);
+            }
+        }
 
-                int[] colors = new int[]
+        protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            base.OnElementPropertyChanged(sender, e);
+            var custompicker = Element as CustomMaterialDatePicker;
+            if (e != null && InputLayout != null)
+            {
+                if (e.PropertyName == "TextColor" || e.PropertyName == "BackgroundColor")
                 {
-                    formsColor.ToAndroid(),
-                    formsColor.MultiplyAlpha(0.25).ToAndroid(),
-                    formsColor.ToAndroid(),
-                    formsColor.MultiplyAlpha(0.25).ToAndroid(),
-                    formsColor.ToAndroid(),
-                    formsColor.MultiplyAlpha(0.25).ToAndroid(),
-                };
-                Control.SetHint(formsTitle, e.NewElement);
-                Control.DefaultHintTextColor = new ColorStateList(states, colors);
+                    InputLayout.ApplyTheme(custompicker.TextColor, custompicker.PlaceHolderColor);
+                }
             }
         }
     }

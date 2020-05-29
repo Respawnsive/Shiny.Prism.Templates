@@ -12,33 +12,33 @@ namespace Template.Mobile.CustomCtrl
 
         }
 
-        public static readonly BindableProperty TitleProperty =
+        public static readonly BindableProperty PlaceHolderProperty =
               BindableProperty.Create(
-                 propertyName: "Title",
+                 propertyName: "PlaceHolder",
                   returnType: typeof(string),
                   declaringType: typeof(CustomMaterialDatePicker),
                   defaultValue: "",
                   defaultBindingMode: BindingMode.TwoWay);
 
-        public string Title
+        public string PlaceHolder
         {
-            get { return (string)GetValue(TitleProperty); }
-            set { SetValue(TitleProperty, value); }
+            get { return (string)GetValue(PlaceHolderProperty); }
+            set { SetValue(PlaceHolderProperty, value); }
         }
 
         
-        public static readonly BindableProperty TitleColorProperty =
+        public static readonly BindableProperty PlaceHolderColorProperty =
               BindableProperty.Create(
-                 propertyName: "TitleColor",
+                 propertyName: "PlaceHolderColor",
                   returnType: typeof(Color),
                   declaringType: typeof(CustomMaterialDatePicker),
                   defaultValue: (Color)App.Current.Resources["Accent"],
                   defaultBindingMode: BindingMode.TwoWay);
 
-        public Color TitleColor
+        public Color PlaceHolderColor
         {
-            get { return (Color)GetValue(TitleColorProperty); }
-            set { SetValue(TitleColorProperty, value); }
+            get { return (Color)GetValue(PlaceHolderColorProperty); }
+            set { SetValue(PlaceHolderColorProperty, value); }
         }
     }
 }

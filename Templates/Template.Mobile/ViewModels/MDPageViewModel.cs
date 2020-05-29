@@ -22,12 +22,12 @@ namespace Template.Mobile.ViewModels
                 //Create NavigationMenu here
                 MenuItems = new List<MenuItemModel>
                 {
-                    //new MenuItemModel
-                    //{
-                    //    Title = "Home",// this["HomePage_Title"],
-                    //    ItemImageSource = "ic_menu_home.svg",
-                    //    NavigationPath = $"{nameof(NavigationPage)}/{nameof(HomePage)}"
-                    //},
+                    new MenuItemModel
+                    {
+                        Title = "Accueil",// this["HomePage_Title"],
+                        ItemImageSource = "ic_home.png",
+                        NavigationPath = $"{nameof(NavigationPage)}/{nameof(HomePage)}"
+                    },
                     new MenuItemModel
                     {
                         Title = "DEBUG Images",// this["TakeInChargePageTitle"],
@@ -48,14 +48,14 @@ namespace Template.Mobile.ViewModels
                     },
                 };
 
-//#if DEBUG
-//                MenuItems.Insert(0, new MenuItemModel
-//                {
-//                        Title = "DEBUG",// this["TakeInChargePageTitle"],
-//                        ItemImageSource = "ic_bug_report.png",
-//                        NavigationPath = $"{nameof(NavigationPage)}/{nameof(Debug_ThemingPage)}"
-//                });
-//#endif
+                //#if DEBUG
+                //                MenuItems.Insert(0, new MenuItemModel
+                //                {
+                //                        Title = "DEBUG",
+                //                        ItemImageSource = "ic_bug_report.png",
+                //                        NavigationPath = $"{nameof(NavigationPage)}/{nameof(Debug_ThemingPage)}"
+                //                });
+                //#endif
 
                 //Device.InvokeOnMainThreadAsync(notificationService.RegisterAsync);
 
@@ -64,6 +64,8 @@ namespace Template.Mobile.ViewModels
                 //{
                 //    await NavigationService.NavigateAsync(url);
                 //});
+
+                SelectedMenuItem = MenuItems.Count > 0 ? MenuItems[0] : null;
             }
             catch (Exception ex)
             {
@@ -98,23 +100,21 @@ namespace Template.Mobile.ViewModels
 
         private bool MenuNavigateCommandCanExecute(MenuItemModel selectedItem)
         {
-            if (!selectedItem.IsActive)
-            {
-                //Hack pour déselectionner l'item de la liste
-                SelectedMenuItem = null;
-            }
-            //Conditions pour exécuter la command
-            return selectedItem.IsActive;
+            if (selectedItem != null)
+                //Conditions pour exécuter la command
+                return selectedItem.IsActive;
+            return false;
         }
 
         private async void MenuNavigateCommandExecuteAsync(MenuItemModel selectedItem)
         {
             try
             {
-                //Hack pour déselectionner l'item de la liste
-                SelectedMenuItem = null;
-                await NavigationService.NavigateAsync(selectedItem.NavigationPath);
-                Logger.Write("MenuNavigateCommandExecuteAsync", $"{selectedItem.NavigationPath}");
+                if (selectedItem != null)
+                {
+                    await NavigationService.NavigateAsync(selectedItem.NavigationPath);
+                    Logger.Write("MenuNavigateCommandExecuteAsync", $"{selectedItem.NavigationPath}");
+                }
             }
             catch (Exception ex)
             {

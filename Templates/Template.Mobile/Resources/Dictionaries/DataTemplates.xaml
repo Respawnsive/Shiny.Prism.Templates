@@ -2,6 +2,7 @@
 <ResourceDictionary x:Class="Template.Mobile.Resources.Dictionaries.DataTemplates"
                     xmlns="http://xamarin.com/schemas/2014/forms"
                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:cells="clr-namespace:Template.Mobile.Views.Cells"
                     xmlns:dictionaries="clr-namespace:Template.Mobile.Resources.Dictionaries;assembly=Template.Mobile"
                     xmlns:models="clr-namespace:Template.Mobile.Models">
 
@@ -17,26 +18,60 @@
 
     <!--  DataTemplate  -->
 
-    <DataTemplate x:Key="MenuItemTemplate" x:DataType="models:MenuItemModel">
-        <!--  Binding context is a MenuItem  -->
-        <ViewCell>
-            <StackLayout Margin="5"
-                         Padding="5"
-                         HorizontalOptions="FillAndExpand"
-                         Orientation="Horizontal">
+    <DataTemplate x:Key="CollectionViewDataTemplate_SingleLine_MDMenuItem" x:DataType="models:MenuItemModel">
+        <cells:SelectableCellBase x:Name="cellcontainer" Style="{StaticResource SelectableCollectionView}">
+            <Grid Margin="5"
+                  Padding="5"
+                  HorizontalOptions="FillAndExpand"
+                  VerticalOptions="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
 
-                <Image WidthRequest="32"
+                <Image Grid.Column="0"
+                       WidthRequest="32"
                        HeightRequest="32"
                        Aspect="AspectFit"
                        Source="{Binding ItemImageSource}" />
 
-                <Label Style="{StaticResource TextTitle}"
+                <Label Grid.Column="1"
+                       Style="{StaticResource TextTitle}"
                        VerticalOptions="Center"
                        IsEnabled="{Binding IsActive}"
                        Text="{Binding Title}" />
+            </Grid>
+        </cells:SelectableCellBase>
+    </DataTemplate>
 
-            </StackLayout>
-        </ViewCell>
+    <DataTemplate x:Key="CollectionViewDataTemplate_MultiColumns_CenteredImageLabel" x:DataType="models:ImageModel">
+        <cells:SelectableCellBase x:Name="cellcontainer" Style="{StaticResource SelectableCollectionView}">
+            <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Image Grid.Row="0"
+                       Grid.Column="0"
+                       WidthRequest="{Binding ImageWidth}"
+                       HeightRequest="{Binding ImageHeight}"
+                       MinimumWidthRequest="{Binding ImageWidth}"
+                       MinimumHeightRequest="{Binding ImageHeight}"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       Aspect="AspectFit"
+                       Source="{Binding Filename}" />
+                <Label Grid.Row="1"
+                       Grid.Column="0"
+                       Style="{StaticResource TextCenter}"
+                       FontSize="Micro"
+                       LineBreakMode="TailTruncation"
+                       Text="{Binding Filename, Converter={StaticResource WithoutExtensionConverter}}" />
+            </Grid>
+        </cells:SelectableCellBase>
     </DataTemplate>
 
     <!--<DataTemplate x:Key="SillyDataTemplate">

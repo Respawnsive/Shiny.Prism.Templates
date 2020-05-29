@@ -6,7 +6,7 @@
     <!--  Tip : Install VS Extension "Inline Color Picker (by Nokola) to visualize & pick colors directly in xaml files  -->
 
     <Color x:Key="DarkSurface">#121212</Color>
-    <Color x:Key="LightSurface">#02FF0266</Color>
+    <Color x:Key="LightSurface">#02BB2734</Color>
     <Color x:Key="AcrylicSurface">#E4E4E4</Color>
 
     <Color x:Key="DarkElevation2dp">#212121</Color>

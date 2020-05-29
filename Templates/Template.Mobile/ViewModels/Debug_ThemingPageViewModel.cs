@@ -30,6 +30,8 @@ namespace Template.Mobile.ViewModels
                 });
                 //Subscribe
                 this.WhenAnyValue(x => x.SelectedTheme).Subscribe(LoadTheme).DisposeWith(DestroyWith);
+
+                TestValue = 2;
             }
             catch(Exception ex)
             {
@@ -40,6 +42,9 @@ namespace Template.Mobile.ViewModels
         [Reactive]
         public string SelectedTheme { get; set; }
 
+        [Reactive]
+        public int TestValue { get; set; }
+
         public ObservableCollection<string> Themes { get; set; }
 
         private void LoadTheme(string themename)
@@ -49,19 +54,19 @@ namespace Template.Mobile.ViewModels
                 switch (themename)
                 {
                     case "Acrylic":
-                        ResourcesHelper.ApplyTheme(AppTheme.Acrylic);
+                        ThemeHelper.ApplyTheme(AppTheme.Acrylic);
                         break;
                     case "AcrylicBlur":
-                        ResourcesHelper.ApplyTheme(AppTheme.AcrylicBlur);
+                        ThemeHelper.ApplyTheme(AppTheme.AcrylicBlur);
                         break;
                     case "AcrylicDarkBlur":
-                        ResourcesHelper.ApplyTheme(AppTheme.AcrylicDarkBlur);
+                        ThemeHelper.ApplyTheme(AppTheme.AcrylicDarkBlur);
                         break;
                     case "Dark":
-                        ResourcesHelper.ApplyTheme(AppTheme.Dark);
+                        ThemeHelper.ApplyTheme(AppTheme.Dark);
                         break;
                     case "Light":
-                        ResourcesHelper.ApplyTheme(AppTheme.Light);
+                        ThemeHelper.ApplyTheme(AppTheme.Light);
                         break;
                 }
             }

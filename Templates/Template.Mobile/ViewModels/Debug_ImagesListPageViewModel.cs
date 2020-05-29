@@ -1,13 +1,13 @@
-﻿using Prism.Commands;
-using Prism.Mvvm;
-using Prism.Navigation;
+﻿using Prism.Navigation;
+using ReactiveUI;
 using ReactiveUI.Fody.Helpers;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
+using System.Reactive.Disposables;
 using System.Threading.Tasks;
 using Template.Mobile.Models;
+using Xamarin.Essentials;
+using Xamarin.Forms;
 
 namespace Template.Mobile.ViewModels
 {
@@ -15,7 +15,8 @@ namespace Template.Mobile.ViewModels
     {
         public Debug_ImagesListPageViewModel(INavigationService navigationService) : base(navigationService)
         {
-            
+            this.WhenAnyValue(x => x.SelectedIcon_Generic).Subscribe(ShowImage).DisposeWith(DestroyWith);
+            this.WhenAnyValue(x => x.SelectedIcon_Material).Subscribe(ShowImage).DisposeWith(DestroyWith);
         }
 
         #region Services
@@ -24,10 +25,17 @@ namespace Template.Mobile.ViewModels
 
         #region Properties
 
-        public ObservableCollection<ImageGroupModel> ListIcons { get; private set; } = new ObservableCollection<ImageGroupModel>();
+        public List<ImageModel> ListIcons_Generic { get; private set; } = new List<ImageModel>();
+        public List<ImageModel> ListIcons_Material { get; private set; } = new List<ImageModel>();
 
         [Reactive]
-        public ImageModel SelectedIcon { get; set; }
+        public ImageModel SelectedIcon_Generic { get; set; }
+
+        [Reactive]
+        public ImageModel SelectedIcon_Material { get; set; }
+
+        [Reactive]
+        public int AdjustableGridColumnNumber { get; set; } = 3;
 
         #endregion
 
@@ -41,18 +49,20 @@ namespace Template.Mobile.ViewModels
         {
             //Icons are renderer in native PNG !!! (source is SVG in shared)
             //Generic Projects Images
-            ListIcons.Add(new ImageGroupModel("Generic Projects Images", new List<ImageModel>()
-            {
+            ListIcons_Generic.AddRange( new[] {
                 new ImageModel(){ Filename="appicon.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="splash_centered.png", ImageHeight=47, ImageWidth=120},
-                new ImageModel(){ Filename="splash_background.png", ImageHeight=68, ImageWidth=120},
-                new ImageModel(){ Filename="background_blur.png", ImageHeight=68, ImageWidth=120},
-                new ImageModel(){ Filename="background_darkblur.png", ImageHeight=68, ImageWidth=120},
+                new ImageModel(){ Filename="splash_background.png", ImageHeight=120, ImageWidth=68},
+                new ImageModel(){ Filename="background_blur.png", ImageHeight=120, ImageWidth=68},
+                new ImageModel(){ Filename="background_darkblur.png", ImageHeight=120, ImageWidth=68},
+                new ImageModel(){ Filename="menu_background_dark.png", ImageHeight=68, ImageWidth=120},
+                new ImageModel(){ Filename="menu_background_light.png", ImageHeight=68, ImageWidth=120},
                 new ImageModel(){ Filename="ic_menu.png", ImageHeight=48, ImageWidth=48},
-            }));
+                new ImageModel(){ Filename="ic_exit_to_app.png", ImageHeight=48, ImageWidth=48}
+                }
+            );
             //Materials Icons
-            ListIcons.Add(new ImageGroupModel("Material Icons", new List<ImageModel>()
-            {
+            ListIcons_Material.AddRange(new[] {
                 new ImageModel(){ Filename="ic_3d_rotation.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_accessibility.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_accessible.png", ImageHeight=48, ImageWidth=48},
@@ -1000,21 +1010,63 @@ namespace Template.Mobile.ViewModels
                 new ImageModel(){ Filename="ic_wrap_text.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_youtube_searched_for.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_zoom_out_map.png" , ImageHeight=48, ImageWidth=48}
-            }));
+                }
+            );
+        }
+
+        public void RefreshColumnNumber()
+        {
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                if (Device.Idiom == TargetIdiom.Phone)
+                {
+                    //Phone
+                    if (DeviceDisplay.MainDisplayInfo.Orientation == DisplayOrientation.Portrait)
+                    {
+                        //Portrait
+                        AdjustableGridColumnNumber = 3;
+                    }
+                    else
+                    {
+                        //Landscape
+                        AdjustableGridColumnNumber = 4;
+                    }
+                }
+                else
+                {
+                    //Not on a phone (tablet/pc/etc.)
+                    if (DeviceDisplay.MainDisplayInfo.Orientation == DisplayOrientation.Portrait)
+                    {
+                        //Portrait
+                        AdjustableGridColumnNumber = 4;
+                    }
+                    else
+                    {
+                        //Landscape
+                        AdjustableGridColumnNumber = 5;
+                    }
+                }
+            });
+        }
+
+        private void ShowImage(ImageModel image)
+        {
+            Console.WriteLine($"#################################################");
+            Console.WriteLine($"Filename : {image?.Filename}");
+            Console.WriteLine($"#################################################");
         }
 
         #endregion
 
         #region LifeCycle
 
-        public override void OnAppearing()
+        public override Task InitializeAsync(INavigationParameters parameters)
         {
-            base.OnAppearing();
-            Task.Run(() => LoadDatas());
+            return Task.Run(() => RefreshColumnNumber()).ContinueWith(r => LoadDatas());
         }
 
         #endregion
-        
+
     }
 
 }

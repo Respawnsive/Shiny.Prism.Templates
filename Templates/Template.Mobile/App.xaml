@@ -10,12 +10,13 @@
     <Application.Resources>
 
         <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries >
+            <ResourceDictionary.MergedDictionaries>
                 <dictionaries:Colors />
                 <dictionaries:Converters />
                 <dictionaries:Values />
                 <dictionaries:Styles />
                 <dictionaries:DataTemplates />
+                <dictionaries:ControlTemplates />
             </ResourceDictionary.MergedDictionaries>
 
         </ResourceDictionary>

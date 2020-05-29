@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:ContentPageBase x:Class="Template.Mobile.Views.StartupPage"
+                       xmlns="http://xamarin.com/schemas/2014/forms"
+                       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                       xmlns:prism="http://prismlibrary.com"
+                       xmlns:viewModels="clr-namespace:Template.Mobile.ViewModels;assembly=Template.Mobile"
+                       xmlns:views="clr-namespace:Template.Mobile.Views;assembly=Template.Mobile"
+                       Title="{Binding [SamplePage_Title]}"
+                       x:TypeArguments="viewModels:StartupPageViewModel"
+                       x:DataType="viewModels:StartupPageViewModel"
+                       prism:ViewModelLocator.AutowireViewModel="True">
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+        <Image MinimumWidthRequest="240"
+               MinimumHeightRequest="640"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="FillAndExpand"
+               Aspect="Fill"
+               Source="splash_background.png" />
+
+        <StackLayout HorizontalOptions="Center"
+                     VerticalOptions="Center"
+                     Orientation="Vertical">
+
+            <Image WidthRequest="240"
+                   HeightRequest="94"
+                   HorizontalOptions="Center"
+                   Aspect="AspectFit"
+                   Source="splash_centered.png" />
+
+            <ActivityIndicator IsVisible="{Binding IsBusy}"
+                               WidthRequest="80"
+                               HeightRequest="80"
+                               HorizontalOptions="Center"
+                               IsRunning="True" />
+
+            <Label IsVisible="{Binding StatusLabel, Converter={StaticResource IsNotNullConverter}}"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   Text="{Binding StatusLabel}" />
+
+            <Button IsVisible="{Binding HasFailedOnce}"
+                    WidthRequest="200"
+                    HeightRequest="50"
+                    Margin="30"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                    Command="{Binding LoadCommand}"
+                    Text="(Ré)Initialiser" />
+
+        </StackLayout>
+
+
+
+    </Grid>
+</views:ContentPageBase>

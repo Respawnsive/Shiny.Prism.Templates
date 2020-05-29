@@ -3,6 +3,7 @@ using Template.Mobile.ViewModels;
 using System.ComponentModel;
 using Xamarin.Forms.Xaml;
 using System;
+using Template.Mobile.Helpers;
 
 namespace Template.Mobile.Views
 {
@@ -20,8 +21,15 @@ namespace Template.Mobile.Views
             }
             catch(Exception ex)
             {
-
+                Logger.Write(ex);
             }
+        }
+
+        protected override void OnSizeAllocated(double width, double height)
+        {
+            base.OnSizeAllocated(width, height);
+            //This dynamicaly changes the number of columns  when orientation changes
+            ((Debug_ImagesListPageViewModel)this.BindingContext).RefreshColumnNumber();
         }
     }
 }

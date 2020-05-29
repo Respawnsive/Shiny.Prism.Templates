@@ -2,17 +2,25 @@
 
 using Sharpnado.MaterialFrame;
 using Sharpnado.Presentation.Forms.RenderedViews;
-
+using Shiny;
+using Template.Mobile.Interfaces;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Template.Mobile.Helpers
 {
-    public static class ResourcesHelper
+    public static class ThemeHelper
     {
+        #region Dynamic Theme Constants
+
         public const string DynamicMaterialTheme = nameof(DynamicMaterialTheme);
 
         public const string DynamicPrimaryTextColor = nameof(DynamicPrimaryTextColor);
         public const string DynamicSecondaryTextColor = nameof(DynamicSecondaryTextColor);
+
+        public const string DynamicMenuHeaderBorderColor = nameof(DynamicMenuHeaderBorderColor);
+        public const string DynamicMenuBackgroundColor = nameof(DynamicMenuBackgroundColor);
+        public const string DynamicMenuImageSource = nameof(DynamicMenuImageSource);
 
         public const string DynamicNavigationBarColor = nameof(DynamicNavigationBarColor);
         public const string DynamicBackgroundColor = nameof(DynamicBackgroundColor);
@@ -48,25 +56,9 @@ namespace Template.Mobile.Helpers
 
         public const string DynamicElevation = nameof(DynamicElevation);
 
-        public static T GetResource<T>(string key)
-        {
-            if (Application.Current.Resources.TryGetValue(key, out var value))
-            {
-                return (T)value;
-            }
+        #endregion
 
-            throw new InvalidOperationException($"key {key} not found in the resource dictionary");
-        }
-
-        public static Color GetResourceColor(string key)
-        {
-            if (Application.Current.Resources.TryGetValue(key, out var value))
-            {
-                return (Color)value;
-            }
-
-            throw new InvalidOperationException($"key {key} not found in the resource dictionary");
-        }
+        #region Private Theming Methods
 
         private static void SetDynamicResource(string targetResourceName, string sourceResourceName)
         {
@@ -85,6 +77,11 @@ namespace Template.Mobile.Helpers
 
         private static void SetDarkMode()
         {
+            //Set Android Specific StatusBar
+            var statusBarColor = Color.Black;
+            var platformTheme = ShinyHost.Resolve<IPlatformTheme>();
+            platformTheme?.SetStatusBarColor(statusBarColor, true);
+
             SetDynamicResource(DynamicMaterialTheme, MaterialFrame.Theme.Dark);
             SetDynamicResource(DynamicBlurTheme, MaterialFrame.Theme.Dark);
 
@@ -98,8 +95,11 @@ namespace Template.Mobile.Helpers
             SetDynamicResource(DynamicBackgroundColor, "DarkSurface");
             SetDynamicResource(DynamicDudeBackgroundColor, "DarkSurface");
 
-            SetDynamicResource(Elevation4dpColor, "DarkElevation4dp");
+            SetDynamicResource(DynamicMenuBackgroundColor, "DarkSurface");
+            SetDynamicResource(DynamicMenuImageSource, new FileImageSource() { File = "menu_background_dark.png" });
+            SetDynamicResource(DynamicMenuHeaderBorderColor, "DarkElevation2dp");
 
+            SetDynamicResource(Elevation4dpColor, "DarkElevation4dp");
             SetDynamicResource(DynamicElevation, 4);
             SetDynamicResource(DynamicCornerRadius, 5);
 
@@ -113,10 +113,16 @@ namespace Template.Mobile.Helpers
             SetDynamicResource(DynamicBottomBarBackground, "DarkElevation4dp");
 
             SetDynamicResource(DynamicBackgroundImageSource, new FileImageSource());
-        }
+
+            }
 
         private static void SetLightMode(bool isAcrylic)
         {
+            //Set Android Specific StatusBar
+            var statusBarColor = GetResourceColor("PrimaryColor").AddLuminosity(-0.1);
+            var platformTheme = ShinyHost.Resolve<IPlatformTheme>();
+            platformTheme?.SetStatusBarColor(statusBarColor, false);
+
             SetDynamicResource(DynamicMaterialTheme, isAcrylic ? MaterialFrame.Theme.Acrylic : MaterialFrame.Theme.Light);
             SetDynamicResource(DynamicBlurTheme, isAcrylic ? MaterialFrame.Theme.Acrylic : MaterialFrame.Theme.Light);
 
@@ -129,6 +135,10 @@ namespace Template.Mobile.Helpers
 
             SetDynamicResource(DynamicBackgroundColor, isAcrylic ? "AcrylicSurface" : "LightSurface");
             SetDynamicResource(DynamicDudeBackgroundColor, isAcrylic ? "AcrylicSurface" : "LightSurface");
+
+            SetDynamicResource(DynamicMenuBackgroundColor, "AcrylicSurface");
+            SetDynamicResource(DynamicMenuImageSource, new FileImageSource() { File = "menu_background_light.png" });
+            SetDynamicResource(DynamicMenuHeaderBorderColor, "Accent");
 
             SetDynamicResource(Elevation4dpColor, isAcrylic ? "AcrylicFrameBackgroundColor" : "OnSurfaceColor");
 
@@ -151,6 +161,11 @@ namespace Template.Mobile.Helpers
 
         private static void SetDarkBlur()
         {
+            //Set Android Specific StatusBar
+            var statusBarColor = Color.Black;
+            var platformTheme = ShinyHost.Resolve<IPlatformTheme>();
+            platformTheme?.SetStatusBarColor(statusBarColor, true);
+
             SetDynamicResource(DynamicBackgroundImageSource, new FileImageSource { File = "background_darkblur.png" });
 
             SetDynamicResource(DynamicNavigationBarColor, "DarkElevation2dp");
@@ -159,6 +174,10 @@ namespace Template.Mobile.Helpers
             SetDynamicResource(DynamicHeaderTextColor, "TextPrimaryDarkColor");
             SetDynamicResource(DynamicPrimaryTextColor, "TextPrimaryDarkColor");
             SetDynamicResource(DynamicSecondaryTextColor, "TextSecondaryDarkColor");
+
+            SetDynamicResource(DynamicMenuBackgroundColor, "DarkSurface");
+            SetDynamicResource(DynamicMenuImageSource, new FileImageSource() { File = "menu_background_dark.png" });
+            SetDynamicResource(DynamicMenuHeaderBorderColor, "DarkElevation2dp");
 
             SetDynamicResource(DynamicBackgroundColor, Color.Transparent);
             SetDynamicResource(DynamicDudeBackgroundColor, "DarkSurface");
@@ -183,6 +202,11 @@ namespace Template.Mobile.Helpers
 
         private static void SetLightBlur()
         {
+            //Set Android Specific StatusBar
+            var statusBarColor = GetResourceColor("PrimaryColor").AddLuminosity(-0.1);
+            var platformTheme = ShinyHost.Resolve<IPlatformTheme>();
+            platformTheme?.SetStatusBarColor(statusBarColor, false);
+
             SetDynamicResource(DynamicBackgroundImageSource, new FileImageSource { File = "background_blur.png" });
 
             SetDynamicResource(DynamicNavigationBarColor, "Accent");
@@ -194,6 +218,10 @@ namespace Template.Mobile.Helpers
 
             SetDynamicResource(DynamicBackgroundColor, Color.Transparent);
             SetDynamicResource(DynamicDudeBackgroundColor, Color.Transparent);
+
+            SetDynamicResource(DynamicMenuBackgroundColor, "AcrylicSurface");
+            SetDynamicResource(DynamicMenuImageSource, new FileImageSource() { File = "menu_background_light.png" });
+            SetDynamicResource(DynamicMenuHeaderBorderColor, "Accent");
 
             SetDynamicResource(Elevation4dpColor, Color.Transparent);
 
@@ -215,11 +243,32 @@ namespace Template.Mobile.Helpers
             SetDynamicResource(DynamicBlurStyle, MaterialFrame.BlurStyle.Light);
         }
 
+        #endregion
+
+        #region Public Theming Methods
+
+        public static void InitTheme()
+        {
+            //Here is the logic for Theming Initialisation (from Settings, from Device, both, fixed or dynamic, etc.)
+            
+            //Example for applying user Device choice (AppInfo.RequestedTheme from essentials)
+            if (AppInfo.RequestedTheme == Xamarin.Essentials.AppTheme.Dark)
+            {
+                ApplyTheme(AppTheme.AcrylicDarkBlur);
+            }
+            else
+            {
+                ApplyTheme(AppTheme.Acrylic);
+            }
+        }
+
         public static void ApplyTheme(AppTheme newtheme)
         {
             switch (newtheme)
             {
                 case AppTheme.Acrylic:
+                    //Bug from DarkBlur to Acrylic, resolve thru DarkBlur to Light to Acrylic
+                    SetLightMode(false);
                     SetLightMode(true);
                     break;
                 case AppTheme.AcrylicDarkBlur:
@@ -236,8 +285,33 @@ namespace Template.Mobile.Helpers
                     break;
             }
         }
+
+        public static T GetResource<T>(string key)
+        {
+            if (Application.Current.Resources.TryGetValue(key, out var value))
+            {
+                return (T)value;
+            }
+
+            throw new InvalidOperationException($"key {key} not found in the resource dictionary");
+        }
+
+        public static Color GetResourceColor(string key)
+        {
+            if (Application.Current.Resources.TryGetValue(key, out var value))
+            {
+                return (Color)value;
+            }
+
+            throw new InvalidOperationException($"key {key} not found in the resource dictionary");
+        }
+
+        #endregion
     }
 
+    /// <summary>
+    /// Enum the different Themes
+    /// </summary>
     public enum AppTheme
     {
         Light = 0,

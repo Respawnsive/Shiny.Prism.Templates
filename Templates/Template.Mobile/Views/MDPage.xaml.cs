@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Template.Mobile.Helpers;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -18,10 +19,6 @@ namespace Template.Mobile.Views
             try
             {
                 InitializeComponent();
-                //MessagingCenter.Subscribe<object>(this, "ShowMenuBurger", sender =>
-                //{
-                //    this.IsPresented = true;
-                //});
             }
             catch (Exception ex)
             {
@@ -29,9 +26,17 @@ namespace Template.Mobile.Views
             }
         }
 
-        //Pour ne plus afficher le menu après navigation
-        public bool IsPresentedAfterNavigation => false;
-        //Pour garder affiché le menu après navigation
-        //return true;
+        //Dismiss menu after navigation -> return false
+        //Keep menu after navigation -> return true;
+        public bool IsPresentedAfterNavigation
+        {
+            get
+            {
+                if (Device.Idiom != TargetIdiom.Phone && DeviceDisplay.MainDisplayInfo.Orientation == DisplayOrientation.Landscape)
+                    //Not on a phone (tablet/pc/etc.) and Landscape -> we keep the menu displayed
+                    return true;
+                return false;
+            }
+        }
     }
 }

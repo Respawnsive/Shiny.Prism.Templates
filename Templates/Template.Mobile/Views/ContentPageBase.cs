@@ -16,6 +16,7 @@ namespace Template.Mobile.Views
         {
             Tag = parent;
             iOSspec.Page.SetUseSafeArea(this, true);
+            this.ControlTemplate = (ControlTemplate)Application.Current.Resources["ThemedLoaderPageTemplate"];
         }
 
         public TViewModel ViewModel => BindingContext as TViewModel;
@@ -30,15 +31,15 @@ namespace Template.Mobile.Views
             {
                 var vm = ((ViewModelBase)(this.BindingContext));
                 //TODO à réactiver quand HomePage ou MDPage ?
-                //if (vm.GetType() == typeof(MainViewModel))
-                //{
-                //    return base.OnBackButtonPressed();
-                //}
-                //else
-                //{
+                if (vm.GetType() == typeof(MDPageViewModel))
+                {
+                    return base.OnBackButtonPressed();
+                }
+                else
+                {
                     vm.NavigateBackAsync();
                     return true;
-                //}
+                }
             }
             catch
             {

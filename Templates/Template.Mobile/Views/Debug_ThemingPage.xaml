@@ -13,44 +13,47 @@
                        Title="Theming Page"
                        x:TypeArguments="viewModels:Debug_ThemingPageViewModel"
                        x:DataType="viewModels:Debug_ThemingPageViewModel"
-                       prism:ViewModelLocator.AutowireViewModel="True"
-                       BackgroundImageSource="{DynamicResource DynamicBackgroundImageSource}">
+                       prism:ViewModelLocator.AutowireViewModel="True">
 
     <ScrollView>
         <StackLayout Spacing="16" Padding="16">
-            <!--  Place new controls here  -->
-            <materialFrame:MaterialFrame StyleId="5555">
+
+            <materialFrame:MaterialFrame>
                 <StackLayout>
                     <Label Style="{StaticResource TextHeadline}" Text="ThemePicker" />
                     <Picker Title="Choose a Theme"
                             SelectedItem="{Binding SelectedTheme}"
+                            TextColor="{DynamicResource DynamicPrimaryTextColor}"
                             ItemsSource="{Binding Themes}" />
                 </StackLayout>
             </materialFrame:MaterialFrame>
-            <materialFrame:MaterialFrame StyleId="5555">
+
+            <materialFrame:MaterialFrame>
                 <StackLayout>
                     <Label Style="{StaticResource TextHeadline}" Text="Base Controls" />
                     <ActivityIndicator HorizontalOptions="Center"
                                        IsEnabled="True"
                                        IsRunning="True" />
-                    <ProgressBar Progress="100" />
+                    <ProgressBar x:Name="pgbar" HorizontalOptions="FillAndExpand" />
                     <Button Text="Button base" />
                     <Editor Placeholder="Editor base" />
                     <Entry Placeholder="Entry base" />
-                    <Slider />
-                    <Label Style="{StaticResource TextBody}" Text="UncompleteMaterial (base) :" />
-                    <CheckBox />
-                    <DatePicker />
-                    <TimePicker />
-                    <Stepper />
-                    <Label Style="{StaticResource TextBody}" Text="CustomMaterialRenderers :" />
-                    <ctrl:CustomMaterialStepper />
-                    <ctrl:CustomMaterialDatePicker Title="CustomMaterialDatePicker"/>
-                    <ctrl:CustomMaterialDatePicker Title="CustomMaterialDatePicker" IsEnabled="False" />
+                    <StackLayout Orientation="Horizontal">
+                        <Slider HorizontalOptions="FillAndExpand"
+                                VerticalOptions="Center"
+                                Maximum="10"
+                                Minimum="0"
+                                Value="{Binding TestValue}" />
+                        <ctrl:CustomMaterialStepper VerticalOptions="Center" Value="{Binding TestValue}" />
+                    </StackLayout>
+
+                    <ctrl:CustomMaterialDatePicker PlaceHolder="CustomMaterialDatePicker" />
+                    <ctrl:CustomMaterialTimePicker PlaceHolder="CustomMaterialTimePicker" />
 
                 </StackLayout>
             </materialFrame:MaterialFrame>
-            <materialFrame:MaterialFrame StyleId="5555">
+
+            <materialFrame:MaterialFrame>
                 <StackLayout>
                     <Label Style="{StaticResource TextHeadline}" Text="TextHeadline" />
                     <Label Style="{StaticResource TextTitle}" Text="TextTitle" />
@@ -66,11 +69,14 @@
                     <Label Style="{StaticResource TextSubheadCenter}" Text="TextSubheadCenter" />
                     <Label Style="{StaticResource TextSubheadSecondaryCenter}" Text="TextSubheadSecondaryCenter" />
                     <Label Style="{StaticResource TextError}" Text="TextError" />
-                    <Label Style="{StaticResource TextSnackbar}" Text="TextSnackbar" />
+                    <Label Style="{StaticResource TextSnackbar}"
+                           BackgroundColor="{StaticResource Accent}"
+                           Text="TextSnackbar" />
                     <Label Style="{StaticResource TextHeader}" Text="TextHeader" />
                 </StackLayout>
             </materialFrame:MaterialFrame>
-            <materialFrame:MaterialFrame StyleId="5555">
+
+            <materialFrame:MaterialFrame>
                 <StackLayout>
                     <Label Style="{StaticResource TextHeadline}" Text="Image test" />
                     <Image WidthRequest="240"

@@ -25,9 +25,7 @@ namespace Template.Mobile
             {
                 InitializeComponent();
 
-                ResourcesHelper.ApplyTheme(AppTheme.Acrylic);
-
-                NavigationService.NavigateAsync($"{nameof(MDPage)}/{nameof(NavigationPage)}/{nameof(Debug_ImagesListPage)}");
+                NavigationService.NavigateAsync($"{nameof(StartupPage)}");
             }
             catch(Exception ex)
             {

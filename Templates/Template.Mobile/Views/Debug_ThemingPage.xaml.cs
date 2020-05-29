@@ -1,5 +1,9 @@
-﻿using System.ComponentModel;
+﻿using Prism.Commands;
+using System;
+using System.ComponentModel;
+using Template.Mobile.Helpers;
 using Template.Mobile.ViewModels;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace Template.Mobile.Views
@@ -12,7 +16,32 @@ namespace Template.Mobile.Views
     {
         public Debug_ThemingPage()
         {
-            InitializeComponent();
+            try
+            {
+                InitializeComponent();
+                LaunchFakeProgress();
+            }
+            catch (Exception ex)
+            {
+                Logger.Write(ex);
+            }
+        }
+
+        private async void LaunchFakeProgress()
+        {
+            try
+            {
+                await pgbar.ProgressTo(1, 5000, Easing.Linear);
+                await pgbar.ProgressTo(0, 5000, Easing.Linear);
+                await pgbar.ProgressTo(1, 5000, Easing.Linear);
+                await pgbar.ProgressTo(0, 5000, Easing.Linear);
+                await pgbar.ProgressTo(1, 5000, Easing.Linear);
+                await pgbar.ProgressTo(0.5, 2500, Easing.Linear);
+            }
+            catch(Exception ex)
+            {
+
+            }
         }
     }
 }

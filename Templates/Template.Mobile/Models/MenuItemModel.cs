@@ -11,6 +11,7 @@ namespace Template.Mobile.Models
             //Defaut value
             IsActive = true;
         }
+
         public string Title { get; set; }
 
         public string NavigationPath { get; set; }

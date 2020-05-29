@@ -2,8 +2,8 @@
 <ResourceDictionary x:Class="Template.Mobile.Resources.Dictionaries.Fonts"
                     xmlns="http://xamarin.com/schemas/2014/forms"
                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-    
-    <!--Dont forget to import Font(ttf) on each platform !-->
+
+    <!--  Dont forget to import Font file(ttf) on each platform !  -->
     <OnPlatform x:Key="FontBold" x:TypeArguments="x:String">
         <On Platform="iOS">Roboto-Bold</On>
         <On Platform="Android">Roboto-Bold.ttf#Roboto</On>
@@ -32,5 +32,5 @@
         <On Platform="iOS">Roboto-Light</On>
         <On Platform="Android">Roboto-Light.ttf#Roboto</On>
     </OnPlatform>
-    
+
 </ResourceDictionary>

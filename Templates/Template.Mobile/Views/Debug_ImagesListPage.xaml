@@ -5,6 +5,7 @@
                        xmlns:d="http://xamarin.com/schemas/2014/forms/design"
                        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                        mc:Ignorable="d"
+                       xmlns:materialFrame="clr-namespace:Sharpnado.MaterialFrame;assembly=Sharpnado.MaterialFrame"
                        xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
                        xmlns:viewModels="clr-namespace:Template.Mobile.ViewModels;assembly=Template.Mobile"
                        xmlns:views="clr-namespace:Template.Mobile.Views;assembly=Template.Mobile"
@@ -16,66 +17,51 @@
         xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
         ios:Page.UseSafeArea="True"
     -->
-    <CollectionView BackgroundColor="#F1F1F1"
-                    IsGrouped="true"
-                    ItemSizingStrategy="MeasureAllItems"
-                    SelectedItem="{Binding SelectedIcon}"
-                    SelectionMode="Single"
-                    ItemsSource="{Binding ListIcons}">
-        <CollectionView.GroupHeaderTemplate>
-            <DataTemplate>
-                <Label BackgroundColor="LightGray"
-                       FontAttributes="Bold"
-                       FontSize="Large"
-                       Text="{Binding GroupName}" />
-            </DataTemplate>
-        </CollectionView.GroupHeaderTemplate>
-        <CollectionView.GroupFooterTemplate>
-            <DataTemplate>
-                <StackLayout Spacing="0">
-                    <Label Padding="5,10"
-                           HorizontalOptions="Fill"
-                           HorizontalTextAlignment="End"
-                           BackgroundColor="LightGray"
-                           Text="{Binding Count, StringFormat='Total images: {0:D}'}" />
-                    <BoxView HeightRequest="2" BackgroundColor="White" />
-                </StackLayout>
-            </DataTemplate>
-        </CollectionView.GroupFooterTemplate>
-        <CollectionView.ItemsLayout>
-            <GridItemsLayout Orientation="Vertical" Span="3" />
-        </CollectionView.ItemsLayout>
-        <CollectionView.ItemTemplate>
-            <DataTemplate>
-                <Grid Padding="5"
-                      HorizontalOptions="Center"
-                      VerticalOptions="Center">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="Auto" />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-                    <Image Grid.Row="0"
-                           Grid.Column="0"
-                           WidthRequest="{Binding ImageWidth}"
-                           HeightRequest="{Binding ImageHeight}"
-                           MinimumWidthRequest="{Binding ImageWidth}"
-                           MinimumHeightRequest="{Binding ImageHeight}"
-                           HorizontalOptions="Center"
-                           VerticalOptions="Center"
-                           Aspect="AspectFit"
-                           Source="{Binding Filename}" />
-                    <Label Grid.Row="1"
-                           Grid.Column="0"
-                           HorizontalOptions="Center"
-                           VerticalOptions="Center"
-                           FontSize="Micro"
-                           LineBreakMode="TailTruncation"
-                           Text="{Binding Filename, Converter={StaticResource WithoutExtensionConverter}}" />
-                </Grid>
-            </DataTemplate>
-        </CollectionView.ItemTemplate>
-    </CollectionView>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="16" Padding="16">
+
+                <!--  Generic Images  -->
+                <materialFrame:MaterialFrame>
+                    <StackLayout>
+                        <Label Style="{StaticResource TextHeadline}" Text="Generic Images" />
+                        <CollectionView HeightRequest="350"
+                                        Margin="16"
+                                        ItemSizingStrategy="MeasureAllItems"
+                                        SelectedItem="{Binding SelectedIcon_Generic}"
+                                        SelectionMode="Single"
+                                        VerticalScrollBarVisibility="Always"
+                                        ItemTemplate="{StaticResource CollectionViewDataTemplate_MultiColumns_CenteredImageLabel}"
+                                        ItemsSource="{Binding ListIcons_Generic}">
+                            <CollectionView.ItemsLayout>
+                                <!--  https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/collectionview/layout  -->
+                                <GridItemsLayout Orientation="Vertical" Span="{Binding AdjustableGridColumnNumber}" />
+                            </CollectionView.ItemsLayout>
+                        </CollectionView>
+                    </StackLayout>
+                </materialFrame:MaterialFrame>
+
+                <!--  Material Images  -->
+                <materialFrame:MaterialFrame>
+                    <StackLayout>
+                        <Label Style="{StaticResource TextHeadline}" Text="Material Images" />
+                        <CollectionView HeightRequest="350"
+                                        Margin="16"
+                                        ItemSizingStrategy="MeasureAllItems"
+                                        SelectedItem="{Binding SelectedIcon_Material}"
+                                        SelectionMode="Single"
+                                        VerticalScrollBarVisibility="Always"
+                                        ItemTemplate="{StaticResource CollectionViewDataTemplate_MultiColumns_CenteredImageLabel}"
+                                        ItemsSource="{Binding ListIcons_Material}">
+                            <CollectionView.ItemsLayout>
+                                <!--  https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/collectionview/layout  -->
+                                <GridItemsLayout Orientation="Vertical" Span="{Binding AdjustableGridColumnNumber}" />
+                            </CollectionView.ItemsLayout>
+                        </CollectionView>
+                    </StackLayout>
+                </materialFrame:MaterialFrame>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
 </views:ContentPageBase>

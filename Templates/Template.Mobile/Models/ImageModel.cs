@@ -7,7 +7,6 @@ namespace Template.Mobile.Models
 {
     public class ImageModel : BindableBase
     {
-
         public string Filename { get; set; }
         public int ImageHeight { get; set; }
         public int ImageWidth { get; set; }
