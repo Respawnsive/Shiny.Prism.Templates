@@ -5,6 +5,7 @@ using Android.Content.PM;
 using Android.Content.Res;
 using Android.OS;
 using Android.Runtime;
+using Lottie.Forms.Droid;
 using Plugin.CurrentActivity;
 using Sharpnado.Presentation.Forms.Droid;
 using Shiny;
@@ -34,6 +35,7 @@ namespace Template.Mobile.Droid
                 Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
                 Android.Glide.Forms.Init(this);
                 SharpnadoInitializer.Initialize();
+                AnimationViewRenderer.Init();
 
                 //Launch FormsApp
                 LoadApplication(new Mobile.App());

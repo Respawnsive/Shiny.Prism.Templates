@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSIX_Installer", "VSIX_Inst
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Template Contents", "Template Contents", "{55CC2672-5C06-489E-AA77-1D827DBFCE4E}"
 	ProjectSection(SolutionItems) = preProject
-		Test.xml = Test.xml
+		Template Content\Test.xml = Template Content\Test.xml
 	EndProjectSection
 EndProject
 Global

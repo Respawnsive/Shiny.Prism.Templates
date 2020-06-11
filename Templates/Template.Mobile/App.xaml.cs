@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Linq;
+using System.Reflection;
 using Prism.Events;
 using Prism.Ioc;
+using Prism.Mvvm;
 using Template.Mobile.Helpers;
 using Template.Mobile.ViewModels;
 using Template.Mobile.Views;
@@ -37,6 +39,24 @@ namespace Template.Mobile
         {
             //REGISTER ALL USED GENERIC PAGES (not AutoRegistered) IN CONTAINER, FOR PRISM NAVIGATION
             containerRegistry.RegisterForNavigation<NavigationPage>();
+        }
+
+        protected override void ConfigureViewModelLocator()
+        {
+            base.ConfigureViewModelLocator();
+
+            ViewModelLocationProvider.SetDefaultViewTypeToViewModelTypeResolver((viewType) =>
+            {
+                if (string.IsNullOrWhiteSpace(viewType.FullName))
+                    return null;
+
+                var viewModelAssemblyName = typeof(ViewModelBase).GetTypeInfo().Assembly.FullName;
+                var viewModelNamespace = typeof(ViewModelBase).Namespace;
+                var viewModelTypeName = viewType.Name.Replace("View", "ViewModel").Replace("Page", "ViewModel");
+                var viewModelName = $"{viewModelNamespace}.{viewModelTypeName}, {viewModelAssemblyName}";
+                var viewModelType = Type.GetType(viewModelName);
+                return viewModelType;
+            });
         }
 
         protected override void OnNavigationError(INavigationError navigationError)

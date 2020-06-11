@@ -3,7 +3,7 @@
                     xmlns="http://xamarin.com/schemas/2014/forms"
                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                     xmlns:ctrl="clr-namespace:Template.Mobile.CustomCtrl"
-                    xmlns:cells="clr-namespace:Template.Mobile.Views.Cells"
+                    xmlns:views="clr-namespace:Template.Mobile.Views"
                     xmlns:dictionaries="clr-namespace:Template.Mobile.Resources.Dictionaries;assembly=Template.Mobile"
                     xmlns:material="clr-namespace:Sharpnado.MaterialFrame;assembly=Sharpnado.MaterialFrame"
                     xmlns:tabs="clr-namespace:Sharpnado.Presentation.Forms.CustomViews.Tabs;assembly=Sharpnado.Presentation.Forms">
@@ -151,7 +151,7 @@
 
     <!--  Style for CollectionView States (Grid as first layout in the itemTemplate)  -->
 
-    <Style x:Key="SelectableCollectionView" TargetType="cells:SelectableCellBase">
+    <Style x:Key="SelectableCollectionView" TargetType="views:SelectableCellBase">
         <Setter Property="VisualStateManager.VisualStateGroups">
             <VisualStateGroupList>
                 <VisualStateGroup x:Name="CommonStates">

@@ -117,7 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Debug_BottomTabsPage_Title" xml:space="preserve">
+    <value>#DEBUG</value>
+  </data>
+  <data name="Debug_ImagesView_Title" xml:space="preserve">
+    <value>Images</value>
+  </data>
+  <data name="Debug_ThemesView_Title" xml:space="preserve">
+    <value>Thèmes</value>
+  </data>
+  <data name="HomePage_Title" xml:space="preserve">
+    <value>Accueil</value>
+  </data>
   <data name="SamplePage_Title" xml:space="preserve">
     <value>Exemple</value>
+  </data>
+  <data name="StartupPage_Title" xml:space="preserve">
+    <value>Initialisation</value>
   </data>
 </root>

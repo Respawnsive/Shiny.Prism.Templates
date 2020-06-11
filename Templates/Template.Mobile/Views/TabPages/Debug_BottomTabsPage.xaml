@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage x:Class="Template.Mobile.Views.Debug_BottomTabsPage"
+            xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            mc:Ignorable="d"
+            xmlns:lazyView="clr-namespace:Prism.Forms.LazyView;assembly=Prism.Forms.LazyView"
+            xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+            xmlns:views="clr-namespace:Template.Mobile.Views;assembly=Template.Mobile"
+            Title="{Binding [Debug_BottomTabsPage_Title]}"
+            prism:ViewModelLocator.AutowireViewModel="True">
+    <lazyView:LazyContentPage Title="{Binding [Debug_ImagesView_Title]}"
+                              x:TypeArguments="views:LoadingView, views:Debug_ImagesView"
+                              IconImageSource="ic_image.png" />
+    <lazyView:LazyContentPage Title="{Binding [Debug_ThemesView_Title]}"
+                              x:TypeArguments="views:LoadingView, views:Debug_ThemesView"
+                              IconImageSource="ic_brightness_6.png" />
+</TabbedPage>
+<!--<?xml version="1.0" encoding="utf-8" ?>
+<views:ContentPageBase x:Class="Template.Mobile.Views.Debug_BottomTabsPage"
+                       xmlns="http://xamarin.com/schemas/2014/forms"
+                       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                       xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                       mc:Ignorable="d"
+                       xmlns:customViews="clr-namespace:Sharpnado.Presentation.Forms.CustomViews;assembly=Sharpnado.Presentation.Forms"
+                       xmlns:lazyView="clr-namespace:Prism.Forms.LazyView;assembly=Prism.Forms.LazyView"
+                       xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+                       xmlns:tabs="clr-namespace:Sharpnado.Presentation.Forms.CustomViews.Tabs;assembly=Sharpnado.Presentation.Forms"
+                       xmlns:viewModels="clr-namespace:Template.Mobile.ViewModels;assembly=Template.Mobile"
+                       xmlns:views="clr-namespace:Template.Mobile.Views;assembly=Template.Mobile"
+                       Title="{Binding [Debug_BottomTabsPage_Title]}"
+                       x:TypeArguments="viewModels:Debug_BottomTabsPageViewModel"
+                       prism:ViewModelLocator.AutowireViewModel="True">
+    <ContentPage.Content>
+        <Grid x:Name="GridContainer"
+              RowSpacing="0"
+              ColumnSpacing="0">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition x:Name="BottomBarRowDefinition" Height="{StaticResource BottomBarHeight}" />
+            </Grid.RowDefinitions>
+
+            <tabs:ViewSwitcher x:Name="Switcher"
+                               Grid.Row="0"
+                               Animate="True"
+                               SelectedIndex="{Binding SelectedViewModelIndex, Mode=TwoWay}">-->
+<!--  Sharpnado LazyView (marche mais pas de load ?)  -->
+<!--
+                <customViews:LazyView x:TypeArguments="views:LoadingView"
+                                      BindingContext="{Binding LoadingViewViewModel}"
+                                      UseActivityIndicator="True" />
+                <customViews:LazyView x:TypeArguments="views:Debug_ImagesList_LazyView"
+                                      BindingContext="{Binding Debug_ImagesList_LazyViewViewModel}"
+                                      UseActivityIndicator="True" />
+                <customViews:LazyView x:TypeArguments="views:Debug_Theming_LazyView"
+                                      BindingContext="{Binding Debug_Theming_LazyViewViewModel}"
+                                      UseActivityIndicator="True" />-->
+<!-- Prism.Forms.LazyView (marche po ?)
+                <lazyView:LazyContentView x:TypeArguments="views:SampleContentView"/>
+                <lazyView:LazyContentView x:TypeArguments="views:Debug_ImagesList_LazyView"/>
+                <lazyView:LazyContentView x:TypeArguments="views:Debug_Theming_LazyView"/>-->
+<!--
+            </tabs:ViewSwitcher>
+
+            <tabs:TabHostView x:Name="TabHost"
+                              Grid.Row="1"
+                              BackgroundColor="{DynamicResource DynamicBottomBarBackground}"
+                              ShadowType="{DynamicResource DynamicTopShadow}"
+                              TabType="Fixed"
+                              SelectedIndex="{Binding Source={x:Reference Switcher}, Path=SelectedIndex, Mode=TwoWay}">
+                <tabs:TabHostView.Tabs>
+
+                    <tabs:BottomTabItem IconImageSource="ic_view_list.png" Label="SampleListView" />-->
+<!--  Circle button  -->
+<!--
+
+                    <tabs:TabButton x:Name="TabButton"
+                                    IsVisible="True"
+                                    ButtonBackgroundColor="{StaticResource Accent}"
+                                    ButtonCircleSize="60"
+                                    ButtonPadding="15"
+                                    IconImageSource="ic_add.png"
+                                    Scale="1.3"
+                                    TranslationY="-10"
+                                    Clicked="TabButtonOnClicked"
+                                    TapCommand="{Binding TabButtonCommand}" />
+
+                    <tabs:BottomTabItem IconImageSource="ic_image.png" Label="Images" />
+                    <tabs:BottomTabItem IconImageSource="ic_brightness_6.png" Label="Thèmes" />
+
+                </tabs:TabHostView.Tabs>
+            </tabs:TabHostView>
+
+        </Grid>
+    </ContentPage.Content>
+</views:ContentPageBase>-->

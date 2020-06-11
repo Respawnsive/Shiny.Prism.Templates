@@ -32,10 +32,13 @@
     <SharedImage Include="Images\Generic_Images\splash_background.png" BaseSize="360, 640" />
     <SharedImage Include="Images\Generic_Images\background_blur.png" BaseSize="360, 640" />
     <SharedImage Include="Images\Generic_Images\background_darkblur.png" BaseSize="360, 640" />
-	<SharedImage Include="Images\Generic_Images\menu_background_dark.png" BaseSize="360, 203" />
+	  <SharedImage Include="Images\Generic_Images\menu_background_dark.png" BaseSize="360, 203" />
     <SharedImage Include="Images\Generic_Images\menu_background_light.png" BaseSize="360, 203"/>
     <SharedImage Include="Images\Material_icons\ic_menu.svg" BaseSize="48, 48" TintColor="#FFFFFFFF" />
     <SharedImage Include="Images\Material_icons\ic_exit_to_app.svg" BaseSize="48, 48" TintColor="#FFFFFFFF" />
+    <SharedImage Include="Images\Material_icons\ic_add.svg" BaseSize="48, 48" TintColor="#FFFFFFFF" />
+    <SharedImage Include="Images\Material_icons\ic_image.svg" BaseSize="48, 48" TintColor="#FFFFFFFF" />
+    <SharedImage Include="Images\Material_icons\ic_brightness_6.svg" BaseSize="48, 48" TintColor="#FFFFFFFF" />
     
     <!-- Generic All Material Icons -->
     <SharedImage Include="Images\Material_icons\ic_3d_rotation.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
@@ -50,7 +53,7 @@
     <SharedImage Include="Images\Material_icons\ic_account_circle.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
     <SharedImage Include="Images\Material_icons\ic_ac_unit.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
     <SharedImage Include="Images\Material_icons\ic_adb.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
-    <SharedImage Include="Images\Material_icons\ic_add.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
+    <!--<SharedImage Include="Images\Material_icons\ic_add.svg" BaseSize="48, 48" TintColor="#FFBB2734" />-->
     <SharedImage Include="Images\Material_icons\ic_add_alarm.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
     <SharedImage Include="Images\Material_icons\ic_add_alert.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
     <SharedImage Include="Images\Material_icons\ic_add_a_photo.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
@@ -161,7 +164,7 @@
     <SharedImage Include="Images\Material_icons\ic_brightness_3.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
     <SharedImage Include="Images\Material_icons\ic_brightness_4.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
     <SharedImage Include="Images\Material_icons\ic_brightness_5.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
-    <SharedImage Include="Images\Material_icons\ic_brightness_6.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
+    <!--<SharedImage Include="Images\Material_icons\ic_brightness_6.svg" BaseSize="48, 48" TintColor="#FFBB2734" />-->
     <SharedImage Include="Images\Material_icons\ic_brightness_7.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
     <SharedImage Include="Images\Material_icons\ic_brightness_auto.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
     <SharedImage Include="Images\Material_icons\ic_brightness_high.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
@@ -453,7 +456,7 @@
     <SharedImage Include="Images\Material_icons\ic_hourglass_full.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
     <SharedImage Include="Images\Material_icons\ic_http.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
     <SharedImage Include="Images\Material_icons\ic_https.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
-    <SharedImage Include="Images\Material_icons\ic_image.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
+    <!--<SharedImage Include="Images\Material_icons\ic_image.svg" BaseSize="48, 48" TintColor="#FFBB2734" />-->
     <SharedImage Include="Images\Material_icons\ic_image_aspect_ratio.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
     <SharedImage Include="Images\Material_icons\ic_important_devices.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
     <SharedImage Include="Images\Material_icons\ic_import_contacts.svg" BaseSize="48, 48" TintColor="#FFBB2734" />

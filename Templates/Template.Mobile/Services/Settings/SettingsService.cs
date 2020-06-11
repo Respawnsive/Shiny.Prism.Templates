@@ -28,7 +28,7 @@ namespace Template.Mobile.Services.Settings
             _settings = settings;
             SetDefaultValues();
             _settings.Bind(this);
-            _settings.KeysNotToClear.Add($"{GetType().FullName}.{nameof(UnclearableString)}");
+            //_settings.KeysNotToClear.Add($"{GetType().FullName}.{nameof(UnclearableString)}");
 
             // Load json app settings
             AppSettings = appSettings;

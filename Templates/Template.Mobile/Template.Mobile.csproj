@@ -30,24 +30,26 @@
 
   <ItemGroup>
     <PackageReference Include="Acr.UserDialogs" Version="7.1.0.442" />
+    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="3.1.2" />
     <PackageReference Include="HttpTracer" Version="2.1.1" />
     <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="3.1.4" />
     <PackageReference Include="Nito.AsyncEx" Version="5.0.0" />
     <PackageReference Include="Prism.Forms.Extended" Version="7.2.0.1054" />
+    <PackageReference Include="Prism.Forms.LazyView" Version="1.1.0" />
     <PackageReference Include="Prism.Microsoft.DependencyInjection.Extensions" Version="7.2.0.1054" />
     <PackageReference Include="Prism.Plugin.Popups" Version="7.2.0.1046" />
     <PackageReference Include="ReactiveUI.Fody" Version="11.4.1" />
     <PackageReference Include="Refit.HttpClientFactory" Version="5.1.67" />
     <PackageReference Include="Resizetizer.NT" Version="0.2.0" />
     <PackageReference Include="Sharpnado.Presentation.Forms" Version="1.6.0" />
-    <PackageReference Include="Shiny.Core" Version="1.1.0.1570" />
+    <PackageReference Include="Shiny.Core" Version="1.2.0.1686" />
     <PackageReference Include="Shiny.Localization" Version="1.0.0" />
-    <PackageReference Include="Shiny.Logging.AppCenter" Version="1.1.0.1570" />
+    <PackageReference Include="Shiny.Logging.AppCenter" Version="1.2.0.1686" />
     <PackageReference Include="Shiny.Prism" Version="7.2.0.1054" />
     <PackageReference Include="Xamarin.Essentials.Interfaces" Version="1.5.3.2" />
-    <PackageReference Include="Xamarin.Forms" Version="4.6.0.800" />
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.847" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
-    <PackageReference Include="Xamarin.Forms.Visual.Material" Version="4.6.0.800" />
+    <PackageReference Include="Xamarin.Forms.Visual.Material" Version="4.6.0.847" />
   </ItemGroup>
 
   <ItemGroup>
@@ -81,17 +83,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>MobileTextResources.resx</DependentUpon>
     </Compile>
-    <Compile Update="Views\Debug_ThemingPage.xaml.cs">
-      <DependentUpon>Debug_ThemingPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Views\Debug_ImagesListPage.xaml.cs">
-      <DependentUpon>Debug_ImagesListPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Views\HomePage.xaml.cs">
+    <Compile Update="Views\ContentPages\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\StartupPage.xaml.cs">
+    <Compile Update="Views\ContentPages\StartupPage.xaml.cs">
       <DependentUpon>StartupPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ContentViews\Debug_ImagesView.xaml.cs">
+      <DependentUpon>Debug_ImagesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ContentViews\Debug_ThemesView.xaml.cs">
+      <DependentUpon>Debug_ThemesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ContentViews\LoadingView.xaml.cs">
+      <DependentUpon>LoadingView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
@@ -121,16 +126,19 @@
     <EmbeddedResource Update="Views\Cells\SelectableCellBase.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\Debug_ImagesListPage.xaml">
+    <EmbeddedResource Update="Views\MasterDetailPages\MDPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\MDPage.xaml">
+    <EmbeddedResource Update="Views\ContentViews\LoadingView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\StartupPage.xaml">
+    <EmbeddedResource Update="Views\ContentPages\StartupPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\SamplePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\TabPages\Debug_BottomTabsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

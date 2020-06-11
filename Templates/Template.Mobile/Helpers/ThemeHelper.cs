@@ -264,6 +264,7 @@ namespace Template.Mobile.Helpers
 
         public static void ApplyTheme(AppTheme newtheme)
         {
+            _currentTheme = newtheme;
             switch (newtheme)
             {
                 case AppTheme.Acrylic:
@@ -304,6 +305,12 @@ namespace Template.Mobile.Helpers
             }
 
             throw new InvalidOperationException($"key {key} not found in the resource dictionary");
+        }
+
+        private static AppTheme _currentTheme;
+        public static AppTheme GetCurrentTheme()
+        {
+            return _currentTheme;
         }
 
         #endregion

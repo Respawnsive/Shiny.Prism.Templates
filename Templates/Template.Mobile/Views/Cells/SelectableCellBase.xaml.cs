@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Template.Mobile.Views.Cells
+namespace Template.Mobile.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SelectableCellBase : Frame
@@ -16,6 +10,8 @@ namespace Template.Mobile.Views.Cells
         {
             InitializeComponent();
         }
+
+        #region ColorSelected_Tint
 
         public static readonly BindableProperty ColorSelected_TintProperty =
               BindableProperty.Create(
@@ -41,6 +37,10 @@ namespace Template.Mobile.Views.Cells
             }
         }
 
+        #endregion
+
+        #region ColorSelected_Background
+
         public static readonly BindableProperty ColorSelected_BackgroundProperty =
               BindableProperty.Create(
                  propertyName: "ColorSelected_Background",
@@ -64,5 +64,8 @@ namespace Template.Mobile.Views.Cells
                 control.wrapperframe.BackgroundColor = (Color)newValue;
             }
         }
+
+        #endregion
+
     }
 }

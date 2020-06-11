@@ -1,5 +1,6 @@
 ﻿using System;
 using Foundation;
+using Lottie.Forms.iOS.Renderers;
 using Microsoft.Extensions.DependencyInjection;
 using Sharpnado.MaterialFrame.iOS;
 using Sharpnado.Presentation.Forms.iOS;
@@ -36,9 +37,10 @@ namespace Template.Mobile.iOS
                 Xamarin.Forms.Nuke.FormsHandler.Init();
                 iOSMaterialFrameRenderer.Init();
                 SharpnadoInitializer.Initialize();
+                AnimationViewRenderer.Init();
 
                 //Launch FormsApp
-                LoadApplication(new Mobile.App());
+                LoadApplication(new App());
             }
             catch(Exception ex)
             {

@@ -53,5 +53,18 @@ namespace Template.Mobile.Droid.Renderers
                 InputLayout.ApplyTheme(custompicker.TextColor, custompicker.PlaceHolderColor);
             }
         }
+
+        protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            base.OnElementPropertyChanged(sender, e);
+            var custompicker = Element as CustomMaterialTimePicker;
+            if (e != null && InputLayout != null)
+            {
+                if (e.PropertyName == "TextColor" || e.PropertyName == "BackgroundColor")
+                {
+                    InputLayout.ApplyTheme(custompicker.TextColor, custompicker.PlaceHolderColor);
+                }
+            }
+        }
     }
 }
