@@ -2,7 +2,7 @@
 using Refit;
 using Template.Mobile.Models.SampleApi;
 
-namespace Template.Mobile.Services.SampleApi
+namespace Template.Mobile.Services
 {
     public interface ISampleApiService
     {

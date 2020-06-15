@@ -5,6 +5,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Sharpnado.MaterialFrame.iOS;
 using Sharpnado.Presentation.Forms.iOS;
 using Shiny;
+using Template.Mobile.Helpers;
+using Template.Mobile.iOS.Services;
+using Template.Mobile.Services;
 using UIKit;
 
 namespace Template.Mobile.iOS
@@ -44,7 +47,7 @@ namespace Template.Mobile.iOS
             }
             catch(Exception ex)
             {
-
+                Logger.Write(ex);
             }
 
             return base.FinishedLaunching(app, options);
@@ -52,7 +55,8 @@ namespace Template.Mobile.iOS
 
         private void ConfigureServices(IServiceCollection services)
         {
-            // todo: Add platform specific service implementations here if needed
+            //Add platform-specific service implementations here if needed
+            services.AddSingleton<IPlatformThemeService, PlatformThemeService>();
         }
 
         public override void PerformFetch(UIApplication application, Action<UIBackgroundFetchResult> completionHandler)

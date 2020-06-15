@@ -16,7 +16,7 @@ namespace Template.Mobile.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Debug_BottomTabsPage : Xamarin.Forms.TabbedPage
     {
-        public Debug_BottomTabsPage()
+        public Debug_BottomTabsPage() : base()
         {
             try
             {

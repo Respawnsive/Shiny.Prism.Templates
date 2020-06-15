@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Shiny;
 using Shiny.Logging;
-using Template.Mobile.Services.Settings.App;
+using Template.Mobile.Services;
 
 namespace Template.Mobile.Modules
 {

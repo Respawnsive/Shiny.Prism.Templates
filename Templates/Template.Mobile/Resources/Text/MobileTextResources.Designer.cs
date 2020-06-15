@@ -79,6 +79,15 @@ namespace Template.Mobile.Resources.Text {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Exemple.
+        /// </summary>
+        public static string Debug_SamplesView_Title {
+            get {
+                return ResourceManager.GetString("Debug_SamplesView_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Thèmes.
         /// </summary>
         public static string Debug_ThemesView_Title {
@@ -93,15 +102,6 @@ namespace Template.Mobile.Resources.Text {
         public static string HomePage_Title {
             get {
                 return ResourceManager.GetString("HomePage_Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Exemple.
-        /// </summary>
-        public static string SamplePage_Title {
-            get {
-                return ResourceManager.GetString("SamplePage_Title", resourceCulture);
             }
         }
         

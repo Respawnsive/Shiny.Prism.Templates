@@ -41,7 +41,7 @@ namespace Template.Mobile.ViewModels
                 {
                     Title = this["Debug_BottomTabsPage_Title"],
                     ItemImageSource = "ic_bug_report.png",
-                    NavigationPath = $"{nameof(NavigationPage)}/{nameof(Debug_BottomTabsPage)}"
+                    NavigationPath = $"{nameof(NavigationPage)}/{nameof(Debug_BottomTabsPage)}" //do not include a TabbedPage into a NavigationPage (iOS bug)
                 });
 #endif
 

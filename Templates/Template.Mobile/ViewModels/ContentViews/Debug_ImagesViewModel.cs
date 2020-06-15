@@ -4,6 +4,7 @@ using ReactiveUI.Fody.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Reactive.Disposables;
+using System.Threading;
 using System.Threading.Tasks;
 using Template.Mobile.Models;
 using Xamarin.Essentials;
@@ -52,14 +53,17 @@ namespace Template.Mobile.ViewModels
             //Generic Projects Images
             ListIcons_Generic.AddRange( new[] {
                 new ImageModel(){ Filename="appicon.png", ImageHeight=48, ImageWidth=48},
-                new ImageModel(){ Filename="splash_centered.png", ImageHeight=47, ImageWidth=120},
-                new ImageModel(){ Filename="splash_background.png", ImageHeight=120, ImageWidth=68},
-                new ImageModel(){ Filename="background_blur.png", ImageHeight=120, ImageWidth=68},
-                new ImageModel(){ Filename="background_darkblur.png", ImageHeight=120, ImageWidth=68},
-                new ImageModel(){ Filename="menu_background_dark.png", ImageHeight=68, ImageWidth=120},
-                new ImageModel(){ Filename="menu_background_light.png", ImageHeight=68, ImageWidth=120},
+                new ImageModel(){ Filename="splash_centered.png", ImageHeight=19, ImageWidth=48},
+                new ImageModel(){ Filename="splash_background.png", ImageHeight=128, ImageWidth=72},
+                new ImageModel(){ Filename="background_blur.png", ImageHeight=128, ImageWidth=72},
+                new ImageModel(){ Filename="background_darkblur.png", ImageHeight=128, ImageWidth=72},
+                new ImageModel(){ Filename="menu_background_dark.png", ImageHeight=41, ImageWidth=72},
+                new ImageModel(){ Filename="menu_background_light.png", ImageHeight=41, ImageWidth=72},
                 new ImageModel(){ Filename="ic_menu.png", ImageHeight=48, ImageWidth=48},
-                new ImageModel(){ Filename="ic_exit_to_app.png", ImageHeight=48, ImageWidth=48}
+                new ImageModel(){ Filename="ic_exit_to_app.png", ImageHeight=48, ImageWidth=48},
+                new ImageModel(){ Filename="ic_add.png", ImageHeight=48, ImageWidth=48},
+                new ImageModel(){ Filename="ic_image.png", ImageHeight=48, ImageWidth=48},
+                new ImageModel(){ Filename="ic_brightness_6.png", ImageHeight=48, ImageWidth=48},
                 }
             );
             //Materials Icons
@@ -76,7 +80,7 @@ namespace Template.Mobile.ViewModels
                 new ImageModel(){ Filename="ic_account_circle.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_ac_unit.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_adb.png", ImageHeight=48, ImageWidth=48},
-                new ImageModel(){ Filename="ic_add.png", ImageHeight=48, ImageWidth=48},
+                //new ImageModel(){ Filename="ic_add.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_add_alarm.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_add_alert.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_add_a_photo.png", ImageHeight=48, ImageWidth=48},
@@ -187,7 +191,7 @@ namespace Template.Mobile.ViewModels
                 new ImageModel(){ Filename="ic_brightness_3.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_brightness_4.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_brightness_5.png", ImageHeight=48, ImageWidth=48},
-                new ImageModel(){ Filename="ic_brightness_6.png", ImageHeight=48, ImageWidth=48},
+                //new ImageModel(){ Filename="ic_brightness_6.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_brightness_7.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_brightness_auto.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_brightness_high.png", ImageHeight=48, ImageWidth=48},
@@ -341,7 +345,7 @@ namespace Template.Mobile.ViewModels
                 new ImageModel(){ Filename="ic_event_note.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_event_seat.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_ev_station.png", ImageHeight=48, ImageWidth=48},
-                new ImageModel(){ Filename="ic_exit_to_app.png", ImageHeight=48, ImageWidth=48},
+                //new ImageModel(){ Filename="ic_exit_to_app.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_expand_less.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_expand_more.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_explicit.png", ImageHeight=48, ImageWidth=48},
@@ -479,7 +483,7 @@ namespace Template.Mobile.ViewModels
                 new ImageModel(){ Filename="ic_hourglass_full.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_http.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_https.png", ImageHeight=48, ImageWidth=48},
-                new ImageModel(){ Filename="ic_image.png", ImageHeight=48, ImageWidth=48},
+                //new ImageModel(){ Filename="ic_image.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_image_aspect_ratio.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_important_devices.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_import_contacts.png", ImageHeight=48, ImageWidth=48},
@@ -591,7 +595,7 @@ namespace Template.Mobile.ViewModels
                 new ImageModel(){ Filename="ic_markunread.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_markunread_mailbox.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_memory.png", ImageHeight=48, ImageWidth=48},
-                new ImageModel(){ Filename="ic_menu.png", ImageHeight=48, ImageWidth=48},
+                //new ImageModel(){ Filename="ic_menu.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_merge_type.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_message.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_mic.png", ImageHeight=48, ImageWidth=48},
@@ -1065,6 +1069,8 @@ namespace Template.Mobile.ViewModels
         {
             base.Initialize(parameters);
             Task.Run(() => LoadDatas());
+            //Fake long loading for LazyView Test
+            Task.Delay(5000);
         }
 
         public override void OnAppearing()

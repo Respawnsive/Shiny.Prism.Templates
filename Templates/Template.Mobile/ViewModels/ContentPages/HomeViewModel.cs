@@ -3,8 +3,7 @@ using System.Threading.Tasks;
 using Prism.Navigation;
 using ReactiveUI.Fody.Helpers;
 using Shiny;
-using Template.Mobile.Models.SampleApi;
-using Template.Mobile.Services.SampleApi;
+using Template.Mobile.Services;
 using Xamarin.Forms;
 
 namespace Template.Mobile.ViewModels

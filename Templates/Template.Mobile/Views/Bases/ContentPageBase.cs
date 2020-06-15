@@ -5,11 +5,7 @@ using iOSspec = Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 
 namespace Template.Mobile.Views
 {
-    public class ContentPageBase : ContentPageBase<ViewModelBase>
-    {
-    }
-
-    public class ContentPageBase<TViewModel> : ContentPage where TViewModel : ViewModelBase
+    public class ContentPageBase : ContentPage
     {
         public readonly string Tag;
         public ContentPageBase([CallerMemberName]string parent = "") : base()
@@ -19,7 +15,6 @@ namespace Template.Mobile.Views
             this.ControlTemplate = (ControlTemplate)Application.Current.Resources["ThemedLoaderPageTemplate"];
         }
 
-        public TViewModel ViewModel => BindingContext as TViewModel;
 
         /// <summary>
         /// Gère l'interception du bouton retour (physique & logiciel/Navigationbar) 

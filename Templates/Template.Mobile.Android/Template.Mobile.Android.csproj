@@ -125,7 +125,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Helpers\PlatformTheme.cs" />
+    <Compile Include="Services\PlatformThemeService.cs" />
     <Compile Include="Renderers\AndroidMaterialTimePickerRenderer.cs" />
     <Compile Include="Renderers\AndroidMaterialDatePickerRenderer.cs" />
     <Compile Include="Renderers\AndroidMaterialStepperRenderer.cs" />

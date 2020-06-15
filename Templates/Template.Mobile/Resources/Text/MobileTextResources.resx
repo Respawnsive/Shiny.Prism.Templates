@@ -123,14 +123,14 @@
   <data name="Debug_ImagesView_Title" xml:space="preserve">
     <value>Images</value>
   </data>
+  <data name="Debug_SamplesView_Title" xml:space="preserve">
+    <value>Exemple</value>
+  </data>
   <data name="Debug_ThemesView_Title" xml:space="preserve">
     <value>Thèmes</value>
   </data>
   <data name="HomePage_Title" xml:space="preserve">
     <value>Accueil</value>
-  </data>
-  <data name="SamplePage_Title" xml:space="preserve">
-    <value>Exemple</value>
   </data>
   <data name="StartupPage_Title" xml:space="preserve">
     <value>Initialisation</value>

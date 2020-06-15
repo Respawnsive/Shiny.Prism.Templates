@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Reactive.Disposables;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Template.Mobile.Helpers;
@@ -90,6 +91,13 @@ namespace Template.Mobile.ViewModels
         {
             base.Initialize(parameters);
             Task.Run(() => LoadDatas());
+            //Fake long loading for LazyView Test
+            Task.Delay(5000);
+        }
+
+        public override void OnAppearing()
+        {
+            base.OnAppearing();
         }
 
         #endregion

@@ -70,6 +70,7 @@
     <Compile Include="Renderers\iOSMaterialStepperRenderer.cs" />
     <Compile Include="Renderers\iOSMaterialDatePickerRenderer.cs" />
     <Compile Include="Renderers\iOSMaterialTimePickerRenderer.cs" />
+    <Compile Include="Services\PlatformThemeService.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />

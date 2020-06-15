@@ -9,8 +9,7 @@ using ReactiveUI;
 using ReactiveUI.Fody.Helpers;
 using Shiny;
 using Shiny.Localization;
-using Template.Mobile.Services.Dialogs;
-using Template.Mobile.Services.Settings;
+using Template.Mobile.Services;
 
 namespace Template.Mobile.ViewModels
 {

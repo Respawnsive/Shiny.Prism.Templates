@@ -3,7 +3,7 @@
 using Sharpnado.MaterialFrame;
 using Sharpnado.Presentation.Forms.RenderedViews;
 using Shiny;
-using Template.Mobile.Interfaces;
+using Template.Mobile.Services;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -79,7 +79,7 @@ namespace Template.Mobile.Helpers
         {
             //Set Android Specific StatusBar
             var statusBarColor = Color.Black;
-            var platformTheme = ShinyHost.Resolve<IPlatformTheme>();
+            var platformTheme = ShinyHost.Resolve<IPlatformThemeService>();
             platformTheme?.SetStatusBarColor(statusBarColor, true);
 
             SetDynamicResource(DynamicMaterialTheme, MaterialFrame.Theme.Dark);
@@ -120,7 +120,7 @@ namespace Template.Mobile.Helpers
         {
             //Set Android Specific StatusBar
             var statusBarColor = GetResourceColor("PrimaryColor").AddLuminosity(-0.1);
-            var platformTheme = ShinyHost.Resolve<IPlatformTheme>();
+            var platformTheme = ShinyHost.Resolve<IPlatformThemeService>();
             platformTheme?.SetStatusBarColor(statusBarColor, false);
 
             SetDynamicResource(DynamicMaterialTheme, isAcrylic ? MaterialFrame.Theme.Acrylic : MaterialFrame.Theme.Light);
@@ -163,7 +163,7 @@ namespace Template.Mobile.Helpers
         {
             //Set Android Specific StatusBar
             var statusBarColor = Color.Black;
-            var platformTheme = ShinyHost.Resolve<IPlatformTheme>();
+            var platformTheme = ShinyHost.Resolve<IPlatformThemeService>();
             platformTheme?.SetStatusBarColor(statusBarColor, true);
 
             SetDynamicResource(DynamicBackgroundImageSource, new FileImageSource { File = "background_darkblur.png" });
@@ -204,7 +204,7 @@ namespace Template.Mobile.Helpers
         {
             //Set Android Specific StatusBar
             var statusBarColor = GetResourceColor("PrimaryColor").AddLuminosity(-0.1);
-            var platformTheme = ShinyHost.Resolve<IPlatformTheme>();
+            var platformTheme = ShinyHost.Resolve<IPlatformThemeService>();
             platformTheme?.SetStatusBarColor(statusBarColor, false);
 
             SetDynamicResource(DynamicBackgroundImageSource, new FileImageSource { File = "background_blur.png" });

@@ -1,7 +1,7 @@
 ﻿using System.Globalization;
 using Newtonsoft.Json;
 
-namespace Template.Mobile.Services.Settings.App
+namespace Template.Mobile.Services
 {
     public class AppSettingsService : IAppSettingsService
     {

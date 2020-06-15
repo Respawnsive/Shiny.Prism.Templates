@@ -3,8 +3,7 @@ using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using Shiny;
-using Template.Mobile.Services.Settings;
-using Template.Mobile.Services.Settings.App;
+using Template.Mobile.Services;
 
 namespace Template.Mobile.Modules
 {
@@ -12,7 +11,7 @@ namespace Template.Mobile.Modules
     {
         public override void Register(IServiceCollection services)
         {
-            var embeddedResourceStream = Assembly.GetAssembly(typeof(IAppSettingsService)).GetManifestResourceStream($"{typeof(AppSettingsService).Namespace}.appsettings.json");
+            var embeddedResourceStream = Assembly.GetAssembly(typeof(IAppSettingsService)).GetManifestResourceStream($"{typeof(AppSettingsService).Namespace}.Settings.App.appsettings.json");
             if (embeddedResourceStream != null)
             {
                 using (var streamReader = new StreamReader(embeddedResourceStream))

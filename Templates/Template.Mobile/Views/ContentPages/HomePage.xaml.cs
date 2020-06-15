@@ -11,9 +11,9 @@ using Xamarin.Forms.Xaml;
 namespace Template.Mobile.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HomePage : ContentPageBase<HomeViewModel>
+    public partial class HomePage : ContentPageBase
     {
-        public HomePage()
+        public HomePage() : base()
         {
             try
             {

@@ -11,9 +11,9 @@ namespace Template.Mobile.Views
     // by visiting https://aka.ms/xamarinforms-previewer
     [DesignTimeVisible(false)]
     //[XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Debug_ImagesView : ContentViewBase<Debug_ImagesViewModel>
+    public partial class Debug_ImagesView : ContentViewBase
     {
-        public Debug_ImagesView()
+        public Debug_ImagesView() : base(nameof(Debug_ImagesView))
         {
             try
             {

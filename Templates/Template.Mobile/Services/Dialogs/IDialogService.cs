@@ -1,6 +1,6 @@
 ﻿using Acr.UserDialogs;
 
-namespace Template.Mobile.Services.Dialogs
+namespace Template.Mobile.Services
 {
     public interface IDialogService : IUserDialogs
     {

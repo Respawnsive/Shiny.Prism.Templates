@@ -1,21 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
+﻿using Android.OS;
 using Plugin.CurrentActivity;
-using Template.Mobile.Interfaces;
+using Template.Mobile.Services;
 using Xamarin.Essentials;
 
-namespace Template.Mobile.Droid.Helpers
+namespace Template.Mobile.Droid.Services
 {
-    public class PlatformTheme : IPlatformTheme
+    public class PlatformThemeService : IPlatformThemeService
     {
         public void SetStatusBarColor(System.Drawing.Color color, bool darkStatusBarTint)
         {

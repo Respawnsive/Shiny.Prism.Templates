@@ -2,16 +2,10 @@
 <views:ContentViewBase x:Class="Template.Mobile.Views.Debug_ImagesView"
                        xmlns="http://xamarin.com/schemas/2014/forms"
                        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                       xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-                       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-                       mc:Ignorable="d"
                        xmlns:materialFrame="clr-namespace:Sharpnado.MaterialFrame;assembly=Sharpnado.MaterialFrame"
-                       xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
                        xmlns:viewModels="clr-namespace:Template.Mobile.ViewModels;assembly=Template.Mobile"
                        xmlns:views="clr-namespace:Template.Mobile.Views;assembly=Template.Mobile"
-                       x:TypeArguments="viewModels:Debug_ImagesViewModel"
-                       x:DataType="viewModels:Debug_ImagesViewModel"
-                       prism:ViewModelLocator.AutowireViewModel="True">
+                       x:DataType="viewModels:Debug_ImagesViewModel">
     <ScrollView>
         <StackLayout Spacing="16" Padding="16">
 

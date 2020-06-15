@@ -11,9 +11,9 @@ using Xamarin.Forms.Xaml;
 namespace Template.Mobile.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LoadingView : ContentViewBase<LoadingViewModel>
+    public partial class LoadingView : ContentView
     {
-        public LoadingView()
+        public LoadingView() : base()
         {
             try
             {

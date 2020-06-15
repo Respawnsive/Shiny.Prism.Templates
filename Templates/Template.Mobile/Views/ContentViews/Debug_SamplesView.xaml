@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:ContentViewBase x:Class="Template.Mobile.Views.Debug_SamplesView"
+                       xmlns="http://xamarin.com/schemas/2014/forms"
+                       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                       xmlns:sampleApi="clr-namespace:Template.Mobile.Models.SampleApi;assembly=Template.Mobile"
+                       xmlns:viewModels="clr-namespace:Template.Mobile.ViewModels;assembly=Template.Mobile"
+                       xmlns:views="clr-namespace:Template.Mobile.Views;assembly=Template.Mobile"
+                       x:DataType="viewModels:Debug_SamplesViewModel">
+    <CollectionView HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    ItemsSource="{Binding Users}">
+        <CollectionView.EmptyView>
+            <Label Text="No Records Found" />
+        </CollectionView.EmptyView>
+
+        <CollectionView.ItemTemplate>
+            <DataTemplate x:DataType="sampleApi:User">
+                <StackLayout>
+                    <Label Text="{Binding FirstName}" />
+                    <Label Text="{Binding LastName}" />
+                </StackLayout>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</views:ContentViewBase>

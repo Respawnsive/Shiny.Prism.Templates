@@ -3,10 +3,10 @@
                     xmlns="http://xamarin.com/schemas/2014/forms"
                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                     xmlns:ctrl="clr-namespace:Template.Mobile.CustomCtrl"
-                    xmlns:views="clr-namespace:Template.Mobile.Views"
                     xmlns:dictionaries="clr-namespace:Template.Mobile.Resources.Dictionaries;assembly=Template.Mobile"
                     xmlns:material="clr-namespace:Sharpnado.MaterialFrame;assembly=Sharpnado.MaterialFrame"
-                    xmlns:tabs="clr-namespace:Sharpnado.Presentation.Forms.CustomViews.Tabs;assembly=Sharpnado.Presentation.Forms">
+                    xmlns:tabs="clr-namespace:Sharpnado.Presentation.Forms.CustomViews.Tabs;assembly=Sharpnado.Presentation.Forms"
+                    xmlns:views="clr-namespace:Template.Mobile.Views">
 
     <ResourceDictionary.MergedDictionaries>
         <dictionaries:Colors />
@@ -149,8 +149,10 @@
         <Setter Property="IsTextVisible" Value="False" />
     </Style>-->
 
-    <!--  Style for CollectionView States (Grid as first layout in the itemTemplate)  -->
+    
+    <!--  Named Styles - Apply explicitely to Target with Style="{StaticResource key}"  -->
 
+    <!--  Style for CollectionView States (Grid as first layout in the itemTemplate)  -->
     <Style x:Key="SelectableCollectionView" TargetType="views:SelectableCellBase">
         <Setter Property="VisualStateManager.VisualStateGroups">
             <VisualStateGroupList>
@@ -191,7 +193,12 @@
         </Setter>
     </Style>-->
 
-    <!--  Named Styles - Apply explicitely to Target with Style="{StaticResource key}"  -->
+    <!--<Style x:Key="BottomTabStyle" TargetType="TabbedPage">
+        <Setter Property="BarBackgroundColor" Value="{DynamicResource DynamicMenuBackgroundColor}" />
+        <Setter Property="BarTextColor" Value="{DynamicResource DynamicPrimaryTextColor}" />
+        <Setter Property="SelectedTabColor" Value="{StaticResource Accent}" />
+        <Setter Property="UnselectedTabColor" Value="LightGray" />
+    </Style>-->
 
     <Style x:Key="TextHeadline" TargetType="Label">
         <Setter Property="FontFamily" Value="{StaticResource FontExtraBold}" />

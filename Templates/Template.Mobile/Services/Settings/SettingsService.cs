@@ -3,9 +3,8 @@ using System.Globalization;
 using ReactiveUI;
 using ReactiveUI.Fody.Helpers;
 using Shiny.Settings;
-using Template.Mobile.Services.Settings.App;
 
-namespace Template.Mobile.Services.Settings
+namespace Template.Mobile.Services
 {
     /// <summary>
     /// Will sync user settings with device preferences

@@ -12,9 +12,9 @@ namespace Template.Mobile.Views
     // by visiting https://aka.ms/xamarinforms-previewer
     [DesignTimeVisible(false)]
     //[XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Debug_ThemesView : ContentViewBase<Debug_ThemesViewModel>
+    public partial class Debug_ThemesView : ContentViewBase
     {
-        public Debug_ThemesView()
+        public Debug_ThemesView() : base()
         {
             try
             {

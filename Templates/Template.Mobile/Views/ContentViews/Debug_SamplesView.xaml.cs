@@ -11,9 +11,9 @@ using Xamarin.Forms.Xaml;
 namespace Template.Mobile.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SamplePage : ContentPageBase<SamplePageViewModel>
+    public partial class Debug_SamplesView : ContentViewBase
     {
-        public SamplePage()
+        public Debug_SamplesView() : base()
         {
             try
             {

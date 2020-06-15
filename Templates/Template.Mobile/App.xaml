@@ -2,9 +2,6 @@
 <prism:PrismApplication x:Class="Template.Mobile.App"
                         xmlns="http://xamarin.com/schemas/2014/forms"
                         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                        xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-                        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-                        mc:Ignorable="d"
                         xmlns:dictionaries="clr-namespace:Template.Mobile.Resources.Dictionaries;assembly=Template.Mobile"
                         xmlns:prism="http://prismlibrary.com">
     <Application.Resources>

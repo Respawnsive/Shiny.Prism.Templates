@@ -1,7 +1,6 @@
 ﻿using System.Globalization;
-using Template.Mobile.Services.Settings.App;
 
-namespace Template.Mobile.Services.Settings
+namespace Template.Mobile.Services
 {
     public interface ISettingsService
     {

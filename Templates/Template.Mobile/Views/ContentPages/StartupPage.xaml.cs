@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace Template.Mobile.Views
 {
-    public partial class StartupPage : ContentPageBase<StartupViewModel>
+    public partial class StartupPage : ContentPageBase
     {
-        public StartupPage()
+        public StartupPage() : base()
         {
             try
             {

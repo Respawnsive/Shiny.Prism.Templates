@@ -5,7 +5,7 @@ using Acr.UserDialogs;
 using Shiny;
 using Xamarin.Forms;
 
-namespace Template.Mobile.Services.Dialogs
+namespace Template.Mobile.Services
 {
     public class DialogsService : IDialogService
     {

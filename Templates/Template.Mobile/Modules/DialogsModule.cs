@@ -5,7 +5,7 @@ using Prism.Plugin.Popups;
 using Rg.Plugins.Popup.Contracts;
 using Rg.Plugins.Popup.Services;
 using Shiny;
-using Template.Mobile.Services.Dialogs;
+using Template.Mobile.Services;
 
 namespace Template.Mobile.Modules
 {

@@ -6,7 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Polly;
 using Refit;
 using Shiny;
-using Template.Mobile.Services.SampleApi;
+using Template.Mobile.Services;
 
 namespace Template.Mobile.Modules
 {
