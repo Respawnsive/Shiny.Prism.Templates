@@ -1069,8 +1069,6 @@ namespace Template.Mobile.ViewModels
         {
             base.Initialize(parameters);
             Task.Run(() => LoadDatas());
-            //Fake long loading for LazyView Test
-            Task.Delay(5000);
         }
 
         public override void OnAppearing()
@@ -1079,6 +1077,11 @@ namespace Template.Mobile.ViewModels
             Task.Run(() => RefreshColumnNumber());
         }
 
+        public override void OnRotationChanged()
+        {
+            base.OnRotationChanged();
+            Task.Run(() => RefreshColumnNumber());
+        }
         #endregion
 
     }

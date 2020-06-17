@@ -14,9 +14,9 @@ using Xamarin.Forms.Xaml;
 namespace Template.Mobile.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Debug_BottomTabsPage : Xamarin.Forms.TabbedPage
+    public partial class Debug_BottomTabsPage : BottomTabbedPageBase
     {
-        public Debug_BottomTabsPage() : base()
+        public Debug_BottomTabsPage() : base(nameof(Debug_BottomTabsPage))
         {
             try
             {

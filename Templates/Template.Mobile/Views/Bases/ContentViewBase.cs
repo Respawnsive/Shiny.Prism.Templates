@@ -14,5 +14,11 @@ namespace Template.Mobile.Views
             this.ControlTemplate = (ControlTemplate)Application.Current.Resources["ThemedLoaderPageTemplate"];
         }
 
+        //protected override void OnSizeAllocated(double width, double height)
+        //{
+        //    base.OnSizeAllocated(width, height);
+        //    ((ViewModelBase)this.Parent.BindingContext).OnRotationChanged();
+        //}
+
     }
 }

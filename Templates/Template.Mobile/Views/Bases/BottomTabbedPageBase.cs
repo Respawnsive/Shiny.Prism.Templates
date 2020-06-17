@@ -5,22 +5,29 @@ using iOSspec = Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 
 namespace Template.Mobile.Views
 {
-    public class ContentPageBase : ContentPage
+    public class BottomTabbedPageBase : TabbedPage
     {
         public readonly string Tag;
-        public ContentPageBase([CallerMemberName]string parent = "") : base()
+        public BottomTabbedPageBase([CallerMemberName]string parent = "") : base()
         {
             Tag = parent;
             iOSspec.Page.SetUseSafeArea(this, true);
-            this.ControlTemplate = (ControlTemplate)Application.Current.Resources["ThemedLoaderPageTemplate"];
         }
 
+        /// <summary>
+        /// Manage device orientation and raise all "Childs-ViewModels" OnRotationChanged()
+        /// </summary>
+        /// <param name="width"></param>
+        /// <param name="height"></param>
         protected override void OnSizeAllocated(double width, double height)
         {
             base.OnSizeAllocated(width, height);
-            ((ViewModelBase)this.BindingContext).OnRotationChanged();
+            foreach (var page in this.Children)
+            {
+                if (page.BindingContext != null)
+                    ((ViewModelBase)page.BindingContext).OnRotationChanged();
+            }
         }
-
         /// <summary>
         /// Gère l'interception du bouton retour (physique & logiciel/Navigationbar) 
         /// </summary>

@@ -41,7 +41,7 @@ namespace Template.Mobile.ViewModels
                 {
                     Title = this["Debug_BottomTabsPage_Title"],
                     ItemImageSource = "ic_bug_report.png",
-                    NavigationPath = $"{nameof(NavigationPage)}/{nameof(Debug_BottomTabsPage)}" //do not include a TabbedPage into a NavigationPage (iOS bug)
+                    NavigationPath = $"{nameof(NavigationPage)}/{nameof(Debug_BottomTabsPage)}?selectedTab={nameof(Debug_ImagesView)}"
                 });
 #endif
 
@@ -100,8 +100,15 @@ namespace Template.Mobile.ViewModels
             {
                 if (selectedItem != null)
                 {
-                    await NavigationService.NavigateAsync(selectedItem.NavigationPath);
-                    Logger.Write("MenuNavigateCommandExecuteAsync", $"{selectedItem.NavigationPath}");
+                    var result = await NavigationService.NavigateAsync(selectedItem.NavigationPath);
+                    if (!result.Success)
+                    {
+                        Logger.Write(result.Exception);
+                    }
+                    else
+                    {
+                        Logger.Write("MenuNavigateCommandExecuteAsync", $"{selectedItem.NavigationPath}");
+                    }
                 }
             }
             catch (Exception ex)
@@ -154,6 +161,14 @@ namespace Template.Mobile.ViewModels
 
         #region Navigation & LifeCycle
 
+        public override void OnAppearing()
+        {
+            //if (!string.IsNullOrWhiteSpace(_notificationService.PendingUrl))
+            //{
+            //    NavigationService.NavigateAsync(_notificationService.PendingUrl);
+            //    _notificationService.PendingUrl = null;
+            //}
+        }
 
         public override void Destroy()
         {
@@ -167,15 +182,6 @@ namespace Template.Mobile.ViewModels
         }
 
         #endregion
-
-        public override void OnAppearing()
-        {
-            //if (!string.IsNullOrWhiteSpace(_notificationService.PendingUrl))
-            //{
-            //    NavigationService.NavigateAsync(_notificationService.PendingUrl);
-            //    _notificationService.PendingUrl = null;
-            //}
-        }
 
         
     }

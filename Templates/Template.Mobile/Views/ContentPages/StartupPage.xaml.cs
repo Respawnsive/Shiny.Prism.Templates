@@ -7,7 +7,7 @@ namespace Template.Mobile.Views
 {
     public partial class StartupPage : ContentPageBase
     {
-        public StartupPage() : base()
+        public StartupPage() : base(nameof(StartupPage))
         {
             try
             {

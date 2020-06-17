@@ -9,6 +9,7 @@ using ReactiveUI;
 using ReactiveUI.Fody.Helpers;
 using Shiny;
 using Shiny.Localization;
+using Template.Mobile.Helpers;
 using Template.Mobile.Services;
 
 namespace Template.Mobile.ViewModels
@@ -24,20 +25,28 @@ namespace Template.Mobile.ViewModels
     {
         protected ViewModelBase(INavigationService navigationService)
         {
-            NavigationService = navigationService;
-            SettingsService = ShinyHost.Resolve<ISettingsService>();
-            //DialogsService = ShinyHost.Resolve<IDialogService>();
-            LocalizationManager = ShinyHost.Resolve<ILocalizationManager>();
+            try
+            {
+                NavigationService = navigationService;
+                SettingsService = ShinyHost.Resolve<ISettingsService>();
+                LocalizationManager = ShinyHost.Resolve<ILocalizationManager>();
+                //DialogsService = ShinyHost.Resolve<IDialogService>();
 
-            NavigateBackCommand = ExecutionAwareCommand.FromTask(NavigateBackAsync)
-                .OnIsExecutingChanged(OnIsExecutingChanged);
+                NavigateBackCommand = ExecutionAwareCommand.FromTask(NavigateBackAsync)
+                    .OnIsExecutingChanged(OnIsExecutingChanged);
+            }
+            catch(Exception ex)
+            {
+                Logger.Write(ex);
+            }
         }
 
         #region Services
 
         protected INavigationService NavigationService { get; }
 
-        protected IDialogService DialogsService { get; }
+        //TODO resolve errors !!!
+        //protected IDialogService DialogsService { get; }
 
         protected ISettingsService SettingsService { get; }
 
@@ -115,7 +124,9 @@ namespace Template.Mobile.ViewModels
 
         public virtual Task<bool> CanNavigateAsync(INavigationParameters parameters) => Task.FromResult(true);
 
-        public virtual Task NavigateBackAsync() => NavigationService.GoBackAsync(); 
+        public virtual Task NavigateBackAsync() => NavigationService.GoBackAsync();
+
+        public virtual void OnRotationChanged() { }
 
         #endregion
     }

@@ -15,5 +15,8 @@ namespace Template.Mobile.Models.SampleApi
 
         [JsonProperty("avatar")]
         public string Avatar { get; set; }
+
+        [JsonProperty("email")]
+        public string Email { get; set; }
     }
 }

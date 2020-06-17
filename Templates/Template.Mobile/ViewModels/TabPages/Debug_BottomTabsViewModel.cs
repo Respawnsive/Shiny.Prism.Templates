@@ -15,8 +15,21 @@ namespace Template.Mobile.ViewModels
 
         public Debug_BottomTabsViewModel(INavigationService navigationService) : base(navigationService)
         {
-
+            Titre1 = "Titre1";
+            Titre2 = "Titre2";
+            Titre3 = "Titre3";
         }
+
+
+        [Reactive]
+        public string Titre1 { get; set; }
+
+
+        [Reactive]
+        public string Titre2 { get; set; }
+
+        [Reactive]
+        public string Titre3 { get; set; }
 
         public override void OnAppearing()
         {

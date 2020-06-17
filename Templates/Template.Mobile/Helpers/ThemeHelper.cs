@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Threading.Tasks;
 using Sharpnado.MaterialFrame;
 using Sharpnado.Presentation.Forms.RenderedViews;
 using Shiny;
@@ -247,19 +247,23 @@ namespace Template.Mobile.Helpers
 
         #region Public Theming Methods
 
-        public static void InitTheme()
+        public static async Task InitTheme()
         {
             //Here is the logic for Theming Initialisation (from Settings, from Device, both, fixed or dynamic, etc.)
-            
+
             //Example for applying user Device choice (AppInfo.RequestedTheme from essentials)
-            if (AppInfo.RequestedTheme == Xamarin.Essentials.AppTheme.Dark)
+            //iOS need to do this on UIThread !!!
+            await Device.InvokeOnMainThreadAsync(() =>
             {
-                ApplyTheme(AppTheme.AcrylicDarkBlur);
-            }
-            else
-            {
-                ApplyTheme(AppTheme.Acrylic);
-            }
+                if (AppInfo.RequestedTheme == Xamarin.Essentials.AppTheme.Dark)
+                {
+                    ApplyTheme(AppTheme.AcrylicDarkBlur);
+                }
+                else
+                {
+                    ApplyTheme(AppTheme.Acrylic);
+                }
+            });
         }
 
         public static void ApplyTheme(AppTheme newtheme)
@@ -273,9 +277,11 @@ namespace Template.Mobile.Helpers
                     SetLightMode(true);
                     break;
                 case AppTheme.AcrylicDarkBlur:
+                    SetDarkMode();
                     SetDarkBlur();
                     break;
                 case AppTheme.AcrylicBlur:
+                    SetLightMode(false);
                     SetLightBlur();
                     break;
                 case AppTheme.Light:

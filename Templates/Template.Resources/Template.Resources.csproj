@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.4" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.5" />
     <PackageReference Include="Resizetizer.NT" Version="0.2.0" />
   </ItemGroup>
 
@@ -33,12 +33,13 @@
     <SharedImage Include="Images\Generic_Images\background_blur.png" BaseSize="360, 640" />
     <SharedImage Include="Images\Generic_Images\background_darkblur.png" BaseSize="360, 640" />
 	  <SharedImage Include="Images\Generic_Images\menu_background_dark.png" BaseSize="360, 203" />
-    <SharedImage Include="Images\Generic_Images\menu_background_light.png" BaseSize="360, 203"/>
+    <SharedImage Include="Images\Generic_Images\menu_background_light.png" BaseSize="360, 203" />
     <SharedImage Include="Images\Material_icons\ic_menu.svg" BaseSize="48, 48" TintColor="#FFFFFFFF" />
     <SharedImage Include="Images\Material_icons\ic_exit_to_app.svg" BaseSize="48, 48" TintColor="#FFFFFFFF" />
     <SharedImage Include="Images\Material_icons\ic_add.svg" BaseSize="48, 48" TintColor="#FFFFFFFF" />
     <SharedImage Include="Images\Material_icons\ic_image.svg" BaseSize="48, 48" TintColor="#FFFFFFFF" />
     <SharedImage Include="Images\Material_icons\ic_brightness_6.svg" BaseSize="48, 48" TintColor="#FFFFFFFF" />
+    <SharedImage Include="Images\Material_icons\ic_list.svg" BaseSize="48, 48" TintColor="#FFFFFFFF" />
     
     <!-- Generic All Material Icons -->
     <SharedImage Include="Images\Material_icons\ic_3d_rotation.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
@@ -511,7 +512,7 @@
     <SharedImage Include="Images\Material_icons\ic_line_weight.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
     <SharedImage Include="Images\Material_icons\ic_link.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
     <SharedImage Include="Images\Material_icons\ic_linked_camera.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
-    <SharedImage Include="Images\Material_icons\ic_list.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
+    <!--<SharedImage Include="Images\Material_icons\ic_list.svg" BaseSize="48, 48" TintColor="#FFBB2734" />-->
     <SharedImage Include="Images\Material_icons\ic_live_help.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
     <SharedImage Include="Images\Material_icons\ic_live_tv.svg" BaseSize="48, 48" TintColor="#FFBB2734" />
     <SharedImage Include="Images\Material_icons\ic_local_activity.svg" BaseSize="48, 48" TintColor="#FFBB2734" />

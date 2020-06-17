@@ -34,6 +34,13 @@
         <Setter Property="BarTextColor" Value="{DynamicResource DynamicBarTextColor}" />
     </Style>
 
+    <Style ApplyToDerivedTypes="True" TargetType="TabbedPage">
+        <Setter Property="BarBackgroundColor" Value="{DynamicResource DynamicNavigationBarColor}" />
+        <Setter Property="BarTextColor" Value="{DynamicResource DynamicBarTextColor}" />
+        <Setter Property="SelectedTabColor" Value="{DynamicResource DynamicBarTextColor}" />
+        <Setter Property="UnselectedTabColor" Value="Silver" />
+    </Style>
+
     <Style TargetType="ActivityIndicator">
         <Setter Property="Color" Value="{StaticResource Accent}" />
         <Setter Property="BackgroundColor" Value="{DynamicResource DynamicBackgroundColor}" />
@@ -149,7 +156,7 @@
         <Setter Property="IsTextVisible" Value="False" />
     </Style>-->
 
-    
+
     <!--  Named Styles - Apply explicitely to Target with Style="{StaticResource key}"  -->
 
     <!--  Style for CollectionView States (Grid as first layout in the itemTemplate)  -->
@@ -191,13 +198,6 @@
                 </VisualStateGroup>
             </VisualStateGroupList>
         </Setter>
-    </Style>-->
-
-    <!--<Style x:Key="BottomTabStyle" TargetType="TabbedPage">
-        <Setter Property="BarBackgroundColor" Value="{DynamicResource DynamicMenuBackgroundColor}" />
-        <Setter Property="BarTextColor" Value="{DynamicResource DynamicPrimaryTextColor}" />
-        <Setter Property="SelectedTabColor" Value="{StaticResource Accent}" />
-        <Setter Property="UnselectedTabColor" Value="LightGray" />
     </Style>-->
 
     <Style x:Key="TextHeadline" TargetType="Label">

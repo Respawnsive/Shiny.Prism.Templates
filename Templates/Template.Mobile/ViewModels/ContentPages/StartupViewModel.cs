@@ -62,7 +62,7 @@ namespace Template.Mobile.ViewModels
                 //await Task.WhenAll(taskToDo, taskToWait);
 
                 StatusLabel = "Chargement du thème...";
-                ThemeHelper.InitTheme();
+                await ThemeHelper.InitTheme();
                 await Task.Delay(1000);
 
                 //Fake/Dev init
@@ -99,7 +99,8 @@ namespace Template.Mobile.ViewModels
             {
                 if (!string.IsNullOrWhiteSpace(error))
                 {
-                    DialogsService.Toast(error);
+                    //TODO resolve errors in DialogService before !!!
+                    //DialogsService.Toast(error);
                     HasFailedOnce = true;
                 }
                 Device.BeginInvokeOnMainThread(() =>

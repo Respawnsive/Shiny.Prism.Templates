@@ -4,6 +4,7 @@ using System.ComponentModel;
 using Xamarin.Forms.Xaml;
 using System;
 using Template.Mobile.Helpers;
+using System.Threading.Tasks;
 
 namespace Template.Mobile.Views
 {
@@ -18,6 +19,10 @@ namespace Template.Mobile.Views
             try
             {
                 InitializeComponent();
+
+                // TODO -> NEVER do this in real code
+                // Simulating a complex view(Xaml) to load
+                Task.Delay(TimeSpan.FromSeconds(3)).Wait();
             }
             catch(Exception ex)
             {
@@ -25,11 +30,6 @@ namespace Template.Mobile.Views
             }
         }
 
-        //protected override void OnSizeAllocated(double width, double height)
-        //{
-        //    base.OnSizeAllocated(width, height);
-        //    //This dynamicaly changes the number of columns  when orientation changes
-        //    ((Debug_ImagesListPageViewModel)this.BindingContext).RefreshColumnNumber();
-        //}
+        
     }
 }

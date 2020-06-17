@@ -13,7 +13,7 @@ namespace Template.Mobile.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class HomePage : ContentPageBase
     {
-        public HomePage() : base()
+        public HomePage() : base(nameof(HomePage))
         {
             try
             {

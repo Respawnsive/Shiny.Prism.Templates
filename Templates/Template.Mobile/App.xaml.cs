@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
+using Prism;
 using Prism.Events;
 using Prism.Forms.LazyView;
 using Prism.Ioc;
@@ -12,27 +13,24 @@ using Template.Mobile.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-//[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Template.Mobile
 {
     [AutoRegisterForNavigation]
     public partial class App
     {
-        public App()
-        {
-        }
+        public App() { }
 
         protected override void OnInitialized()
         {
             try
             {
                 InitializeComponent();
-
                 NavigationService.NavigateAsync($"{nameof(StartupPage)}");
             }
             catch(Exception ex)
             {
-                Console.WriteLine(ex.ToString());
+                Helpers.Logger.Write(ex);
             }
         }
 
@@ -40,11 +38,11 @@ namespace Template.Mobile
         {
             //REGISTER ALL USED GENERIC PAGES (not AutoRegistered) IN CONTAINER, FOR PRISM NAVIGATION
             containerRegistry.RegisterForNavigation<NavigationPage>();
-            //containerRegistry.RegisterForNavigation<LazyContentPage<Debug_ImagesView>, Debug_ImagesViewModel>(nameof(Debug_ImagesView));
             //containerRegistry.RegisterForNavigation<LazyContentPage<Debug_SamplesView>, Debug_SamplesViewModel>(nameof(Debug_SamplesView));
+            //containerRegistry.RegisterForNavigation<LazyContentPage<Debug_ImagesView>, Debug_ImagesViewModel>(nameof(Debug_ImagesView));
             //containerRegistry.RegisterForNavigation<LazyContentPage<Debug_ThemesView>, Debug_ThemesViewModel>(nameof(Debug_ThemesView));
-            containerRegistry.RegisterForNavigation<LazyContentPage<LoadingView, Debug_ImagesView>, Debug_ImagesViewModel>(nameof(Debug_ImagesView));
             containerRegistry.RegisterForNavigation<LazyContentPage<LoadingView, Debug_SamplesView>, Debug_SamplesViewModel>(nameof(Debug_SamplesView));
+            containerRegistry.RegisterForNavigation<LazyContentPage<LoadingView, Debug_ImagesView>, Debug_ImagesViewModel>(nameof(Debug_ImagesView));
             containerRegistry.RegisterForNavigation<LazyContentPage<LoadingView, Debug_ThemesView>, Debug_ThemesViewModel>(nameof(Debug_ThemesView));
         }
 

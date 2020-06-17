@@ -2,24 +2,75 @@
 <views:ContentViewBase x:Class="Template.Mobile.Views.Debug_SamplesView"
                        xmlns="http://xamarin.com/schemas/2014/forms"
                        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                       xmlns:materialFrame="clr-namespace:Sharpnado.MaterialFrame;assembly=Sharpnado.MaterialFrame"
                        xmlns:sampleApi="clr-namespace:Template.Mobile.Models.SampleApi;assembly=Template.Mobile"
                        xmlns:viewModels="clr-namespace:Template.Mobile.ViewModels;assembly=Template.Mobile"
                        xmlns:views="clr-namespace:Template.Mobile.Views;assembly=Template.Mobile"
                        x:DataType="viewModels:Debug_SamplesViewModel">
-    <CollectionView HorizontalOptions="FillAndExpand"
-                    VerticalOptions="FillAndExpand"
-                    ItemsSource="{Binding Users}">
-        <CollectionView.EmptyView>
-            <Label Text="No Records Found" />
-        </CollectionView.EmptyView>
+    <StackLayout Spacing="16" Padding="16">
 
-        <CollectionView.ItemTemplate>
-            <DataTemplate x:DataType="sampleApi:User">
-                <StackLayout>
-                    <Label Text="{Binding FirstName}" />
-                    <Label Text="{Binding LastName}" />
-                </StackLayout>
-            </DataTemplate>
-        </CollectionView.ItemTemplate>
-    </CollectionView>
+        <!--  Generic Images  -->
+        <materialFrame:MaterialFrame>
+            <StackLayout>
+                <Label Style="{StaticResource TextHeadline}" Text="Samples List :" />
+                <CollectionView HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                SelectionMode="Single"
+                                ItemsSource="{Binding Users}">
+                    <CollectionView.EmptyView>
+                        <Label Text="No Records Found" />
+                    </CollectionView.EmptyView>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="sampleApi:User">
+                            <views:SelectableCellBase x:Name="cellcontainer"
+                                                      Style="{StaticResource SelectableCollectionView}"
+                                                      Margin="0">
+                                <Grid Margin="0" Padding="0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Image Grid.Row="0"
+                                           Grid.RowSpan="2"
+                                           Grid.Column="0"
+                                           WidthRequest="100"
+                                           HeightRequest="100"
+                                           Aspect="AspectFill"
+                                           Source="{Binding Avatar}" />
+                                    <Label Grid.Row="0"
+                                           Grid.Column="1"
+                                           Style="{StaticResource TextSubhead}">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Text="{Binding FirstName}" />
+                                                <Span Text=" " />
+                                                <Span Text="{Binding LastName}" />
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                    <Label Grid.Row="1"
+                                           Grid.Column="1"
+                                           Style="{StaticResource TextBody}">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span TextColor="Blue"
+                                                      TextDecorations="Underline"
+                                                      Text="{Binding Email}" />
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                </Grid>
+
+                            </views:SelectableCellBase>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+        </materialFrame:MaterialFrame>
+    </StackLayout>
 </views:ContentViewBase>

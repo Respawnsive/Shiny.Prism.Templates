@@ -19,7 +19,9 @@ namespace Template.Mobile.ViewModels
             _sampleApiService = sampleApiService;
         }
 
-        [Reactive] public ObservableCollection<User> Users { get; set; }
+
+        [Reactive]
+        public ObservableCollection<User> Users { get; set; }
 
         private async Task GetUsersAsync()
         {
@@ -32,8 +34,6 @@ namespace Template.Mobile.ViewModels
         {
             base.Initialize(parameters);
             Device.BeginInvokeOnMainThread(async() => await GetUsersAsync());
-            //Fake long loading for LazyView Test
-            Task.Delay(5000);
         }
 
         public override void OnAppearing()

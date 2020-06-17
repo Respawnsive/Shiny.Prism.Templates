@@ -2,11 +2,11 @@
 <MasterDetailPage x:Class="Template.Mobile.Views.MDPage"
                   xmlns="http://xamarin.com/schemas/2014/forms"
                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                   xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-                  xmlns:viewModels="clr-namespace:Template.Mobile.ViewModels;assembly=Template.Mobile"
-                  xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                   mc:Ignorable="d"
+                  xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+                  xmlns:viewModels="clr-namespace:Template.Mobile.ViewModels;assembly=Template.Mobile"
                   x:DataType="viewModels:MDViewModel">
     <MasterDetailPage.Master>
         <ContentPage Title="Menu"
@@ -14,7 +14,7 @@
                      ios:Page.UseSafeArea="true"
                      IconImageSource="ic_menu.png">
 
-            <!--  Ici on dessine notre menu comme on veut  -->
+            <!--  Here we draw our app menu as we want it  -->
             <ContentPage.Content>
                 <Grid Padding="3">
                     <Grid.RowDefinitions>
@@ -63,13 +63,12 @@
                                    TextColor="{DynamicResource DynamicBarTextColor}"
                                    Text="{Binding UserLogin}" />
 
-                            <Image Grid.Row="0"
-                                   Grid.RowSpan="2"
-                                   Grid.Column="1"
-                                   WidthRequest="48"
-                                   HeightRequest="48"
-                                   Aspect="AspectFit"
-                                   Source="ic_exit_to_app.png" />
+                            <Button Grid.Row="0"
+                                    Grid.RowSpan="2"
+                                    Grid.Column="1"
+                                    WidthRequest="48"
+                                    HeightRequest="48"
+                                    ImageSource="ic_exit_to_app.png" />
                         </Grid>
                     </Grid>
 

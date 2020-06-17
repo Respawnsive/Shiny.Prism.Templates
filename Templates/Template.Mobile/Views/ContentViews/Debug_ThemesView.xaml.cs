@@ -1,6 +1,7 @@
 ﻿using Prism.Commands;
 using System;
 using System.ComponentModel;
+using System.Threading.Tasks;
 using Template.Mobile.Helpers;
 using Template.Mobile.ViewModels;
 using Xamarin.Forms;
@@ -14,11 +15,16 @@ namespace Template.Mobile.Views
     //[XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Debug_ThemesView : ContentViewBase
     {
-        public Debug_ThemesView() : base()
+        public Debug_ThemesView() : base(nameof(Debug_ThemesView))
         {
             try
             {
                 InitializeComponent();
+
+                // TODO -> NEVER do this in real code
+                // Simulating a complex view
+                Task.Delay(TimeSpan.FromSeconds(3)).Wait();
+
                 LaunchFakeProgress();
             }
             catch (Exception ex)
@@ -40,7 +46,7 @@ namespace Template.Mobile.Views
             }
             catch(Exception ex)
             {
-
+                Logger.Write(ex);
             }
         }
     }
