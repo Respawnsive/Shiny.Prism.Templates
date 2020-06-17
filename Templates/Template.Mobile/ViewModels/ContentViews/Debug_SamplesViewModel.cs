@@ -1,9 +1,12 @@
-﻿using Prism.Navigation;
+﻿using System.Collections.Generic;
+using Prism.Navigation;
 using ReactiveUI.Fody.Helpers;
-using Shiny;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
+using Acr.UserDialogs;
+using Apizr;
 using Template.Mobile.Models.SampleApi;
 using Template.Mobile.Services;
 using Xamarin.Forms;
@@ -12,33 +15,53 @@ namespace Template.Mobile.ViewModels
 {
     public class Debug_SamplesViewModel : ViewModelBase
     {
-        private readonly ISampleApiService _sampleApiService;
+        private readonly IApizrManager<ISampleApiService> _sampleApiManager;
 
-        public Debug_SamplesViewModel(INavigationService navigationService, ISampleApiService sampleApiService) : base(navigationService)
+        public Debug_SamplesViewModel(INavigationService navigationService, IApizrManager<ISampleApiService> sampleApiManager) : base(navigationService)
         {
-            _sampleApiService = sampleApiService;
+            _sampleApiManager = sampleApiManager;
         }
 
+
+        #region Properties
 
         [Reactive]
         public ObservableCollection<User> Users { get; set; }
 
+        #endregion
+
+        #region Methods
+
         private async Task GetUsersAsync()
         {
-            var userList = await _sampleApiService.GetUsersAsync(0);
-            if (!userList.Data.IsEmpty())
-                Users = new ObservableCollection<User>(userList.Data);
+            IList<User>? users;
+            try
+            {
+                var userList = await _sampleApiManager.ExecuteAsync((ct, api) => api.GetUsersAsync(ct), CancellationToken.None);
+                users = userList.Data;
+            }
+            catch (ApizrException<UserList> e)
+            {
+                var message = e.InnerException is IOException ? "No network" : (e.Message ?? "Error");
+                UserDialogs.Instance.Toast(new ToastConfig(message) { BackgroundColor = Color.Red, MessageTextColor = Color.White });
+
+                users = e.CachedResult?.Data;
+            }
+
+            if (users != null)
+                Users = new ObservableCollection<User>(users);
         }
 
-        public override void Initialize(INavigationParameters parameters)
-        {
-            base.Initialize(parameters);
-            Device.BeginInvokeOnMainThread(async() => await GetUsersAsync());
-        }
+        #endregion
+
+        #region Lifecycle
 
         public override void OnAppearing()
         {
             base.OnAppearing();
-        }
+            Device.InvokeOnMainThreadAsync(GetUsersAsync);
+        } 
+
+        #endregion
     }
 }

@@ -2,13 +2,13 @@
 using System.Reactive.Disposables;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Localizr;
 using Prism.AppModel;
 using Prism.Commands;
 using Prism.Navigation;
 using ReactiveUI;
 using ReactiveUI.Fody.Helpers;
 using Shiny;
-using Shiny.Localization;
 using Template.Mobile.Helpers;
 using Template.Mobile.Services;
 
@@ -29,8 +29,8 @@ namespace Template.Mobile.ViewModels
             {
                 NavigationService = navigationService;
                 SettingsService = ShinyHost.Resolve<ISettingsService>();
-                LocalizationManager = ShinyHost.Resolve<ILocalizationManager>();
-                //DialogsService = ShinyHost.Resolve<IDialogService>();
+                LocalizationManager = ShinyHost.Resolve<ILocalizrManager>();
+                DialogsService = ShinyHost.Resolve<IDialogService>();
 
                 NavigateBackCommand = ExecutionAwareCommand.FromTask(NavigateBackAsync)
                     .OnIsExecutingChanged(OnIsExecutingChanged);
@@ -45,12 +45,11 @@ namespace Template.Mobile.ViewModels
 
         protected INavigationService NavigationService { get; }
 
-        //TODO resolve errors !!!
-        //protected IDialogService DialogsService { get; }
+        protected IDialogService DialogsService { get; }
 
         protected ISettingsService SettingsService { get; }
 
-        protected ILocalizationManager LocalizationManager { get; }
+        protected ILocalizrManager LocalizationManager { get; }
 
         #endregion
 

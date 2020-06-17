@@ -22,7 +22,7 @@ namespace Template.Mobile
             services.RegisterModule<DialogsModule>();
 
             // Add APIs
-            services.RegisterModule<ApiModule>();
+            services.RegisterModule<WebApiModule>();
 
             // Add Localization
             services.RegisterModule<LocalizationModule>();

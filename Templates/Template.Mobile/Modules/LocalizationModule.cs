@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Text;
+﻿using System.Globalization;
+using Localizr;
+using Localizr.Resx;
 using Microsoft.Extensions.DependencyInjection;
 using Shiny;
-using Shiny.Localization.Resx;
 using Template.Mobile.Resources.Text;
 using Template.Resources.Text;
 
@@ -14,8 +12,10 @@ namespace Template.Mobile.Modules
     {
         public override void Register(IServiceCollection services)
         {
-            services.UseLocalization<ResxTextProvider<MobileTextResources>>(options =>
-                options.AddTextProvider<ResxTextProvider<TextResources>>());
+            services.AddLocalizr<ResxTextProvider<MobileTextResources>>(options =>
+                options.AddTextProvider<ResxTextProvider<TextResources>>()
+                    .WithDefaultInvariantCulture(CultureInfo.CreateSpecificCulture("fr-FR"))
+                    .WithAutoInitialization());
         }
     }
 }
