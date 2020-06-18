@@ -1,10 +1,7 @@
 ﻿using Prism.Commands;
-using Prism.Mvvm;
 using Prism.Navigation;
 using ReactiveUI.Fody.Helpers;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Template.Mobile.Helpers;
@@ -17,20 +14,19 @@ namespace Template.Mobile.ViewModels
     {
         public StartupViewModel(INavigationService navigationService) : base(navigationService)
         {
-            LoadCommand = ExecutionAwareCommand.FromTask(LoadApplication).OnIsExecutingChanged(res =>
-            {
-                if (res)
-                    BusyCounter++;
-                BusyCounter--;
-            });
+            //Create commands
+            LoadCommand = ExecutionAwareCommand.FromTask(LoadApplication).OnIsExecutingChanged(OnIsExecutingChanged);
+
+            //Subscribe to Properties changes
+            //this.WhenAnyValue(x => x.Property1).Subscribe(Property1Changed).DisposeWith(DestroyWith);
         }
 
         #region Services
 
         #endregion
 
-        #region Properties
 
+        #region Properties
 
         [Reactive]
         public bool HasFailedOnce { get; set; }
@@ -40,19 +36,19 @@ namespace Template.Mobile.ViewModels
 
         #endregion
 
+
         #region Commands
 
         public ICommand LoadCommand { get; }
 
-
         #endregion
+
 
         #region Methods
 
         private async Task LoadApplication()
         {
             string error = null;
-            Device.BeginInvokeOnMainThread(() => BusyCounter++);
             try
             {
                 // Manage here any long time initialization (DB, Localisation, etc...)
@@ -99,18 +95,14 @@ namespace Template.Mobile.ViewModels
             {
                 if (!string.IsNullOrWhiteSpace(error))
                 {
-                    //TODO resolve errors in DialogService before !!!
-                    //DialogsService.Toast(error);
+                    DialogsService?.Toast(error);
                     HasFailedOnce = true;
                 }
-                Device.BeginInvokeOnMainThread(() =>
-                {
-                    BusyCounter--;
-                });
             }
         }
 
         #endregion
+
 
         #region LifeCycle
 
@@ -120,5 +112,7 @@ namespace Template.Mobile.ViewModels
         }
 
         #endregion
+
+
     }
 }

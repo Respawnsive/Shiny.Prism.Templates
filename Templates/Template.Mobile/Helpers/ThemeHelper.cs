@@ -269,28 +269,31 @@ namespace Template.Mobile.Helpers
         public static void ApplyTheme(AppTheme newtheme)
         {
             _currentTheme = newtheme;
-            switch (newtheme)
+            Device.BeginInvokeOnMainThread(() =>
             {
-                case AppTheme.Acrylic:
-                    //Bug from DarkBlur to Acrylic, resolve thru DarkBlur to Light to Acrylic
-                    SetLightMode(false);
-                    SetLightMode(true);
-                    break;
-                case AppTheme.AcrylicDarkBlur:
-                    SetDarkMode();
-                    SetDarkBlur();
-                    break;
-                case AppTheme.AcrylicBlur:
-                    SetLightMode(false);
-                    SetLightBlur();
-                    break;
-                case AppTheme.Light:
-                    SetLightMode(false);
-                    break;
-                case AppTheme.Dark:
-                    SetDarkMode();
-                    break;
-            }
+                switch (newtheme)
+                {
+                    case AppTheme.Acrylic:
+                        //Bug from DarkBlur to Acrylic, resolve thru DarkBlur to Light to Acrylic
+                        SetLightMode(false);
+                        SetLightMode(true);
+                        break;
+                    case AppTheme.AcrylicDarkBlur:
+                        SetDarkMode();
+                        SetDarkBlur();
+                        break;
+                    case AppTheme.AcrylicBlur:
+                        SetLightMode(false);
+                        SetLightBlur();
+                        break;
+                    case AppTheme.Light:
+                        SetLightMode(false);
+                        break;
+                    case AppTheme.Dark:
+                        SetDarkMode();
+                        break;
+                }
+            });
         }
 
         public static T GetResource<T>(string key)

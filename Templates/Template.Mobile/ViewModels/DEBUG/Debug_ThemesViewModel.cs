@@ -1,13 +1,10 @@
-﻿using Prism.Commands;
-using Prism.Navigation;
+﻿using Prism.Navigation;
 using ReactiveUI;
 using ReactiveUI.Fody.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
 using System.Reactive.Disposables;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Template.Mobile.Helpers;
@@ -18,14 +15,20 @@ namespace Template.Mobile.ViewModels
     {
         public Debug_ThemesViewModel(INavigationService navigationService) : base(navigationService)
         {
-            //Subscribe
+            //Create commands
+            //LoadCommand = ExecutionAwareCommand.FromTask(LoadDatas).OnIsExecutingChanged(OnIsExecutingChanged);
+
+            //Subscribe to Properties changes
             this.WhenAnyValue(x => x.SelectedTheme).Subscribe(LoadTheme).DisposeWith(DestroyWith);
         }
 
+        
         #region Services
 
 
+
         #endregion
+
 
         #region Properties
 
@@ -39,15 +42,22 @@ namespace Template.Mobile.ViewModels
 
         #endregion
 
+
         #region Commands
 
+        //public ICommand LoadCommand { get; }
+
         #endregion
+
 
         #region Methods
 
         private void LoadDatas()
         {
-            Themes = new ObservableCollection<string>(new List<string>()
+            try
+            {
+                //Load data for this ViewModel (fake)
+                Themes = new ObservableCollection<string>(new List<string>()
                 {
                     "Acrylic",
                     "AcrylicBlur",
@@ -55,7 +65,20 @@ namespace Template.Mobile.ViewModels
                     "Dark",
                     "Light"
                 });
-            TestValue = 2;
+                TestValue = 2;
+                SelectedTheme = Enum.GetName(typeof(AppTheme), ThemeHelper.GetCurrentTheme());
+
+            }
+            catch (Exception ex)
+            {
+                DialogsService?.Toast(this["Msg_RedToast_Error_Unknown"]);
+                Logger.Write(ex);
+            }
+            finally
+            {
+
+            }
+            
         }
 
         private void LoadTheme(string themename)
@@ -85,17 +108,13 @@ namespace Template.Mobile.ViewModels
 
         #endregion
 
+
         #region LifeCycle
 
         public override void Initialize(INavigationParameters parameters)
         {
             base.Initialize(parameters);
             Task.Run(() => LoadDatas());
-        }
-
-        public override void OnAppearing()
-        {
-            base.OnAppearing();
         }
 
         #endregion

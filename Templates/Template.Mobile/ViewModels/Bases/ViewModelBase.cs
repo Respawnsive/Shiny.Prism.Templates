@@ -1,14 +1,14 @@
-﻿using System;
-using System.Reactive.Disposables;
-using System.Threading.Tasks;
-using System.Windows.Input;
-using Prism.AppModel;
+﻿using Prism.AppModel;
 using Prism.Commands;
 using Prism.Navigation;
 using ReactiveUI;
 using ReactiveUI.Fody.Helpers;
 using Shiny;
 using Shiny.Localization;
+using System;
+using System.Reactive.Disposables;
+using System.Threading.Tasks;
+using System.Windows.Input;
 using Template.Mobile.Helpers;
 using Template.Mobile.Services;
 
@@ -17,7 +17,6 @@ namespace Template.Mobile.ViewModels
     public abstract class ViewModelBase : ReactiveObject,
                                       IAutoInitialize,
                                       IInitialize,
-                                      IInitializeAsync,
                                       INavigatedAware,
                                       IPageLifecycleAware,
                                       IDestructible,
@@ -41,12 +40,12 @@ namespace Template.Mobile.ViewModels
             }
         }
 
+
         #region Services
 
         protected INavigationService NavigationService { get; }
 
-        //TODO resolve errors !!!
-        //protected IDialogService DialogsService { get; }
+        protected IDialogService DialogsService { get; }
 
         protected ISettingsService SettingsService { get; }
 
@@ -54,10 +53,19 @@ namespace Template.Mobile.ViewModels
 
         #endregion
 
+        
         #region Properties
 
+        /// <summary>
+        /// Useful for localization -> in xaml just bind a TextProperty={binding [key]}
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public string this[string name] => LocalizationManager.GetText(name);
 
+        /// <summary>
+        /// Useful for managing IsBusy with potential multiple calls (background thread) and automaticaly managed with "OnIsExecutingChanged" methods
+        /// </summary>
         private int _busyCounter;
         protected int BusyCounter
         {
@@ -72,20 +80,22 @@ namespace Template.Mobile.ViewModels
         [Reactive] 
         public bool IsBusy { get; private set; }
 
-        [Reactive] 
-        public string Title { get; protected set; }
+        //[Reactive] 
+        //public string Title { get; protected set; }
 
         #endregion
 
+        
         #region Commands
 
         public ICommand NavigateBackCommand { get; }
 
         #endregion
 
+        
         #region Methods
 
-        private void OnIsExecutingChanged(bool isExecuting)
+        protected void OnIsExecutingChanged(bool isExecuting)
         {
             if (isExecuting)
                 BusyCounter++;
@@ -95,12 +105,14 @@ namespace Template.Mobile.ViewModels
 
         #endregion
 
+        
         #region Lifecycle
 
         private CompositeDisposable _deactivateWith;
         protected CompositeDisposable DeactivateWith => _deactivateWith ??= new CompositeDisposable();
 
         protected CompositeDisposable DestroyWith { get; } = new CompositeDisposable();
+        public virtual void Destroy() => this.DestroyWith?.Dispose();
 
         protected virtual void Deactivate()
         {
@@ -108,11 +120,9 @@ namespace Template.Mobile.ViewModels
             _deactivateWith = null;
         }
 
-        public virtual void OnNavigatedFrom(INavigationParameters parameters) => this.Deactivate();
-
         public virtual void Initialize(INavigationParameters parameters) { }
 
-        public virtual Task InitializeAsync(INavigationParameters parameters) => Task.CompletedTask;
+        public virtual void OnNavigatedFrom(INavigationParameters parameters) => this.Deactivate();
 
         public virtual void OnNavigatedTo(INavigationParameters parameters) { }
 
@@ -120,13 +130,11 @@ namespace Template.Mobile.ViewModels
 
         public virtual void OnDisappearing() { }
 
-        public virtual void Destroy() => this.DestroyWith?.Dispose();
+        public virtual void OnRotationChanged() { }
 
         public virtual Task<bool> CanNavigateAsync(INavigationParameters parameters) => Task.FromResult(true);
 
         public virtual Task NavigateBackAsync() => NavigationService.GoBackAsync();
-
-        public virtual void OnRotationChanged() { }
 
         #endregion
     }

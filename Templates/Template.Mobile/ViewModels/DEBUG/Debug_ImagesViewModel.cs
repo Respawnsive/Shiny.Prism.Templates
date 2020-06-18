@@ -1,11 +1,12 @@
-﻿using Prism.Navigation;
+﻿using Prism.Commands;
+using Prism.Navigation;
 using ReactiveUI;
 using ReactiveUI.Fody.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Reactive.Disposables;
-using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using Template.Mobile.Models;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -16,6 +17,10 @@ namespace Template.Mobile.ViewModels
     {
         public Debug_ImagesViewModel(INavigationService navigationService) : base(navigationService)
         {
+            //Create commands
+            LoadCommand = ExecutionAwareCommand.FromTask(LoadDatas).OnIsExecutingChanged(OnIsExecutingChanged);
+
+            //Watch for Properties changes
             this.WhenAnyValue(x => x.SelectedIcon_Generic).Subscribe(ShowImage).DisposeWith(DestroyWith);
             this.WhenAnyValue(x => x.SelectedIcon_Material).Subscribe(ShowImage).DisposeWith(DestroyWith);
         }
@@ -25,9 +30,11 @@ namespace Template.Mobile.ViewModels
 
         #endregion
 
+
         #region Properties
 
         public List<ImageModel> ListIcons_Generic { get; private set; } = new List<ImageModel>();
+
         public List<ImageModel> ListIcons_Material { get; private set; } = new List<ImageModel>();
 
         [Reactive]
@@ -41,17 +48,23 @@ namespace Template.Mobile.ViewModels
 
         #endregion
 
+
         #region Commands
+
+        public ICommand LoadCommand { get; }
 
         #endregion
 
+
         #region Methods
 
-        private void LoadDatas()
+        private async Task LoadDatas()
         {
-            //Icons are renderer in native PNG !!! (source is SVG in shared)
-            //Generic Projects Images
-            ListIcons_Generic.AddRange( new[] {
+            await Device.InvokeOnMainThreadAsync(() =>
+            {
+                //Icons are renderer in native PNG !!! (source is SVG in shared)
+                //Generic Projects Images
+                ListIcons_Generic.AddRange(new[] {
                 new ImageModel(){ Filename="appicon.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="splash_centered.png", ImageHeight=19, ImageWidth=48},
                 new ImageModel(){ Filename="splash_background.png", ImageHeight=128, ImageWidth=72},
@@ -65,9 +78,9 @@ namespace Template.Mobile.ViewModels
                 new ImageModel(){ Filename="ic_image.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_brightness_6.png", ImageHeight=48, ImageWidth=48},
                 }
-            );
-            //Materials Icons
-            ListIcons_Material.AddRange(new[] {
+                );
+                //Materials Icons
+                ListIcons_Material.AddRange(new[] {
                 new ImageModel(){ Filename="ic_3d_rotation.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_accessibility.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_accessible.png", ImageHeight=48, ImageWidth=48},
@@ -1016,7 +1029,8 @@ namespace Template.Mobile.ViewModels
                 new ImageModel(){ Filename="ic_youtube_searched_for.png", ImageHeight=48, ImageWidth=48},
                 new ImageModel(){ Filename="ic_zoom_out_map.png" , ImageHeight=48, ImageWidth=48}
                 }
-            );
+                );
+            });
         }
 
         public void RefreshColumnNumber()
@@ -1063,18 +1077,17 @@ namespace Template.Mobile.ViewModels
 
         #endregion
 
+
         #region LifeCycle
 
         public override void Initialize(INavigationParameters parameters)
         {
             base.Initialize(parameters);
-            Task.Run(() => LoadDatas());
-        }
-
-        public override void OnAppearing()
-        {
-            base.OnAppearing();
-            Task.Run(() => RefreshColumnNumber());
+            Task.Run(async() =>
+            {
+                RefreshColumnNumber();
+                await LoadDatas();
+            });
         }
 
         public override void OnRotationChanged()
@@ -1082,6 +1095,7 @@ namespace Template.Mobile.ViewModels
             base.OnRotationChanged();
             Task.Run(() => RefreshColumnNumber());
         }
+
         #endregion
 
     }

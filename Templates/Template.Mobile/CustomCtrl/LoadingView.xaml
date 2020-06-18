@@ -1,11 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<ContentView x:Class="Template.Mobile.Views.LoadingView"
+<ContentView x:Class="Template.Mobile.CustomCtrl.LoadingView"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
-             xmlns:viewModels="clr-namespace:Template.Mobile.ViewModels;assembly=Template.Mobile"
-             xmlns:views="clr-namespace:Template.Mobile.Views;assembly=Template.Mobile"
-             x:DataType="viewModels:LoadingViewModel"
              BackgroundColor="Transparent">
     <lottie:AnimationView x:Name="AnimationView"
                           HorizontalOptions="FillAndExpand"

@@ -3,6 +3,7 @@
             xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:lazyView="clr-namespace:Prism.Forms.LazyView;assembly=Prism.Forms.LazyView"
+            xmlns:ctrl="clr-namespace:Template.Mobile.CustomCtrl"
             xmlns:viewModels="clr-namespace:Template.Mobile.ViewModels;assembly=Template.Mobile"
             xmlns:views="clr-namespace:Template.Mobile.Views;assembly=Template.Mobile"
             Title="{Binding [Debug_BottomTabsPage_Title]}"
@@ -18,7 +19,7 @@
     <!--  ! Do not forget to RegisterForNavigation for each LazyContentPage dynamicaly generated  -->
 
     <lazyView:LazyContentPage Title="Samples"
-                              x:TypeArguments="views:LoadingView, views:Debug_SamplesView"
+                              x:TypeArguments="ctrl:LoadingView, views:Debug_SamplesView"
                               IconImageSource="ic_list.png" />
     <!--<lazyView:LazyContentPage Title="{Binding [Debug_SamplesView_Title]}"
                               x:TypeArguments="views:Debug_SamplesView"
@@ -26,7 +27,7 @@
 
 
     <lazyView:LazyContentPage Title="Images"
-                              x:TypeArguments="views:LoadingView,views:Debug_ImagesView"
+                              x:TypeArguments="ctrl:LoadingView,views:Debug_ImagesView"
                               IconImageSource="ic_image.png" />
     <!--<lazyView:LazyContentPage Title="{Binding [Debug_ImagesView_Title]}"
                               x:TypeArguments="views:Debug_ImagesView"
@@ -34,7 +35,7 @@
 
 
     <lazyView:LazyContentPage Title="Thèmes"
-                              x:TypeArguments="views:LoadingView,views:Debug_ThemesView"
+                              x:TypeArguments="ctrl:LoadingView,views:Debug_ThemesView"
                               IconImageSource="ic_brightness_6.png" />
     <!--<lazyView:LazyContentPage Title="{Binding [Debug_ThemesView_Title]}"
                               x:TypeArguments="views:Debug_ThemesView"

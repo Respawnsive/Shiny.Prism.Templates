@@ -35,6 +35,7 @@ namespace Template.Mobile.Views
                 if (Device.Idiom != TargetIdiom.Phone && DeviceDisplay.MainDisplayInfo.Orientation == DisplayOrientation.Landscape)
                     //Not on a phone (tablet/pc/etc.) and Landscape -> we keep the menu displayed
                     return true;
+                //phone or portrait -> we hide the menu
                 return false;
             }
         }

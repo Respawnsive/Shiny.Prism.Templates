@@ -68,7 +68,8 @@
                                     Grid.Column="1"
                                     WidthRequest="48"
                                     HeightRequest="48"
-                                    ImageSource="ic_exit_to_app.png" />
+                                    ImageSource="ic_exit_to_app.png"
+                                    Command="{Binding LogoutCommand}"/>
                         </Grid>
                     </Grid>
 
@@ -85,8 +86,6 @@
                                     ItemSizingStrategy="MeasureAllItems"
                                     SelectedItem="{Binding SelectedMenuItem, Mode=TwoWay}"
                                     SelectionMode="Single"
-                                    SelectionChangedCommand="{Binding MenuNavigateCommand}"
-                                    SelectionChangedCommandParameter="{Binding SelectedMenuItem}"
                                     ItemTemplate="{StaticResource CollectionViewDataTemplate_SingleLine_MDMenuItem}"
                                     ItemsSource="{Binding MenuItems}">
                         <CollectionView.ItemsLayout>

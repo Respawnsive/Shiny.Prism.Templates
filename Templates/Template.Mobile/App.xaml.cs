@@ -7,6 +7,7 @@ using Prism.Events;
 using Prism.Forms.LazyView;
 using Prism.Ioc;
 using Prism.Mvvm;
+using Template.Mobile.CustomCtrl;
 using Template.Mobile.Helpers;
 using Template.Mobile.ViewModels;
 using Template.Mobile.Views;
@@ -36,8 +37,10 @@ namespace Template.Mobile
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            //REGISTER ALL USED GENERIC PAGES (not AutoRegistered) IN CONTAINER, FOR PRISM NAVIGATION
+            //REGISTER IN CONTAINER, ALL "Generic-pages" (not AutoRegistered) for Prism Navigation
             containerRegistry.RegisterForNavigation<NavigationPage>();
+
+            //REGISTER IN CONTAINER, ALL "Dynamic-Generated LazyContentPage" for Prism Navigation:
             //containerRegistry.RegisterForNavigation<LazyContentPage<Debug_SamplesView>, Debug_SamplesViewModel>(nameof(Debug_SamplesView));
             //containerRegistry.RegisterForNavigation<LazyContentPage<Debug_ImagesView>, Debug_ImagesViewModel>(nameof(Debug_ImagesView));
             //containerRegistry.RegisterForNavigation<LazyContentPage<Debug_ThemesView>, Debug_ThemesViewModel>(nameof(Debug_ThemesView));

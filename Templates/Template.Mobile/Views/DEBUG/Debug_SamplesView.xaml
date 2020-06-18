@@ -6,6 +6,7 @@
                        xmlns:sampleApi="clr-namespace:Template.Mobile.Models.SampleApi;assembly=Template.Mobile"
                        xmlns:viewModels="clr-namespace:Template.Mobile.ViewModels;assembly=Template.Mobile"
                        xmlns:views="clr-namespace:Template.Mobile.Views;assembly=Template.Mobile"
+                       xmlns:ctrl="clr-namespace:Template.Mobile.CustomCtrl"
                        x:DataType="viewModels:Debug_SamplesViewModel">
     <StackLayout Spacing="16" Padding="16">
 
@@ -23,7 +24,7 @@
 
                     <CollectionView.ItemTemplate>
                         <DataTemplate x:DataType="sampleApi:User">
-                            <views:SelectableCellBase x:Name="cellcontainer"
+                            <ctrl:SelectableCellBase x:Name="cellcontainer"
                                                       Style="{StaticResource SelectableCollectionView}"
                                                       Margin="0">
                                 <Grid Margin="0" Padding="0">
@@ -66,7 +67,7 @@
                                     </Label>
                                 </Grid>
 
-                            </views:SelectableCellBase>
+                            </ctrl:SelectableCellBase>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>

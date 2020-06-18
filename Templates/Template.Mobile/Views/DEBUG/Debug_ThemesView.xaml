@@ -83,7 +83,7 @@
             <materialFrame:MaterialFrame>
                 <StackLayout>
                     <Label Style="{StaticResource TextHeadline}" Text="LoadingView" />
-                    <views:LoadingView HeightRequest="200" />
+                    <ctrl:LoadingView HeightRequest="200" />
                 </StackLayout>
             </materialFrame:MaterialFrame>
         </StackLayout>

@@ -2,6 +2,7 @@
 <ResourceDictionary x:Class="Template.Mobile.Resources.Dictionaries.DataTemplates"
                     xmlns="http://xamarin.com/schemas/2014/forms"
                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:ctrl="clr-namespace:Template.Mobile.CustomCtrl"
                     xmlns:views="clr-namespace:Template.Mobile.Views"
                     xmlns:dictionaries="clr-namespace:Template.Mobile.Resources.Dictionaries;assembly=Template.Mobile"
                     xmlns:models="clr-namespace:Template.Mobile.Models">
@@ -19,7 +20,7 @@
     <!--  DataTemplate  -->
 
     <DataTemplate x:Key="CollectionViewDataTemplate_SingleLine_MDMenuItem" x:DataType="models:MenuItemModel">
-        <views:SelectableCellBase x:Name="cellcontainer" Style="{StaticResource SelectableCollectionView}">
+        <ctrl:SelectableCellBase x:Name="cellcontainer" Style="{StaticResource SelectableCollectionView}">
             <Grid Margin="5"
                   Padding="5"
                   HorizontalOptions="FillAndExpand"
@@ -41,11 +42,11 @@
                        IsEnabled="{Binding IsActive}"
                        Text="{Binding Title}" />
             </Grid>
-        </views:SelectableCellBase>
+        </ctrl:SelectableCellBase>
     </DataTemplate>
 
     <DataTemplate x:Key="CollectionViewDataTemplate_MultiColumns_CenteredImageLabel" x:DataType="models:ImageModel">
-        <views:SelectableCellBase x:Name="cellcontainer" Style="{StaticResource SelectableCollectionView}">
+        <ctrl:SelectableCellBase x:Name="cellcontainer" Style="{StaticResource SelectableCollectionView}">
             <Grid HorizontalOptions="Center" VerticalOptions="Center">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
@@ -71,7 +72,7 @@
                        LineBreakMode="TailTruncation"
                        Text="{Binding Filename, Converter={StaticResource WithoutExtensionConverter}}" />
             </Grid>
-        </views:SelectableCellBase>
+        </ctrl:SelectableCellBase>
     </DataTemplate>
 
     <!--<DataTemplate x:Key="SillyDataTemplate">

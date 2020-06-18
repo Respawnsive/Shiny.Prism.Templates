@@ -12,6 +12,8 @@ namespace Template.Mobile.Views
         {
             Tag = parent;
             iOSspec.Page.SetUseSafeArea(this, true);
+            this.BackgroundColor = (Color)Application.Current.Resources["DynamicBackgroundColor"];
+            this.BackgroundImageSource = (ImageSource)Application.Current.Resources["DynamicBackgroundImageSource"];
         }
 
         /// <summary>

@@ -1,7 +1,7 @@
 ﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Template.Mobile.Views
+namespace Template.Mobile.CustomCtrl
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SelectableCellBase : Frame

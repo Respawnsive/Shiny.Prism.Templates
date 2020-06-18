@@ -84,22 +84,22 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>MobileTextResources.resx</DependentUpon>
     </Compile>
-    <Compile Update="Views\ContentPages\HomePage.xaml.cs">
+    <Compile Update="Views\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\ContentPages\StartupPage.xaml.cs">
+    <Compile Update="Views\StartupPage.xaml.cs">
       <DependentUpon>StartupPage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\ContentViews\Debug_ImagesView.xaml.cs">
+    <Compile Update="Views\DEBUG\Debug_ImagesView.xaml.cs">
       <DependentUpon>Debug_ImagesView.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\ContentViews\Debug_ThemesView.xaml.cs">
+    <Compile Update="Views\DEBUG\Debug_ThemesView.xaml.cs">
       <DependentUpon>Debug_ThemesView.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\ContentViews\LoadingView.xaml.cs">
+    <Compile Update="CustomCtrl\LoadingView.xaml.cs">
       <DependentUpon>LoadingView.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\ContentViews\Debug_SamplesView.xaml.cs">
+    <Compile Update="Views\DEBUG\Debug_SamplesView.xaml.cs">
       <DependentUpon>Debug_SamplesView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -130,24 +130,20 @@
     <EmbeddedResource Update="Views\Cells\SelectableCellBase.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\MasterDetailPages\MDPage.xaml">
+    <EmbeddedResource Update="Views\MDPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\ContentViews\LoadingView.xaml">
+    <EmbeddedResource Update="CustomCtrl\LoadingView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\ContentPages\StartupPage.xaml">
+    <EmbeddedResource Update="Views\StartupPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\ContentViews\Debug_SamplesView.xaml">
+    <EmbeddedResource Update="Views\DEBUG\Debug_SamplesView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\TabPages\Debug_BottomTabsPage.xaml">
+    <EmbeddedResource Update="Views\DEBUG\Debug_BottomTabsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Interfaces\" />
   </ItemGroup>
 </Project>

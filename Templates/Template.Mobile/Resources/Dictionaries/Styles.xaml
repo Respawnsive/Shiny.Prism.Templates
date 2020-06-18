@@ -21,7 +21,7 @@
         <Setter Property="Padding">
             <Setter.Value>
                 <OnPlatform x:TypeArguments="Thickness">
-                    <On Platform="iOS">0, 20, 0, 0</On>
+                    <On Platform="iOS">0, 0, 0, 0</On>
                     <On Platform="Android">0, 0, 0, 0</On>
                 </OnPlatform>
             </Setter.Value>
@@ -160,7 +160,7 @@
     <!--  Named Styles - Apply explicitely to Target with Style="{StaticResource key}"  -->
 
     <!--  Style for CollectionView States (Grid as first layout in the itemTemplate)  -->
-    <Style x:Key="SelectableCollectionView" TargetType="views:SelectableCellBase">
+    <Style x:Key="SelectableCollectionView" TargetType="ctrl:SelectableCellBase">
         <Setter Property="VisualStateManager.VisualStateGroups">
             <VisualStateGroupList>
                 <VisualStateGroup x:Name="CommonStates">
