@@ -18,27 +18,18 @@
 
     <!--  ! Do not forget to RegisterForNavigation for each LazyContentPage dynamicaly generated  -->
 
-    <lazyView:LazyContentPage Title="Samples"
+    <lazyView:LazyContentPage BindingContextChanged="TabPage_OnBindingContextChanged"
                               x:TypeArguments="ctrl:LoadingView, views:Debug_SamplesView"
                               IconImageSource="ic_list.png" />
-    <!--<lazyView:LazyContentPage Title="{Binding [Debug_SamplesView_Title]}"
-                              x:TypeArguments="views:Debug_SamplesView"
-                              IconImageSource="ic_list.png" />-->
 
 
-    <lazyView:LazyContentPage Title="Images"
+    <lazyView:LazyContentPage BindingContextChanged="TabPage_OnBindingContextChanged"
                               x:TypeArguments="ctrl:LoadingView,views:Debug_ImagesView"
                               IconImageSource="ic_image.png" />
-    <!--<lazyView:LazyContentPage Title="{Binding [Debug_ImagesView_Title]}"
-                              x:TypeArguments="views:Debug_ImagesView"
-                              IconImageSource="ic_image.png" />-->
 
 
-    <lazyView:LazyContentPage Title="Thèmes"
+    <lazyView:LazyContentPage BindingContextChanged="TabPage_OnBindingContextChanged"
                               x:TypeArguments="ctrl:LoadingView,views:Debug_ThemesView"
                               IconImageSource="ic_brightness_6.png" />
-    <!--<lazyView:LazyContentPage Title="{Binding [Debug_ThemesView_Title]}"
-                              x:TypeArguments="views:Debug_ThemesView"
-                              IconImageSource="ic_brightness_6.png" />-->
 
 </views:BottomTabbedPageBase>
