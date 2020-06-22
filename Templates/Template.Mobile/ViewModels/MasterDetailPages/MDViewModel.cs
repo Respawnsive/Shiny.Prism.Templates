@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Template.Mobile.Helpers;
 using Template.Mobile.Models;
+using Template.Mobile.Push;
 using Template.Mobile.Views;
 using Xamarin.Forms;
 
@@ -42,6 +43,12 @@ namespace Template.Mobile.ViewModels
                     Title = this["Debug_BottomTabsPage_Title"],
                     ItemImageSource = "ic_bug_report.png",
                     NavigationPath = $"{nameof(NavigationPage)}/{nameof(Debug_BottomTabsPage)}" //do not include a TabbedPage into a NavigationPage (iOS bug)
+                });
+                MenuItems.Add(new MenuItemModel
+                {
+                    Title = this["#DEBUG push"],
+                    ItemImageSource = "ic_bug_report.png",
+                    NavigationPath = $"{nameof(NavigationPage)}/{nameof(PushSetupPage)}"
                 });
 #endif
 

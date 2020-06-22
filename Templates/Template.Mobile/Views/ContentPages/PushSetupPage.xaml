@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:ContentPageBase x:Class="Template.Mobile.Views.PushSetupPage"
+                       xmlns="http://xamarin.com/schemas/2014/forms"
+                       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                       xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+                       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                       xmlns:views="clr-namespace:Template.Mobile.Views;assembly=Template.Mobile"
+                       Title="Setup"
+                       mc:Ignorable="d">
+
+    <ContentPage.Content>
+        <TableView Intent="Form">
+            <TableRoot>
+                <TableSection Title="Registration">
+                    <TextCell Command="{Binding RequestAccess}"
+                              Detail="{Binding AccessStatus}"
+                              Text="Status" />
+                    <TextCell Command="{Binding UnRegister}"
+                              Text="Un-Register" />
+                </TableSection>
+
+                <TableSection Title="Tags">
+                    <SwitchCell IsEnabled="False"
+                                On="{Binding IsTagsSupported}"
+                                Text="Tags Support" />
+                    <EntryCell IsEnabled="{Binding IsTagsSupported}"
+                               Label="Tag"
+                               Text="{Binding Tag}" />
+                    <TextCell Command="{Binding UpdateTag}"
+                              Text="Update Tag" />
+                </TableSection>
+
+                <TableSection Title="Info">
+                    <TextCell Detail="{Binding Implementation}"
+                              Text="Implementation" />
+                    <TextCell Detail="{Binding RegToken}"
+                              Text="Registration Token" />
+                    <TextCell Detail="{Binding RegDate}"
+                              Text="Registration Date" />
+                    <TextCell Detail="{Binding ExpiryDate}"
+                              Text="ExpiryDate" />
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </ContentPage.Content>
+</views:ContentPageBase>

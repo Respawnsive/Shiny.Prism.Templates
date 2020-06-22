@@ -7,6 +7,7 @@ using Prism.Forms.LazyView;
 using Prism.Ioc;
 using Prism.Mvvm;
 using Template.Mobile.Helpers;
+using Template.Mobile.Push;
 using Template.Mobile.ViewModels;
 using Template.Mobile.Views;
 using Xamarin.Forms;
@@ -18,6 +19,7 @@ namespace Template.Mobile
     [AutoRegisterForNavigation]
     public partial class App
     {
+
         public App()
         {
         }
@@ -27,7 +29,6 @@ namespace Template.Mobile
             try
             {
                 InitializeComponent();
-
                 NavigationService.NavigateAsync($"{nameof(StartupPage)}");
             }
             catch(Exception ex)

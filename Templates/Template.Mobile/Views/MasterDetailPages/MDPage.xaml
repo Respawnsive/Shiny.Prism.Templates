@@ -2,16 +2,16 @@
 <MasterDetailPage x:Class="Template.Mobile.Views.MDPage"
                   xmlns="http://xamarin.com/schemas/2014/forms"
                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                   xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-                  xmlns:viewModels="clr-namespace:Template.Mobile.ViewModels;assembly=Template.Mobile"
                   xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
-                  mc:Ignorable="d"
-                  x:DataType="viewModels:MDViewModel">
+                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                  xmlns:viewModels="clr-namespace:Template.Mobile.ViewModels;assembly=Template.Mobile"
+                  x:DataType="viewModels:MDViewModel"
+                  mc:Ignorable="d">
     <MasterDetailPage.Master>
         <ContentPage Title="Menu"
-                     BackgroundColor="{DynamicResource DynamicMenuHeaderBorderColor}"
                      ios:Page.UseSafeArea="true"
+                     BackgroundColor="{DynamicResource DynamicMenuHeaderBorderColor}"
                      IconImageSource="ic_menu.png">
 
             <!--  Ici on dessine notre menu comme on veut  -->
@@ -24,7 +24,8 @@
                     </Grid.RowDefinitions>
 
                     <!--  Header Text&Action  -->
-                    <Grid Grid.Row="0" VerticalOptions="Center">
+                    <Grid Grid.Row="0"
+                          VerticalOptions="Center">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
@@ -36,8 +37,8 @@
                         <!--  Menu Header Image  HeightRequest="168"  -->
                         <Image Grid.Row="0"
                                Grid.Column="0"
-                               HeightRequest="168"
                                Aspect="AspectFill"
+                               HeightRequest="168"
                                Source="{DynamicResource DynamicMenuImageSource}" />
 
                         <!--  User  -->
@@ -54,42 +55,42 @@
                             <Label Grid.Row="0"
                                    Grid.Column="0"
                                    Style="{StaticResource TextSubhead}"
-                                   TextColor="{DynamicResource DynamicBarTextColor}"
-                                   Text="{Binding UserDisplayName}" />
+                                   Text="{Binding UserDisplayName}"
+                                   TextColor="{DynamicResource DynamicBarTextColor}" />
 
                             <Label Grid.Row="1"
                                    Grid.Column="0"
                                    Style="{StaticResource TextSubheadSecondary}"
-                                   TextColor="{DynamicResource DynamicBarTextColor}"
-                                   Text="{Binding UserLogin}" />
+                                   Text="{Binding UserLogin}"
+                                   TextColor="{DynamicResource DynamicBarTextColor}" />
 
                             <Image Grid.Row="0"
                                    Grid.RowSpan="2"
                                    Grid.Column="1"
-                                   WidthRequest="48"
-                                   HeightRequest="48"
                                    Aspect="AspectFit"
-                                   Source="ic_exit_to_app.png" />
+                                   HeightRequest="48"
+                                   Source="ic_exit_to_app.png"
+                                   WidthRequest="48" />
                         </Grid>
                     </Grid>
 
                     <!--  Header Separator  -->
                     <ContentView Grid.Row="1"
+                                 BackgroundColor="White"
                                  HeightRequest="1"
                                  HorizontalOptions="FillAndExpand"
-                                 VerticalOptions="FillAndExpand"
-                                 BackgroundColor="White" />
+                                 VerticalOptions="FillAndExpand" />
 
                     <!--  List_Menu  -->
                     <CollectionView Grid.Row="2"
                                     BackgroundColor="{DynamicResource DynamicMenuBackgroundColor}"
                                     ItemSizingStrategy="MeasureAllItems"
+                                    ItemTemplate="{StaticResource CollectionViewDataTemplate_SingleLine_MDMenuItem}"
+                                    ItemsSource="{Binding MenuItems}"
                                     SelectedItem="{Binding SelectedMenuItem, Mode=TwoWay}"
-                                    SelectionMode="Single"
                                     SelectionChangedCommand="{Binding MenuNavigateCommand}"
                                     SelectionChangedCommandParameter="{Binding SelectedMenuItem}"
-                                    ItemTemplate="{StaticResource CollectionViewDataTemplate_SingleLine_MDMenuItem}"
-                                    ItemsSource="{Binding MenuItems}">
+                                    SelectionMode="Single">
                         <CollectionView.ItemsLayout>
                             <!--  https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/collectionview/layout  -->
                             <LinearItemsLayout Orientation="Vertical" />

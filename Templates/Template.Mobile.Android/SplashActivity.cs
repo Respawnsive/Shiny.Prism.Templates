@@ -1,4 +1,5 @@
-﻿using Android.App;
+﻿using System;
+using Android.App;
 using Android.Content;
 using Android.Content.PM;
 using Android.OS;
@@ -22,7 +23,7 @@ namespace Template.Mobile.Droid
 
             if (Intent.Extras != null)
                 mainIntent.PutExtras(Intent.Extras);
-
+            
             StartActivity(mainIntent);
         }
     }

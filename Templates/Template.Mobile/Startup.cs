@@ -2,6 +2,7 @@
 using Shiny;
 using Shiny.Prism;
 using Template.Mobile.Modules;
+using Template.Mobile.Push;
 
 namespace Template.Mobile
 {
@@ -26,6 +27,11 @@ namespace Template.Mobile
 
             // Add Localization
             services.RegisterModule<LocalizationModule>();
+
+
+            services.UseNotifications(true);
+            // Add Shiny FireBase Push
+            services.UseFirebaseMessaging<PushDelegate>();
         }
     }
 }

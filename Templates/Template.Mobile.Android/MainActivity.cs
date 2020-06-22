@@ -10,6 +10,10 @@ using Plugin.CurrentActivity;
 using Sharpnado.Presentation.Forms.Droid;
 using Shiny;
 using System;
+using System.Collections;
+using System.Collections.Generic;
+using DynamicData.Kernel;
+using Shiny.Push;
 
 namespace Template.Mobile.Droid
 {
@@ -37,6 +41,8 @@ namespace Template.Mobile.Droid
                 SharpnadoInitializer.Initialize();
                 AnimationViewRenderer.Init();
 
+                //var extra = Intent.Extras?.GetParcelable("data");
+                
                 //Launch FormsApp
                 LoadApplication(new Mobile.App());
 
@@ -44,7 +50,6 @@ namespace Template.Mobile.Droid
             }
             catch(Exception ex)
             {
-
             }
         }
 

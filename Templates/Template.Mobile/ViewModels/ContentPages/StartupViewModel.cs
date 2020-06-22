@@ -67,15 +67,15 @@ namespace Template.Mobile.ViewModels
 
                 //Fake/Dev init
                 StatusLabel = "Chargement de la BDD...";
-                await Task.Delay(1000);
+                //await Task.Delay(1000);
                 StatusLabel = "Chargement de la langue...";
-                await Task.Delay(1000);
+                //await Task.Delay(1000);
                 StatusLabel = "Chargement de XXX...";
-                await Task.Delay(1000);
+                //await Task.Delay(1000);
                 StatusLabel = "Chargement de YYY...";
-                await Task.Delay(1000);
+                //await Task.Delay(1000);
                 StatusLabel = "Lancement de l'application...";
-                await Task.Delay(1000);
+                //await Task.Delay(1000);
                 
                 // Manage startup navigation logic (ConfigPage or LoginProcess or HomePage or whatever...)
                 string nextPage;
