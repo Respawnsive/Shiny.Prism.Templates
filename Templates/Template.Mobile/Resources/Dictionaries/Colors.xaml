@@ -17,7 +17,7 @@
     <Color x:Key="DarkElevation24dp">#373737</Color>
 
     <Color x:Key="PrimaryColor">#BB2734</Color>
-    <Color x:Key="SecondaryColor">##27bbaf</Color>
+    <Color x:Key="SecondaryColor">#27bbaf</Color>
 
     <Color x:Key="OnPrimaryColor">#000000</Color>
     <Color x:Key="OnSecondaryColor">#000000</Color>

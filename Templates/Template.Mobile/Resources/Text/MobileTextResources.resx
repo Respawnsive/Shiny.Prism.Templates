@@ -132,7 +132,13 @@
   <data name="HomePage_Title" xml:space="preserve">
     <value>Accueil</value>
   </data>
+  <data name="LoremIpsum_Text" xml:space="preserve">
+    <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</value>
+  </data>
   <data name="StartupPage_Title" xml:space="preserve">
     <value>Initialisation</value>
+  </data>
+  <data name="WalkThrough_Title" xml:space="preserve">
+    <value>Walk-through</value>
   </data>
 </root>

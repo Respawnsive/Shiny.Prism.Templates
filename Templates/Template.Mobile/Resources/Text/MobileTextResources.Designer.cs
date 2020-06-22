@@ -106,11 +106,29 @@ namespace Template.Mobile.Resources.Text {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..
+        /// </summary>
+        public static string LoremIpsum_Text {
+            get {
+                return ResourceManager.GetString("LoremIpsum_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Initialisation.
         /// </summary>
         public static string StartupPage_Title {
             get {
                 return ResourceManager.GetString("StartupPage_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Walk-through.
+        /// </summary>
+        public static string WalkThrough_Title {
+            get {
+                return ResourceManager.GetString("WalkThrough_Title", resourceCulture);
             }
         }
     }

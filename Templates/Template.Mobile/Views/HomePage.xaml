@@ -9,12 +9,15 @@
                        x:DataType="viewModels:HomeViewModel">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Spacing="16" Padding="16">
+            <StackLayout Padding="16"
+                         Spacing="16">
 
                 <materialFrame:MaterialFrame>
                     <StackLayout>
-                        <Label Style="{StaticResource TextHeadline}" Text="Welcome to the HomePage !" />
-                        <Label Style="{StaticResource TextBody}" Text="Need to customize your page here..." />
+                        <Label Style="{StaticResource TextHeadline}"
+                               Text="Welcome to the HomePage !" />
+                        <Label Style="{StaticResource TextBody}"
+                               Text="Need to customize your page here..." />
                     </StackLayout>
                 </materialFrame:MaterialFrame>
 

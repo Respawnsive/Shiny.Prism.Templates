@@ -9,5 +9,6 @@
     <SharpnadoConverters:IsNullConverter x:Key="IsNullConverter" />
     <LocalConverters:WithoutExtensionConverter x:Key="WithoutExtensionConverter" />
     <LocalConverters:IntEnumConverter x:Key="IntEnumConverter" />
+    <LocalConverters:NullToFalseConverter x:Key="NullToFalseConverter" />
 
 </ResourceDictionary>

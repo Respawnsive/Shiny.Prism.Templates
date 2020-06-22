@@ -137,6 +137,13 @@ namespace Template.Mobile.ViewModels
                     ItemImageSource = "ic_bug_report.png",
                     NavigationPath = $"{nameof(NavigationPage)}/{nameof(Debug_BottomTabsPage)}?selectedTab={nameof(Debug_ImagesView)}"
                 });
+
+                MenuItems.Add(new MenuItemModel
+                {
+                    Title = this["WalkThrough_Title"],
+                    ItemImageSource = "ic_bug_report.png",
+                    NavigationPath = $"{nameof(WalkThroughPage)}"
+                });
 #endif
 
                 //await Device.InvokeOnMainThreadAsync(notificationService.RegisterAsync);
