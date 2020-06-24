@@ -56,11 +56,11 @@ namespace Template.Mobile.ViewModels
             string sQueryString;
             if (Device.RuntimePlatform == Device.iOS)
             {
-                sQueryString = $"{nameof(NavigationPage)}/{nameof(HomePage)}";
+                sQueryString = $"///{nameof(MDPage)}/{nameof(NavigationPage)}/{nameof(HomePage)}";
             }
             else
             {
-                sQueryString = $"{nameof(NavigationPage)}/{nameof(HomePage)}";
+                sQueryString = $"///{nameof(MDPage)}/{nameof(NavigationPage)}/{nameof(HomePage)}";
             }
             await NavigationService.NavigateAsync(sQueryString);
         }
