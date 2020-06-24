@@ -110,7 +110,7 @@
     <Compile Update="Views\DEBUG\Debug_SamplesView.xaml.cs">
       <DependentUpon>Debug_SamplesView.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Walkthrough\WalkThroughPage.xaml.cs">
+    <Compile Update="Views\WalkThroughPage.xaml.cs">
       <DependentUpon>WalkThroughPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -156,10 +156,7 @@
     <EmbeddedResource Update="Views\DEBUG\Debug_BottomTabsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Walkthrough\WalkThroughItemTemplate.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Walkthrough\WalkThroughPage.xaml">
+    <EmbeddedResource Update="Views\WalkThroughPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>

@@ -32,6 +32,7 @@ namespace Template.Mobile.iOS
                 this.ShinyFinishedLaunching(new Startup(), ConfigureServices);
 
                 //Forms Init
+                Xamarin.Forms.Forms.SetFlags(new string[] { "CarouselView_Experimental", "IndicatorView_Experimental" });
                 global::Xamarin.Forms.Forms.Init();
 
                 //Plugins Init

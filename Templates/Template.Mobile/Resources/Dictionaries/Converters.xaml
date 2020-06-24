@@ -10,5 +10,6 @@
     <LocalConverters:WithoutExtensionConverter x:Key="WithoutExtensionConverter" />
     <LocalConverters:IntEnumConverter x:Key="IntEnumConverter" />
     <LocalConverters:NullToFalseConverter x:Key="NullToFalseConverter" />
+    <LocalConverters:InvertBoolConverter x:Key="InvertBoolConverter" />
 
 </ResourceDictionary>

@@ -26,7 +26,7 @@ namespace Template.Mobile.Droid
                 base.OnCreate(savedInstanceState);
 
                 //Forms Init
-                Xamarin.Forms.Forms.SetFlags(new string[] {"IndicatorView_Experimental"});
+                Xamarin.Forms.Forms.SetFlags(new string[] { "CarouselView_Experimental", "IndicatorView_Experimental" });
                 global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
 
                 //Plugins Init
