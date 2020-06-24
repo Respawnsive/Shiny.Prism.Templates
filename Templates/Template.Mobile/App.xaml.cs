@@ -47,6 +47,7 @@ namespace Template.Mobile
             containerRegistry.RegisterForNavigation<LazyContentPage<LoadingView, Debug_ImagesView>, Debug_ImagesViewModel>(nameof(Debug_ImagesView));
             containerRegistry.RegisterForNavigation<LazyContentPage<LoadingView, Debug_SamplesView>, Debug_SamplesViewModel>(nameof(Debug_SamplesView));
             containerRegistry.RegisterForNavigation<LazyContentPage<LoadingView, Debug_ThemesView>, Debug_ThemesViewModel>(nameof(Debug_ThemesView));
+            containerRegistry.RegisterForNavigation<LazyContentPage<LoadingView, PushSetupPage>, PushSetupViewModel>(nameof(PushSetupPage));
         }
 
         protected override void ConfigureViewModelLocator()

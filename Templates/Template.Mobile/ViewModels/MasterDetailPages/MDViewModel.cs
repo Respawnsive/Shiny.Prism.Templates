@@ -44,12 +44,12 @@ namespace Template.Mobile.ViewModels
                     ItemImageSource = "ic_bug_report.png",
                     NavigationPath = $"{nameof(NavigationPage)}/{nameof(Debug_BottomTabsPage)}" //do not include a TabbedPage into a NavigationPage (iOS bug)
                 });
-                MenuItems.Add(new MenuItemModel
-                {
-                    Title = this["#DEBUG push"],
-                    ItemImageSource = "ic_bug_report.png",
-                    NavigationPath = $"{nameof(NavigationPage)}/{nameof(PushSetupPage)}"
-                });
+                //MenuItems.Add(new MenuItemModel
+                //{
+                //    Title = this["#DEBUG push"],
+                //    ItemImageSource = "ic_bug_report.png",
+                //    NavigationPath = $"{nameof(NavigationPage)}/{nameof(PushSetupPage)}"
+                //});
 #endif
 
                 //Device.InvokeOnMainThreadAsync(notificationService.RegisterAsync);

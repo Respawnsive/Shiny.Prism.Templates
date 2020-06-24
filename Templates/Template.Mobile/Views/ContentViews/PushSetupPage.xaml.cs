@@ -3,7 +3,7 @@
 namespace Template.Mobile.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class PushSetupPage : ContentPageBase
+    public partial class PushSetupPage : ContentViewBase
     {
         public PushSetupPage() : base()
         {

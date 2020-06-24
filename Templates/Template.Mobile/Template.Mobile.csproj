@@ -64,7 +64,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Views\ContentPages\PushSetupPage.xaml.cs">
+    <Compile Update="Views\ContentViews\PushSetupPage.xaml.cs">
       <DependentUpon>PushSetupPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="Resources\Dictionaries\Colors.xaml.cs">
@@ -123,7 +123,7 @@
     <EmbeddedResource Update="Push\PushPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\ContentPages\PushSetupPage.xaml">
+    <EmbeddedResource Update="Views\ContentViews\PushSetupPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\Dictionaries\Colors.xaml">

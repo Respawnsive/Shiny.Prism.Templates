@@ -38,4 +38,8 @@
     <!--</x:Arguments>
     </NavigationPage>-->
 
+    <lazyView:LazyContentPage Title="{Binding [Debug_PushSetup_Title]}"
+                              x:TypeArguments="views:LoadingView,views:PushSetupPage"
+                              IconImageSource="ic_notifications.png" />
+
 </TabbedPage>

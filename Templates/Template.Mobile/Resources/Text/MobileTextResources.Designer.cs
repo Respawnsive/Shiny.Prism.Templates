@@ -79,6 +79,15 @@ namespace Template.Mobile.Resources.Text {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to PushSetup.
+        /// </summary>
+        public static string Debug_PushSetup_Title {
+            get {
+                return ResourceManager.GetString("Debug_PushSetup_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Exemple.
         /// </summary>
         public static string Debug_SamplesView_Title {

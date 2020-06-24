@@ -123,6 +123,9 @@
   <data name="Debug_ImagesView_Title" xml:space="preserve">
     <value>Images</value>
   </data>
+  <data name="Debug_PushSetup_Title" xml:space="preserve">
+    <value>PushSetup</value>
+  </data>
   <data name="Debug_SamplesView_Title" xml:space="preserve">
     <value>Exemple</value>
   </data>
