@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:ContentPageBase x:Class="Template.Mobile.Views.HomePage"
+                       xmlns="http://xamarin.com/schemas/2014/forms"
+                       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                       xmlns:materialFrame="clr-namespace:Sharpnado.MaterialFrame;assembly=Sharpnado.MaterialFrame"
+                       xmlns:viewModels="clr-namespace:Template.Mobile.ViewModels;assembly=Template.Mobile"
+                       xmlns:views="clr-namespace:Template.Mobile.Views;assembly=Template.Mobile"
+                       Title="{Binding [HomePage_Title]}"
+                       x:DataType="viewModels:HomeViewModel">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="16"
+                         Spacing="16">
+
+                <materialFrame:MaterialFrame>
+                    <StackLayout>
+                        <Label Style="{StaticResource TextHeadline}" Text="Welcome to the HomePage !" />
+                        <Label Style="{StaticResource TextBody}" Text="Need to customize your page here..." />
+                        <Button Command="{Binding NavigateCmd}" Text="Gooooooooooo" />
+                    </StackLayout>
+                </materialFrame:MaterialFrame>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</views:ContentPageBase>
