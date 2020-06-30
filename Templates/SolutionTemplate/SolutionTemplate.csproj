@@ -1,0 +1,1282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>16.0</MinimumVisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{C9675A26-225D-44E6-A0F2-906E44CC6BBD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SolutionTemplate</RootNamespace>
+    <AssemblyName>SolutionTemplate</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <GeneratePkgDefFile>false</GeneratePkgDefFile>
+    <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
+    <IncludeDebugSymbolsInVSIXContainer>false</IncludeDebugSymbolsInVSIXContainer>
+    <IncludeDebugSymbolsInLocalVSIXDeployment>false</IncludeDebugSymbolsInLocalVSIXDeployment>
+    <CreateVsixContainer>false</CreateVsixContainer>
+    <DeployExtension>false</DeployExtension>
+    <DeployVSTemplates>false</DeployVSTemplates>
+    <CopyVsixManifestToOutput>false</CopyVsixManifestToOutput>
+    <CopyBuildOutputToOutputDirectory>false</CopyBuildOutputToOutputDirectory>
+    <CopyOutputSymbolsToOutputDirectory>false</CopyOutputSymbolsToOutputDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.CoreUtility">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Template.Mobile.Android\MainActivity.cs" />
+    <Content Include="Template.Mobile.Android\MainApplication.cs" />
+    <Content Include="Template.Mobile.Android\Properties\AssemblyInfo.cs" />
+    <Content Include="Template.Mobile.Android\Renderers\AndroidMaterialDatePickerRenderer.cs" />
+    <Content Include="Template.Mobile.Android\Renderers\AndroidMaterialStepperRenderer.cs" />
+    <Content Include="Template.Mobile.Android\Renderers\AndroidMaterialTimePickerRenderer.cs" />
+    <Content Include="Template.Mobile.Android\Resources\Resource.designer.cs" />
+    <Content Include="Template.Mobile.Android\Services\PlatformThemeService.cs" />
+    <Content Include="Template.Mobile.Android\SplashActivity.cs" />
+    <Content Include="Template.Mobile.Android\Assets\AboutAssets.txt" />
+    <Content Include="Template.Mobile.Android\Properties\AndroidManifest.xml" />
+    <Content Include="Template.Mobile.Android\Resources\AboutResources.txt" />
+    <Content Include="Template.Mobile.Android\Resources\drawable\splashscreen.xml" />
+    <Content Include="Template.Mobile.Android\Resources\layout\Tabbar.xml" />
+    <Content Include="Template.Mobile.Android\Resources\layout\Toolbar.xml" />
+    <Content Include="Template.Mobile.Android\Resources\values\colors.xml" />
+    <Content Include="Template.Mobile.Android\Resources\values\styles.xml" />
+    <Content Include="Template.Mobile.Android\Template.Mobile.Android.vstemplate" />
+    <Content Include="Template.Mobile.Android\__TemplateIcon.ico" />
+    <Content Include="Template.Mobile.iOS\AppDelegate.cs" />
+    <Content Include="Template.Mobile.iOS\Assets.xcassets\AppIcon.appiconset\Icon1024.png" />
+    <Content Include="Template.Mobile.iOS\Assets.xcassets\AppIcon.appiconset\Icon120.png" />
+    <Content Include="Template.Mobile.iOS\Assets.xcassets\AppIcon.appiconset\Icon152.png" />
+    <Content Include="Template.Mobile.iOS\Assets.xcassets\AppIcon.appiconset\Icon167.png" />
+    <Content Include="Template.Mobile.iOS\Assets.xcassets\AppIcon.appiconset\Icon180.png" />
+    <Content Include="Template.Mobile.iOS\Assets.xcassets\AppIcon.appiconset\Icon20.png" />
+    <Content Include="Template.Mobile.iOS\Assets.xcassets\AppIcon.appiconset\Icon29.png" />
+    <Content Include="Template.Mobile.iOS\Assets.xcassets\AppIcon.appiconset\Icon40.png" />
+    <Content Include="Template.Mobile.iOS\Assets.xcassets\AppIcon.appiconset\Icon58.png" />
+    <Content Include="Template.Mobile.iOS\Assets.xcassets\AppIcon.appiconset\Icon60.png" />
+    <Content Include="Template.Mobile.iOS\Assets.xcassets\AppIcon.appiconset\Icon76.png" />
+    <Content Include="Template.Mobile.iOS\Assets.xcassets\AppIcon.appiconset\Icon80.png" />
+    <Content Include="Template.Mobile.iOS\Assets.xcassets\AppIcon.appiconset\Icon87.png" />
+    <Content Include="Template.Mobile.iOS\Main.cs" />
+    <Content Include="Template.Mobile.iOS\Properties\AssemblyInfo.cs" />
+    <Content Include="Template.Mobile.iOS\Renderers\iOSMaterialDatePickerRenderer.cs" />
+    <Content Include="Template.Mobile.iOS\Renderers\iOSMaterialStepperRenderer.cs" />
+    <Content Include="Template.Mobile.iOS\Renderers\iOSMaterialTimePickerRenderer.cs" />
+    <Content Include="Template.Mobile.iOS\Services\PlatformThemeService.cs" />
+    <Content Include="Template.Mobile\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Content>
+    <Content Include="Template.Mobile\Converters\IntEnumConverter.cs" />
+    <Content Include="Template.Mobile\Converters\InvertBoolConverter.cs" />
+    <Content Include="Template.Mobile\Converters\NullToFalseConverter.cs" />
+    <Content Include="Template.Mobile\Converters\WithoutExtensionConverter.cs" />
+    <Content Include="Template.Mobile\CustomCtrl\CustomMaterialDatePicker.cs" />
+    <Content Include="Template.Mobile\CustomCtrl\CustomMaterialStepper.cs" />
+    <Content Include="Template.Mobile\CustomCtrl\CustomMaterialTimePicker.cs" />
+    <Content Include="Template.Mobile\CustomCtrl\LoadingView.xaml.cs">
+      <DependentUpon>LoadingView.xaml</DependentUpon>
+    </Content>
+    <Content Include="Template.Mobile\CustomCtrl\SelectableCellBase.xaml.cs">
+      <DependentUpon>SelectableCellBase.xaml</DependentUpon>
+    </Content>
+    <Content Include="Template.Mobile\Helpers\Logger.cs" />
+    <Content Include="Template.Mobile\Helpers\ThemeHelper.cs" />
+    <Content Include="Template.Mobile\Models\ImageModel.cs" />
+    <Content Include="Template.Mobile\Models\MenuItemModel.cs" />
+    <Content Include="Template.Mobile\Models\SampleApi\User.cs" />
+    <Content Include="Template.Mobile\Models\SampleApi\UserList.cs" />
+    <Content Include="Template.Mobile\Models\WalkThroughItemModel.cs" />
+    <Content Include="Template.Mobile\Modules\DialogsModule.cs" />
+    <Content Include="Template.Mobile\Modules\EssentialsModule.cs" />
+    <Content Include="Template.Mobile\Modules\LocalizationModule.cs" />
+    <Content Include="Template.Mobile\Modules\LoggingModule.cs" />
+    <Content Include="Template.Mobile\Modules\SettingsModule.cs" />
+    <Content Include="Template.Mobile\Modules\WebApiModule.cs" />
+    <Content Include="Template.Mobile\Resources\Dictionaries\Colors.xaml.cs">
+      <DependentUpon>Colors.xaml</DependentUpon>
+    </Content>
+    <Content Include="Template.Mobile\Resources\Dictionaries\ControlTemplates.xaml.cs">
+      <DependentUpon>ControlTemplates.xaml</DependentUpon>
+    </Content>
+    <Content Include="Template.Mobile\Resources\Dictionaries\Converters.xaml.cs">
+      <DependentUpon>Converters.xaml</DependentUpon>
+    </Content>
+    <Content Include="Template.Mobile\Resources\Dictionaries\DataTemplates.xaml.cs">
+      <DependentUpon>DataTemplates.xaml</DependentUpon>
+    </Content>
+    <Content Include="Template.Mobile\Resources\Dictionaries\Fonts.xaml.cs">
+      <DependentUpon>Fonts.xaml</DependentUpon>
+    </Content>
+    <Content Include="Template.Mobile\Resources\Dictionaries\Styles.xaml.cs">
+      <DependentUpon>Styles.xaml</DependentUpon>
+    </Content>
+    <Content Include="Template.Mobile\Resources\Dictionaries\Values.xaml.cs">
+      <DependentUpon>Values.xaml</DependentUpon>
+    </Content>
+    <Content Include="Template.Mobile\Resources\Text\MobileTextResources.Designer.cs" />
+    <Content Include="Template.Mobile\Services\Dialogs\DialogsService.cs" />
+    <Content Include="Template.Mobile\Services\Dialogs\IDialogService.cs" />
+    <Content Include="Template.Mobile\Services\PlatformTheme\IPlatformThemeService.cs" />
+    <Content Include="Template.Mobile\Services\SampleApi\ISampleApiService.cs" />
+    <Content Include="Template.Mobile\Services\Settings\App\AppSettingsService.cs" />
+    <Content Include="Template.Mobile\Services\Settings\App\IAppSettingsService.cs" />
+    <Content Include="Template.Mobile\Services\Settings\ISettingsService.cs" />
+    <Content Include="Template.Mobile\Services\Settings\SettingsService.cs" />
+    <Content Include="Template.Mobile\Startup.cs" />
+    <Content Include="Template.Mobile\ViewModels\Bases\ViewModelBase.cs" />
+    <Content Include="Template.Mobile\ViewModels\Bases\ViewModelBasePage.cs" />
+    <Content Include="Template.Mobile\ViewModels\Bases\ViewModelBaseTabHost.cs" />
+    <Content Include="Template.Mobile\ViewModels\BlankViewModel.cs" />
+    <Content Include="Template.Mobile\ViewModels\DEBUG\Debug_BottomTabsViewModel.cs" />
+    <Content Include="Template.Mobile\ViewModels\DEBUG\Debug_ImagesViewModel.cs" />
+    <Content Include="Template.Mobile\ViewModels\DEBUG\Debug_SamplesViewModel.cs" />
+    <Content Include="Template.Mobile\ViewModels\DEBUG\Debug_ThemesViewModel.cs" />
+    <Content Include="Template.Mobile\ViewModels\HomeViewModel.cs" />
+    <Content Include="Template.Mobile\ViewModels\MDViewModel.cs" />
+    <Content Include="Template.Mobile\ViewModels\StartupViewModel.cs" />
+    <Content Include="Template.Mobile\ViewModels\WalkThroughViewModel.cs" />
+    <Content Include="Template.Mobile\Views\Bases\BottomTabbedPageBase.cs" />
+    <Content Include="Template.Mobile\Views\Bases\ContentPageBase.cs" />
+    <Content Include="Template.Mobile\Views\Bases\ContentViewBase.cs" />
+    <Content Include="Template.Mobile\Views\BlankPage.xaml.cs">
+      <DependentUpon>BlankPage.xaml</DependentUpon>
+    </Content>
+    <Content Include="Template.Mobile\Views\DEBUG\Debug_BottomTabsPage.xaml.cs">
+      <DependentUpon>Debug_BottomTabsPage.xaml</DependentUpon>
+    </Content>
+    <Content Include="Template.Mobile\Views\DEBUG\Debug_ImagesView.xaml.cs">
+      <DependentUpon>Debug_ImagesView.xaml</DependentUpon>
+    </Content>
+    <Content Include="Template.Mobile\Views\DEBUG\Debug_SamplesView.xaml.cs">
+      <DependentUpon>Debug_SamplesView.xaml</DependentUpon>
+    </Content>
+    <Content Include="Template.Mobile\Views\DEBUG\Debug_ThemesView.xaml.cs">
+      <DependentUpon>Debug_ThemesView.xaml</DependentUpon>
+    </Content>
+    <Content Include="Template.Mobile\Views\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Content>
+    <Content Include="Template.Mobile\Views\MDPage.xaml.cs">
+      <DependentUpon>MDPage.xaml</DependentUpon>
+    </Content>
+    <Content Include="Template.Mobile\Views\StartupPage.xaml.cs">
+      <DependentUpon>StartupPage.xaml</DependentUpon>
+    </Content>
+    <Content Include="Template.Mobile\Views\WalkThroughPage.xaml.cs">
+      <DependentUpon>WalkThroughPage.xaml</DependentUpon>
+    </Content>
+    <Content Include="Template.Resources\Text\TextResources.Designer.cs" />
+    <Content Include="RespawnsiveLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <VSTemplate Include="SolutionTemplate.vstemplate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Template.Mobile.iOS\Template.Mobile.iOS.vstemplate" />
+    <Content Include="Template.Mobile.iOS\__TemplateIcon.ico" />
+    <Content Include="Template.Mobile\FodyWeavers.xml" />
+    <Content Include="Template.Mobile\Template.Mobile.vstemplate" />
+    <Content Include="Template.Mobile\__TemplateIcon.ico" />
+    <Content Include="Template.Resources\Images\Generic_Images\appicon.png" />
+    <Content Include="Template.Resources\Images\Generic_Images\background_blur.png" />
+    <Content Include="Template.Resources\Images\Generic_Images\background_darkblur.png" />
+    <Content Include="Template.Resources\Images\Generic_Images\menu_background_dark.png" />
+    <Content Include="Template.Resources\Images\Generic_Images\menu_background_light.png" />
+    <Content Include="Template.Resources\Images\Generic_Images\splash_background.png" />
+    <Content Include="Template.Resources\Images\Generic_Images\splash_centered.png" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_3d_rotation.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_accessibility.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_accessible.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_access_alarm.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_access_alarms.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_access_time.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_account_balance.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_account_balance_wallet.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_account_box.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_account_circle.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_ac_unit.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_adb.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_add.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_add_alarm.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_add_alert.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_add_a_photo.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_add_box.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_add_circle.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_add_circle_outline.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_add_location.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_add_shopping_cart.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_add_to_photos.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_add_to_queue.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_adjust.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_airline_seat_flat.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_airline_seat_flat_angled.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_airline_seat_individual_suite.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_airline_seat_legroom_extra.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_airline_seat_legroom_normal.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_airline_seat_legroom_reduced.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_airline_seat_recline_extra.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_airline_seat_recline_normal.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_airplanemode_active.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_airplanemode_inactive.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_airplay.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_airport_shuttle.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_alarm.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_alarm_add.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_alarm_off.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_alarm_on.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_album.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_all_inclusive.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_all_out.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_android.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_announcement.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_apps.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_archive.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_arrow_back.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_arrow_downward.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_arrow_drop_down.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_arrow_drop_down_circle.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_arrow_drop_up.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_arrow_forward.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_arrow_upward.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_art_track.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_aspect_ratio.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_assessment.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_assignment.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_assignment_ind.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_assignment_late.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_assignment_return.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_assignment_returned.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_assignment_turned_in.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_assistant.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_assistant_photo.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_attachment.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_attach_file.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_attach_money.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_audiotrack.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_autorenew.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_av_timer.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_backspace.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_backup.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_battery_20.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_battery_30.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_battery_50.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_battery_60.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_battery_80.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_battery_90.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_battery_alert.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_battery_charging_20.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_battery_charging_30.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_battery_charging_50.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_battery_charging_60.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_battery_charging_80.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_battery_charging_90.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_battery_charging_full.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_battery_full.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_battery_std.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_battery_unknown.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_beach_access.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_beenhere.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_block.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_bluetooth.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_bluetooth_audio.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_bluetooth_connected.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_bluetooth_disabled.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_bluetooth_searching.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_blur_circular.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_blur_linear.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_blur_off.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_blur_on.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_book.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_bookmark.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_bookmark_border.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_border_all.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_border_bottom.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_border_clear.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_border_color.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_border_horizontal.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_border_inner.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_border_left.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_border_outer.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_border_right.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_border_style.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_border_top.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_border_vertical.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_branding_watermark.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_brightness_1.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_brightness_2.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_brightness_3.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_brightness_4.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_brightness_5.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_brightness_6.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_brightness_7.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_brightness_auto.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_brightness_high.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_brightness_low.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_brightness_medium.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_broken_image.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_brush.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_bubble_chart.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_bug_report.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_build.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_burst_mode.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_business.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_business_center.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_cached.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_cake.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_call.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_call_end.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_call_made.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_call_merge.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_call_missed.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_call_missed_outgoing.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_call_received.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_call_split.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_call_to_action.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_camera.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_camera_alt.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_camera_front.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_camera_rear.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_camera_roll.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_cancel.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_card_giftcard.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_card_membership.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_card_travel.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_casino.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_cast.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_cast_connected.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_center_focus_strong.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_center_focus_weak.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_change_history.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_chat.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_chat_bubble.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_chat_bubble_outline.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_check.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_check_box.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_check_box_outline_blank.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_check_circle.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_chevron_left.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_chevron_right.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_child_care.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_child_friendly.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_chrome_reader_mode.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_class.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_clear.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_clear_all.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_close.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_closed_caption.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_cloud.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_cloud_circle.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_cloud_done.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_cloud_download.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_cloud_off.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_cloud_queue.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_cloud_upload.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_code.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_collections.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_colorize.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_color_lens.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_comment.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_compare.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_compare_arrows.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_computer.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_confirmation_number.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_contacts.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_contact_mail.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_contact_phone.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_content_copy.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_content_cut.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_content_paste.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_control_point.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_control_point_duplicate.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_copyright.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_create.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_create_new_folder.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_credit_card.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_crop.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_crop_16_9.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_crop_3_2.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_crop_5_4.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_crop_7_5.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_crop_din.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_crop_free.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_crop_landscape.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_crop_original.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_crop_portrait.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_crop_rotate.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_crop_square.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_dashboard.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_data_usage.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_date_range.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_dehaze.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_delete.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_delete_forever.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_delete_sweep.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_description.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_desktop_mac.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_desktop_windows.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_details.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_developer_board.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_developer_mode.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_devices.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_devices_other.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_dialer_sip.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_dialpad.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_directions.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_directions_bike.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_directions_boat.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_directions_bus.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_directions_car.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_directions_railway.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_directions_run.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_directions_subway.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_directions_transit.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_directions_walk.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_disc_full.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_dns.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_dock.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_domain.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_done.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_done_all.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_donut_large.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_donut_small.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_do_not_disturb.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_do_not_disturb_alt.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_do_not_disturb_off.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_do_not_disturb_on.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_drafts.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_drag_handle.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_drive_eta.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_dvr.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_edit.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_edit_location.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_email.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_enhanced_encryption.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_equalizer.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_error.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_error_outline.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_euro_symbol.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_event.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_event_available.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_event_busy.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_event_note.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_event_seat.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_ev_station.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_exit_to_app.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_expand_less.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_expand_more.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_explicit.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_explore.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_exposure.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_exposure_neg_1.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_exposure_neg_2.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_exposure_plus_1.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_exposure_plus_2.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_exposure_zero.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_extension.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_face.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_fast_forward.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_fast_rewind.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_favorite.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_favorite_border.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_featured_play_list.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_featured_video.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_feedback.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_fiber_dvr.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_fiber_manual_record.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_fiber_new.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_fiber_pin.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_fiber_smart_record.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_file_download.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_file_upload.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_filter.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_filter_1.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_filter_2.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_filter_3.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_filter_4.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_filter_5.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_filter_6.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_filter_7.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_filter_8.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_filter_9.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_filter_9_plus.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_filter_b_and_w.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_filter_center_focus.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_filter_drama.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_filter_frames.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_filter_hdr.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_filter_list.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_filter_none.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_filter_tilt_shift.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_filter_vintage.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_find_in_page.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_find_replace.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_fingerprint.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_first_page.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_fitness_center.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_flag.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_flare.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_flash_auto.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_flash_off.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_flash_on.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_flight.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_flight_land.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_flight_takeoff.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_flip.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_flip_to_back.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_flip_to_front.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_folder.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_folder_open.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_folder_shared.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_folder_special.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_format_align_center.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_format_align_justify.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_format_align_left.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_format_align_right.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_format_bold.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_format_clear.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_format_color_fill.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_format_color_reset.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_format_color_text.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_format_indent_decrease.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_format_indent_increase.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_format_italic.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_format_line_spacing.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_format_list_bulleted.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_format_list_numbered.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_format_paint.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_format_quote.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_format_shapes.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_format_size.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_format_strikethrough.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_format_textdirection_l_to_r.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_format_textdirection_r_to_l.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_format_underlined.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_forum.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_forward.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_forward_10.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_forward_30.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_forward_5.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_free_breakfast.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_fullscreen.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_fullscreen_exit.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_functions.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_gamepad.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_games.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_gavel.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_gesture.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_get_app.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_golf_course.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_gps_fixed.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_gps_not_fixed.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_gps_off.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_grade.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_gradient.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_grain.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_graphic_eq.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_grid_off.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_grid_on.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_group.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_group_add.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_group_work.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_g_translate.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_hdr_off.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_hdr_on.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_hdr_strong.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_hdr_weak.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_headset.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_headset_mic.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_healing.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_hearing.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_help.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_highlight.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_highlight_off.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_high_quality.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_history.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_home.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_hotel.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_hot_tub.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_hourglass_empty.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_hourglass_full.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_http.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_https.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_image.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_image_aspect_ratio.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_important_devices.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_import_contacts.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_import_export.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_inbox.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_info.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_info_outline.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_input.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_insert_chart.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_insert_comment.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_insert_drive_file.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_insert_emoticon.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_insert_invitation.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_insert_link.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_insert_photo.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_invert_colors.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_invert_colors_off.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_iso.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_keyboard.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_keyboard_arrow_down.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_keyboard_arrow_left.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_keyboard_arrow_right.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_keyboard_arrow_up.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_keyboard_backspace.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_keyboard_capslock.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_keyboard_hide.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_keyboard_return.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_keyboard_tab.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_keyboard_voice.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_kitchen.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_label.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_label_outline.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_landscape.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_language.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_laptop.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_laptop_chromebook.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_laptop_mac.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_laptop_windows.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_last_page.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_launch.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_layers.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_layers_clear.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_leak_add.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_leak_remove.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_lens.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_library_add.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_library_books.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_library_music.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_lightbulb_outline.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_linear_scale.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_line_style.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_line_weight.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_link.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_linked_camera.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_list.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_live_help.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_live_tv.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_activity.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_airport.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_atm.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_bar.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_cafe.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_car_wash.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_convenience_store.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_dining.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_drink.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_florist.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_gas_station.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_grocery_store.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_hospital.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_hotel.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_laundry_service.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_library.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_mall.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_movies.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_offer.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_parking.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_pharmacy.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_phone.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_pizza.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_play.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_post_office.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_printshop.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_see.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_shipping.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_local_taxi.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_location_city.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_location_disabled.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_location_off.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_location_on.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_location_searching.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_lock.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_lock_open.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_lock_outline.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_looks.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_looks_3.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_looks_4.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_looks_5.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_looks_6.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_looks_one.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_looks_two.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_loop.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_loupe.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_low_priority.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_loyalty.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_mail.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_mail_outline.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_map.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_markunread.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_markunread_mailbox.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_memory.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_menu.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_merge_type.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_message.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_mic.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_mic_none.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_mic_off.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_mms.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_mode_comment.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_mode_edit.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_monetization_on.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_monochrome_photos.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_mood.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_mood_bad.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_more.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_more_horiz.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_more_vert.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_motorcycle.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_mouse.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_move_to_inbox.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_movie.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_movie_creation.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_movie_filter.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_multiline_chart.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_music_note.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_music_video.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_my_location.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_nature.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_nature_people.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_navigate_before.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_navigate_next.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_navigation.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_near_me.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_network_cell.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_network_check.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_network_locked.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_network_wifi.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_new_releases.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_next_week.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_nfc.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_note.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_note_add.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_notifications.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_notifications_active.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_notifications_none.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_notifications_off.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_notifications_paused.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_not_interested.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_no_encryption.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_no_sim.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_ondemand_video.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_opacity.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_open_in_browser.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_open_in_new.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_open_with.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_pages.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_pageview.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_palette.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_panorama.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_panorama_fish_eye.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_panorama_horizontal.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_panorama_vertical.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_panorama_wide_angle.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_pan_tool.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_party_mode.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_pause.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_pause_circle_filled.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_pause_circle_outline.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_payment.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_people.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_people_outline.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_perm_camera_mic.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_perm_contact_calendar.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_perm_data_setting.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_perm_device_information.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_perm_identity.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_perm_media.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_perm_phone_msg.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_perm_scan_wifi.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_person.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_personal_video.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_person_add.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_person_outline.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_person_pin.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_person_pin_circle.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_pets.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_phone.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_phonelink.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_phonelink_off.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_phone_android.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_phone_bluetooth_speaker.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_phone_forwarded.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_phone_in_talk.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_phone_iphone.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_phone_locked.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_phone_missed.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_phone_paused.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_photo.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_photo_album.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_photo_camera.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_photo_filter.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_photo_library.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_picture_as_pdf.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_picture_in_picture.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_picture_in_picture_alt.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_pie_chart.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_pie_chart_outlined.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_pin_drop.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_place.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_playlist_add.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_playlist_add_check.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_playlist_play.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_play_arrow.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_play_circle_filled.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_play_circle_filled_white.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_play_circle_outline.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_play_for_work.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_plus_one.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_poll.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_polymer.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_pool.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_portable_wifi_off.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_portrait.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_power.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_power_input.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_power_settings_new.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_pregnant_woman.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_present_to_all.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_print.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_priority_high.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_priority_high_12px.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_public.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_publish.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_query_builder.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_question_answer.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_queue.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_queue_music.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_queue_play_next.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_radio.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_radio_button_checked.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_radio_button_unchecked.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_rate_review.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_receipt.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_recent_actors.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_record_voice_over.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_redeem.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_redo.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_refresh.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_remove.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_remove_circle.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_remove_circle_outline.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_remove_from_queue.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_remove_red_eye.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_remove_shopping_cart.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_repeat.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_repeat_one.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_replay.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_replay_10.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_replay_30.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_replay_5.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_reply.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_reply_all.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_report.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_report_problem.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_restaurant.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_restaurant_menu.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_restore.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_restore_page.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_ring_volume.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_room.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_room_service.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_rotate_90_degrees_ccw.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_rotate_left.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_rotate_right.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_rounded_corner.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_router.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_rowing.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_rss_feed.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_rv_hookup.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_satellite.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_save.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_scanner.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_schedule.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_school.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_screen_lock_landscape.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_screen_lock_portrait.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_screen_lock_rotation.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_screen_rotation.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_screen_share.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_sd_card.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_sd_storage.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_search.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_security.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_select_all.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_send.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_sentiment_dissatisfied.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_sentiment_neutral.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_sentiment_satisfied.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_sentiment_very_dissatisfied.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_sentiment_very_satisfied.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_settings.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_settings_applications.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_settings_backup_restore.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_settings_bluetooth.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_settings_brightness.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_settings_cell.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_settings_ethernet.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_settings_input_antenna.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_settings_input_component.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_settings_input_composite.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_settings_input_hdmi.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_settings_input_svideo.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_settings_overscan.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_settings_phone.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_settings_power.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_settings_remote.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_settings_system_daydream.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_settings_voice.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_share.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_shop.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_shopping_basket.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_shopping_cart.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_shop_two.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_short_text.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_show_chart.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_shuffle.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_cellular_0_bar.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_cellular_1_bar.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_cellular_2_bar.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_cellular_3_bar.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_cellular_4_bar.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_cellular_connected_no_internet_0_bar.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_cellular_connected_no_internet_1_bar.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_cellular_connected_no_internet_2_bar.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_cellular_connected_no_internet_3_bar.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_cellular_connected_no_internet_4_bar.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_cellular_no_sim.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_cellular_null.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_cellular_off.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_wifi_0_bar.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_wifi_1_bar.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_wifi_1_bar_lock.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_wifi_2_bar.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_wifi_2_bar_lock.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_wifi_3_bar.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_wifi_3_bar_lock.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_wifi_4_bar.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_wifi_4_bar_lock.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_wifi_off.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_wifi_statusbar_1_bar_26x24px.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_wifi_statusbar_2_bar_26x24px.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_wifi_statusbar_3_bar_26x24px.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_wifi_statusbar_4_bar_26x24px.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_wifi_statusbar_connected_no_internet_1_26x24px.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_wifi_statusbar_connected_no_internet_26x24px.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_wifi_statusbar_connected_no_internet_2_26x24px.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_wifi_statusbar_connected_no_internet_3_26x24px.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_wifi_statusbar_connected_no_internet_4_26x24px.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_wifi_statusbar_not_connected_26x24px.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_signal_wifi_statusbar_null_26x24px.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_sim_card.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_sim_card_alert.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_skip_next.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_skip_previous.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_slideshow.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_slow_motion_video.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_smartphone.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_smoke_free.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_smoking_rooms.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_sms.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_sms_failed.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_snooze.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_sort.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_spa.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_space_bar.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_speaker.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_speaker_group.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_speaker_notes.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_speaker_notes_off.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_speaker_phone.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_spellcheck.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_stars.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_star_half.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_stay_current_landscape.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_stay_current_portrait.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_stay_primary_landscape.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_stay_primary_portrait.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_stop.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_stop_screen_share.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_storage.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_store.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_store_mall_directory.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_straighten.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_streetview.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_strikethrough_s.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_style.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_subdirectory_arrow_left.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_subdirectory_arrow_right.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_subject.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_subscriptions.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_subtitles.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_subway.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_supervisor_account.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_surround_sound.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_swap_calls.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_swap_horiz.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_swap_vert.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_swap_vertical_circle.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_switch_camera.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_switch_video.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_sync.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_sync_disabled.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_sync_problem.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_system_update.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_system_update_alt.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_tab.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_tablet.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_tablet_android.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_tablet_mac.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_tab_unselected.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_tag_faces.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_tap_and_play.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_terrain.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_textsms.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_texture.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_text_fields.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_text_format.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_theaters.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_thumbs_up_down.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_thumb_down.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_thumb_up.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_timelapse.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_timeline.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_timer.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_timer_10.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_timer_3.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_timer_off.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_time_to_leave.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_title.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_toc.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_today.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_toll.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_tonality.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_touch_app.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_toys.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_track_changes.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_traffic.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_train.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_tram.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_transfer_within_a_station.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_transform.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_translate.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_trending_down.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_trending_flat.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_trending_up.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_tune.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_turned_in.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_turned_in_not.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_tv.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_unarchive.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_undo.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_unfold_less.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_unfold_more.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_update.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_usb.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_verified_user.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_vertical_align_bottom.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_vertical_align_center.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_vertical_align_top.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_vibration.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_videocam.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_videocam_off.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_videogame_asset.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_video_call.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_video_label.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_video_library.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_view_agenda.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_view_array.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_view_carousel.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_view_column.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_view_comfy.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_view_compact.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_view_day.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_view_headline.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_view_list.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_view_module.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_view_quilt.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_view_stream.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_view_week.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_visibility.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_visibility_off.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_voicemail.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_voice_chat.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_volume_down.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_volume_mute.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_volume_off.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_volume_up.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_vpn_key.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_vpn_lock.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_wallpaper.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_warning.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_watch.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_watch_later.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_wb_auto.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_wb_cloudy.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_wb_incandescent.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_wb_iridescent.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_wb_sunny.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_wc.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_web.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_web_asset.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_weekend.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_whatshot.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_widgets.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_wifi.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_wifi_lock.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_wifi_tethering.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_work.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_wrap_text.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_youtube_searched_for.svg" />
+    <Content Include="Template.Resources\Images\Material_icons\ic_zoom_out_map.svg" />
+    <Content Include="Template.Resources\Images\_Readme.txt" />
+    <Content Include="Template.Resources\Template.Resources.vstemplate" />
+    <Content Include="Template.Resources\__TemplateIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Template.Mobile\App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Template.Mobile\CustomCtrl\LoadingView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Template.Mobile\CustomCtrl\SelectableCellBase.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Template.Mobile\Resources\Dictionaries\Colors.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Template.Mobile\Resources\Dictionaries\ControlTemplates.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Template.Mobile\Resources\Dictionaries\Converters.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Template.Mobile\Resources\Dictionaries\DataTemplates.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Template.Mobile\Resources\Dictionaries\Fonts.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Template.Mobile\Resources\Dictionaries\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Template.Mobile\Resources\Dictionaries\Values.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Template.Mobile\Views\BlankPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Template.Mobile\Views\DEBUG\Debug_BottomTabsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Template.Mobile\Views\DEBUG\Debug_ImagesView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Template.Mobile\Views\DEBUG\Debug_SamplesView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Template.Mobile\Views\DEBUG\Debug_ThemesView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Template.Mobile\Views\HomePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Template.Mobile\Views\MDPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Template.Mobile\Views\StartupPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+    <Content Include="Template.Mobile\Views\WalkThroughPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Template.Mobile.iOS\Entitlements.plist" />
+    <Content Include="Template.Mobile.iOS\Info.plist" />
+    <Content Include="Template.Mobile.iOS\Resources\Font\Roboto-Bold.ttf" />
+    <Content Include="Template.Mobile.iOS\Resources\Font\Roboto-BoldItalic.ttf" />
+    <Content Include="Template.Mobile.iOS\Resources\Font\Roboto-ExtraBold.ttf" />
+    <Content Include="Template.Mobile.iOS\Resources\Font\Roboto-ExtraBoldItalic.ttf" />
+    <Content Include="Template.Mobile.iOS\Resources\Font\Roboto-Italic.ttf" />
+    <Content Include="Template.Mobile.iOS\Resources\Font\Roboto-Light.ttf" />
+    <Content Include="Template.Mobile.iOS\Resources\Font\Roboto-LightItalic.ttf" />
+    <Content Include="Template.Mobile.iOS\Resources\Font\Roboto-Regular.ttf" />
+    <Content Include="Template.Mobile.iOS\Resources\Font\Roboto-SemiBold.ttf" />
+    <Content Include="Template.Mobile.iOS\Resources\Font\Roboto-SemiBoldItalic.ttf" />
+    <Content Include="Template.Mobile.iOS\Resources\LaunchScreen.storyboard" />
+    <Content Include="Template.Mobile.iOS\Resources\LoadingViewLottie.json" />
+    <Content Include="Template.Mobile.iOS\Template.Mobile.iOS.csproj" />
+    <Content Include="Template.Mobile\Services\Settings\App\appsettings.json" />
+    <Content Include="Template.Mobile\Services\Settings\App\Debug\appsettings.json" />
+    <Content Include="Template.Mobile\Services\Settings\App\Release\appsettings.json" />
+    <Content Include="Template.Mobile\Template.Mobile.csproj" />
+    <Content Include="Template.Resources\Template.Resources.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Template.Mobile\Resources\Text\MobileTextResources.resx" />
+    <Content Include="Template.Resources\Text\TextResources.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Template.Mobile.iOS\Assets.xcassets\AppIcon.appiconset\Contents.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Template.Mobile.Android\Assets\LoadingViewLottie.json" />
+    <Content Include="Template.Mobile.Android\Assets\Roboto-Bold.ttf" />
+    <Content Include="Template.Mobile.Android\Assets\Roboto-BoldItalic.ttf" />
+    <Content Include="Template.Mobile.Android\Assets\Roboto-ExtraBold.ttf" />
+    <Content Include="Template.Mobile.Android\Assets\Roboto-ExtraBoldItalic.ttf" />
+    <Content Include="Template.Mobile.Android\Assets\Roboto-Italic.ttf" />
+    <Content Include="Template.Mobile.Android\Assets\Roboto-Light.ttf" />
+    <Content Include="Template.Mobile.Android\Assets\Roboto-LightItalic.ttf" />
+    <Content Include="Template.Mobile.Android\Assets\Roboto-Regular.ttf" />
+    <Content Include="Template.Mobile.Android\Assets\Roboto-SemiBold.ttf" />
+    <Content Include="Template.Mobile.Android\Assets\Roboto-SemiBoldItalic.ttf" />
+    <Content Include="Template.Mobile.Android\Template.Mobile.Android.csproj" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,65 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Template.Mobile.Android</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Template.Mobile.Android</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Template.Mobile.Android.csproj" File="Template.Mobile.Android.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="SplashActivity.cs">SplashActivity.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="MainApplication.cs">MainApplication.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="MainActivity.cs">MainActivity.cs</ProjectItem>
+      <Folder Name="Assets" TargetFolderName="Assets">
+          <ProjectItem ReplaceParameters="false" TargetFileName="AboutAssets.txt">AboutAssets.txt</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="LoadingViewLottie.json">LoadingViewLottie.json</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Roboto-Bold.ttf">Roboto-Bold.ttf</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Roboto-BoldItalic.ttf">Roboto-BoldItalic.ttf</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Roboto-ExtraBold.ttf">Roboto-ExtraBold.ttf</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Roboto-ExtraBoldItalic.ttf">Roboto-ExtraBoldItalic.ttf</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Roboto-Italic.ttf">Roboto-Italic.ttf</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Roboto-Light.ttf">Roboto-Light.ttf</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Roboto-LightItalic.ttf">Roboto-LightItalic.ttf</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Roboto-Regular.ttf">Roboto-Regular.ttf</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Roboto-SemiBold.ttf">Roboto-SemiBold.ttf</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Roboto-SemiBoldItalic.ttf">Roboto-SemiBoldItalic.ttf</ProjectItem>
+      </Folder>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AndroidManifest.xml">AndroidManifest.xml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Renderers" TargetFolderName="Renderers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AndroidMaterialDatePickerRenderer.cs">AndroidMaterialDatePickerRenderer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AndroidMaterialStepperRenderer.cs">AndroidMaterialStepperRenderer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AndroidMaterialTimePickerRenderer.cs">AndroidMaterialTimePickerRenderer.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Resources" TargetFolderName="Resources">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AboutResources.txt">AboutResources.txt</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Resource.designer.cs">Resource.designer.cs</ProjectItem>
+        <Folder Name="drawable" TargetFolderName="drawable">
+          <ProjectItem ReplaceParameters="true" TargetFileName="splashscreen.xml">splashscreen.xml</ProjectItem>
+        </Folder>
+        <Folder Name="layout" TargetFolderName="layout">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Tabbar.xml">Tabbar.xml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Toolbar.xml">Toolbar.xml</ProjectItem>
+        </Folder>
+        <Folder Name="values" TargetFolderName="values">
+          <ProjectItem ReplaceParameters="true" TargetFileName="colors.xml">colors.xml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="styles.xml">styles.xml</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Services" TargetFolderName="Services">
+        <ProjectItem ReplaceParameters="true" TargetFileName="PlatformThemeService.cs">PlatformThemeService.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

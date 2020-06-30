@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Ultimate Template</Name>
+    <Description>Respawnsive Ultimate Template (entire solution) V2</Description>
+    <Icon>RespawnsiveLogo.png</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <LanguageTag>csharp</LanguageTag>
+    <PlatformTag>android</PlatformTag>
+    <PlatformTag>ios</PlatformTag>
+    <ProjectTypeTag>mobile</ProjectTypeTag>
+    <!--<CreateNewFolder>true</CreateNewFolder>-->
+    <DefaultName>SolutionName</DefaultName>
+    <!--<ProvideDefaultName>true</ProvideDefaultName>-->
+  </TemplateData>
+  <TemplateContent>
+    <ProjectCollection>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Mobile" CopyParameters="true">Template.Mobile\Template.Mobile.vstemplate</ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Mobile.Android" CopyParameters="true">Template.Mobile.Android\Template.Mobile.Android.vstemplate</ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Mobile.iOS" CopyParameters="true">Template.Mobile.iOS\Template.Mobile.iOS.vstemplate</ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Resources" CopyParameters="true">Template.Resources\Template.Resources.vstemplate</ProjectTemplateLink>
+    </ProjectCollection>
+  </TemplateContent>
+</VSTemplate>

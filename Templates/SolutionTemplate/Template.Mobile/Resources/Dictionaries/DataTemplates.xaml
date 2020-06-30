@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary x:Class="$safeprojectname$.Resources.Dictionaries.DataTemplates"
+                    xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:ctrl="clr-namespace:$safeprojectname$.CustomCtrl"
+                    xmlns:dictionaries="clr-namespace:$safeprojectname$.Resources.Dictionaries;assembly=$safeprojectname$"
+                    xmlns:models="clr-namespace:$safeprojectname$.Models"
+                    xmlns:views="clr-namespace:$safeprojectname$.Views">
+
+    <ResourceDictionary.MergedDictionaries>
+        <dictionaries:Colors />
+        <dictionaries:Converters />
+        <dictionaries:Values />
+        <dictionaries:Styles />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!--  DataTemplateSelectors  -->
+
+
+    <!--  DataTemplate  -->
+
+    <DataTemplate x:Key="CollectionViewDataTemplate_SingleLine_MDMenuItem"
+                  x:DataType="models:MenuItemModel">
+        <ctrl:SelectableCellBase x:Name="cellcontainer"
+                                 Style="{StaticResource SelectableCollectionView}">
+            <Grid Margin="5"
+                  Padding="5"
+                  HorizontalOptions="FillAndExpand"
+                  VerticalOptions="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Image Grid.Column="0"
+                       Aspect="AspectFit"
+                       HeightRequest="32"
+                       Source="{Binding ItemImageSource}"
+                       WidthRequest="32" />
+
+                <Label Grid.Column="1"
+                       IsEnabled="{Binding IsActive}"
+                       Style="{StaticResource TextTitle}"
+                       Text="{Binding Title}"
+                       VerticalOptions="Center" />
+            </Grid>
+        </ctrl:SelectableCellBase>
+    </DataTemplate>
+
+    <DataTemplate x:Key="CollectionViewDataTemplate_MultiColumns_CenteredImageLabel"
+                  x:DataType="models:ImageModel">
+        <ctrl:SelectableCellBase x:Name="cellcontainer"
+                                 Style="{StaticResource SelectableCollectionView}">
+            <Grid HorizontalOptions="Center"
+                  VerticalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Image Grid.Row="0"
+                       Grid.Column="0"
+                       Aspect="AspectFit"
+                       HeightRequest="{Binding ImageHeight}"
+                       HorizontalOptions="Center"
+                       MinimumHeightRequest="{Binding ImageHeight}"
+                       MinimumWidthRequest="{Binding ImageWidth}"
+                       Source="{Binding Filename}"
+                       VerticalOptions="Center"
+                       WidthRequest="{Binding ImageWidth}" />
+                <Label Grid.Row="1"
+                       Grid.Column="0"
+                       FontSize="Micro"
+                       LineBreakMode="TailTruncation"
+                       Style="{StaticResource TextCenter}"
+                       Text="{Binding Filename, Converter={StaticResource WithoutExtensionConverter}}" />
+            </Grid>
+        </ctrl:SelectableCellBase>
+    </DataTemplate>
+
+    <!--<DataTemplate x:Key="SillyDataTemplate">
+        <ViewCell>
+            <views:SillySquareCell effects:ViewEffect.TouchFeedbackColor="{StaticResource Accent}"
+                                           effects:TapCommandEffect.Tap="{Binding OnItemTappedCommand}"
+                                           effects:TapCommandEffect.TapParameter="{Binding .}" />
+        </ViewCell>
+    </DataTemplate>
+
+    <DataTemplate x:Key="AlternateSillyDataTemplate">
+        <ViewCell>
+            <views:AlternateSillySquareCell effects:ViewEffect.TouchFeedbackColor="{StaticResource Accent}"
+                                                    effects:TapCommandEffect.Tap="{Binding OnItemTappedCommand}"
+                                                    effects:TapCommandEffect.TapParameter="{Binding .}" />
+        </ViewCell>
+    </DataTemplate>
+
+    <views:SillyDudeTemplateSelector x:Key="DudeTemplateSelector"
+                                             AlternateSillySquare="{StaticResource AlternateSillyDataTemplate}"
+                                             SillySquare="{StaticResource SillyDataTemplate}" />-->
+
+    <DataTemplate x:Key="WalkThroughItemTemplate"
+                  x:DataType="models:WalkThroughItemModel">
+        <Grid Margin="0,50,0,50"
+              Padding="30,0,30,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+
+            <!--  IMAGE  -->
+
+
+            <Grid Grid.Row="1"
+                  RowSpacing="15"
+                  VerticalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0"
+                       HorizontalOptions="CenterAndExpand"
+                       Style="{StaticResource TextTitle}"
+                       Text="{Binding Title}" />
+                <Label Grid.Row="1"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       Style="{StaticResource TextBody}"
+                       Text="{Binding Description}" />
+            </Grid>
+        </Grid>
+    </DataTemplate>
+
+</ResourceDictionary>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary x:Class="$safeprojectname$.Resources.Dictionaries.ControlTemplates"
+                    xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:dictionaries="clr-namespace:$safeprojectname$.Resources.Dictionaries;assembly=$safeprojectname$">
+
+    <ResourceDictionary.MergedDictionaries>
+        <dictionaries:Colors />
+        <dictionaries:Converters />
+        <dictionaries:Values />
+        <dictionaries:Styles />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!--  ControlTemplate  -->
+
+    <ControlTemplate x:Key="ThemedLoaderPageTemplate">
+        <Grid Margin="0" Padding="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Image Grid.Row="0"
+                   Aspect="AspectFill"
+                   Source="{DynamicResource DynamicBackgroundImageSource}" />
+            <ContentPresenter Grid.Row="0" />
+
+        </Grid>
+    </ControlTemplate>
+
+
+</ResourceDictionary>

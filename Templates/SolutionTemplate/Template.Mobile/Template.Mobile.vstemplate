@@ -1,0 +1,156 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Template.Mobile</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Template.Mobile</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Template.Mobile.csproj" File="Template.Mobile.csproj" ReplaceParameters="true">
+      <Folder Name="Converters" TargetFolderName="Converters">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IntEnumConverter.cs">IntEnumConverter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="InvertBoolConverter.cs">InvertBoolConverter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="NullToFalseConverter.cs">NullToFalseConverter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="WithoutExtensionConverter.cs">WithoutExtensionConverter.cs</ProjectItem>
+      </Folder>
+      <Folder Name="CustomCtrl" TargetFolderName="CustomCtrl">
+        <ProjectItem ReplaceParameters="true" TargetFileName="CustomMaterialDatePicker.cs">CustomMaterialDatePicker.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CustomMaterialStepper.cs">CustomMaterialStepper.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CustomMaterialTimePicker.cs">CustomMaterialTimePicker.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LoadingView.xaml">LoadingView.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LoadingView.xaml.cs">LoadingView.xaml.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SelectableCellBase.xaml">SelectableCellBase.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SelectableCellBase.xaml.cs">SelectableCellBase.xaml.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Helpers" TargetFolderName="Helpers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Logger.cs">Logger.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ThemeHelper.cs">ThemeHelper.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Models" TargetFolderName="Models">
+        <Folder Name="SampleApi" TargetFolderName="SampleApi">
+          <ProjectItem ReplaceParameters="true" TargetFileName="User.cs">User.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="UserList.cs">UserList.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ImageModel.cs">ImageModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MenuItemModel.cs">MenuItemModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="WalkThroughItemModel.cs">WalkThroughItemModel.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Modules" TargetFolderName="Modules">
+        <ProjectItem ReplaceParameters="true" TargetFileName="DialogsModule.cs">DialogsModule.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="EssentialsModule.cs">EssentialsModule.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LocalizationModule.cs">LocalizationModule.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LoggingModule.cs">LoggingModule.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SettingsModule.cs">SettingsModule.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="WebApiModule.cs">WebApiModule.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Resources" TargetFolderName="Resources">
+        <Folder Name="Dictionaries" TargetFolderName="Dictionaries">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Colors.xaml">Colors.xaml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Colors.xaml.cs">Colors.xaml.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ControlTemplates.xaml">ControlTemplates.xaml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ControlTemplates.xaml.cs">ControlTemplates.xaml.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Converters.xaml">Converters.xaml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Converters.xaml.cs">Converters.xaml.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="DataTemplates.xaml">DataTemplates.xaml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="DataTemplates.xaml.cs">DataTemplates.xaml.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Fonts.xaml">Fonts.xaml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Fonts.xaml.cs">Fonts.xaml.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Styles.xaml">Styles.xaml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Styles.xaml.cs">Styles.xaml.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Values.xaml">Values.xaml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Values.xaml.cs">Values.xaml.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Text" TargetFolderName="Text">
+          <ProjectItem ReplaceParameters="true" TargetFileName="MobileTextResources.resx">MobileTextResources.resx</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="MobileTextResources.Designer.cs">MobileTextResources.Designer.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Services" TargetFolderName="Services">
+        <Folder Name="Dialogs" TargetFolderName="Dialogs">
+          <ProjectItem ReplaceParameters="true" TargetFileName="DialogsService.cs">DialogsService.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="IDialogService.cs">IDialogService.cs</ProjectItem>
+        </Folder>
+        <Folder Name="PlatformTheme" TargetFolderName="PlatformTheme">
+          <ProjectItem ReplaceParameters="true" TargetFileName="IPlatformThemeService.cs">IPlatformThemeService.cs</ProjectItem>
+        </Folder>
+        <Folder Name="SampleApi" TargetFolderName="SampleApi">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ISampleApiService.cs">ISampleApiService.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Settings" TargetFolderName="Settings">
+          <Folder Name="App" TargetFolderName="App">
+            <Folder Name="Debug" TargetFolderName="Debug">
+              <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.json">appsettings.json</ProjectItem>
+            </Folder>
+            <Folder Name="Release" TargetFolderName="Release">
+              <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.json">appsettings.json</ProjectItem>
+            </Folder>
+            <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.json">appsettings.json</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="AppSettingsService.cs">AppSettingsService.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="IAppSettingsService.cs">IAppSettingsService.cs</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ISettingsService.cs">ISettingsService.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="SettingsService.cs">SettingsService.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="ViewModels" TargetFolderName="ViewModels">
+        <Folder Name="Bases" TargetFolderName="Bases">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ViewModelBase.cs">ViewModelBase.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ViewModelBasePage.cs">ViewModelBasePage.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ViewModelBaseTabHost.cs">ViewModelBaseTabHost.cs</ProjectItem>
+        </Folder>
+        <Folder Name="DEBUG" TargetFolderName="DEBUG">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Debug_BottomTabsViewModel.cs">Debug_BottomTabsViewModel.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Debug_ImagesViewModel.cs">Debug_ImagesViewModel.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Debug_SamplesViewModel.cs">Debug_SamplesViewModel.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Debug_ThemesViewModel.cs">Debug_ThemesViewModel.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="BlankViewModel.cs">BlankViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="HomeViewModel.cs">HomeViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MDViewModel.cs">MDViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="StartupViewModel.cs">StartupViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="WalkThroughViewModel.cs">WalkThroughViewModel.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Views" TargetFolderName="Views">
+        <Folder Name="Bases" TargetFolderName="Bases">
+          <ProjectItem ReplaceParameters="true" TargetFileName="BottomTabbedPageBase.cs">BottomTabbedPageBase.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ContentPageBase.cs">ContentPageBase.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ContentViewBase.cs">ContentViewBase.cs</ProjectItem>
+        </Folder>
+        <Folder Name="DEBUG" TargetFolderName="DEBUG">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Debug_BottomTabsPage.xaml">Debug_BottomTabsPage.xaml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Debug_BottomTabsPage.xaml.cs">Debug_BottomTabsPage.xaml.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Debug_ImagesView.xaml">Debug_ImagesView.xaml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Debug_ImagesView.xaml.cs">Debug_ImagesView.xaml.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Debug_SamplesView.xaml">Debug_SamplesView.xaml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Debug_SamplesView.xaml.cs">Debug_SamplesView.xaml.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Debug_ThemesView.xaml">Debug_ThemesView.xaml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Debug_ThemesView.xaml.cs">Debug_ThemesView.xaml.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="BlankPage.xaml">BlankPage.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="BlankPage.xaml.cs">BlankPage.xaml.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="HomePage.xaml">HomePage.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="HomePage.xaml.cs">HomePage.xaml.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MDPage.xaml">MDPage.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MDPage.xaml.cs">MDPage.xaml.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="StartupPage.xaml">StartupPage.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="StartupPage.xaml.cs">StartupPage.xaml.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="WalkThroughPage.xaml">WalkThroughPage.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="WalkThroughPage.xaml.cs">WalkThroughPage.xaml.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml">App.xaml</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml.cs">App.xaml.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="FodyWeavers.xml">FodyWeavers.xml</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Startup.cs">Startup.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

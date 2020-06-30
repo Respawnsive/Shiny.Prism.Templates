@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:ContentPageBase x:Class="$safeprojectname$.Views.WalkThroughPage"
+                       xmlns="http://xamarin.com/schemas/2014/forms"
+                       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                       xmlns:viewModels="clr-namespace:$safeprojectname$.ViewModels;assembly=$safeprojectname$"
+                       xmlns:views="clr-namespace:$safeprojectname$.Views;assembly=$safeprojectname$"
+                       Title="{Binding [WalkThrough_Title]}"
+                       x:DataType="viewModels:WalkThroughViewModel">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <CarouselView x:Name="carousel"
+                      Grid.Row="0"
+                      HorizontalScrollBarVisibility="Never"
+                      IndicatorView="indicatorView"
+                      IsBounceEnabled="False"
+                      ItemTemplate="{StaticResource WalkThroughItemTemplate}"
+                      ItemsSource="{Binding WTItems}"
+                      Position="{Binding IndicatorPosition, Mode=TwoWay}"
+                      VerticalScrollBarVisibility="Never">
+            <CarouselView.ItemsLayout>
+                <LinearItemsLayout ItemSpacing="50"
+                                   Orientation="Horizontal"
+                                   SnapPointsAlignment="Center"
+                                   SnapPointsType="MandatorySingle" />
+            </CarouselView.ItemsLayout>
+        </CarouselView>
+
+        <!--<Label Grid.Row="1"
+                   Padding="20"
+                   HorizontalTextAlignment="Center"
+                   Text="Skip"
+                   VerticalTextAlignment="Center" />-->
+
+        <Button Grid.Row="2"
+                Margin="20"
+                Command="{Binding NavigateOutCommand}"
+                HorizontalOptions="Center"
+                IsEnabled="{Binding IsLastPosition}"
+                IsVisible="{Binding IsLastPosition}"
+                Text="GET STARTED"
+                VerticalOptions="Center" />
+
+        <IndicatorView x:Name="indicatorView"
+                       Grid.Row="2"
+                       Padding="40"
+                       HorizontalOptions="Center"
+                       IndicatorColor="{StaticResource Accent}"
+                       IsVisible="{Binding IsLastPosition, Converter={StaticResource InvertBoolConverter}}"
+                       SelectedIndicatorColor="{StaticResource Primary}"
+                       VerticalOptions="Center" />
+    </Grid>
+</views:ContentPageBase>

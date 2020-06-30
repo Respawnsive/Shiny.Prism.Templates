@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView x:Class="$safeprojectname$.CustomCtrl.LoadingView"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             BackgroundColor="Transparent">
+    <lottie:AnimationView x:Name="AnimationView"
+                          HorizontalOptions="FillAndExpand"
+                          VerticalOptions="FillAndExpand"
+                          Animation="LoadingViewLottie.json"
+                          AutoPlay="True"
+                          HardwareAcceleration="True"
+                          Loop="True" />
+</ContentView>

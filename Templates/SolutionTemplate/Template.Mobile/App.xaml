@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<prism:PrismApplication x:Class="$safeprojectname$.App"
+                        xmlns="http://xamarin.com/schemas/2014/forms"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                        xmlns:dictionaries="clr-namespace:$safeprojectname$.Resources.Dictionaries;assembly=$safeprojectname$"
+                        xmlns:prism="http://prismlibrary.com">
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <dictionaries:Colors />
+                <dictionaries:Converters />
+                <dictionaries:Values />
+                <dictionaries:Styles />
+                <dictionaries:DataTemplates />
+                <dictionaries:ControlTemplates />
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+
+    </Application.Resources>
+</prism:PrismApplication>

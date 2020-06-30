@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary x:Class="$safeprojectname$.Resources.Dictionaries.Styles"
+                    xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:ctrl="clr-namespace:$safeprojectname$.CustomCtrl"
+                    xmlns:dictionaries="clr-namespace:$safeprojectname$.Resources.Dictionaries;assembly=$safeprojectname$"
+                    xmlns:material="clr-namespace:Sharpnado.MaterialFrame;assembly=Sharpnado.MaterialFrame"
+                    xmlns:tabs="clr-namespace:Sharpnado.Presentation.Forms.CustomViews.Tabs;assembly=Sharpnado.Presentation.Forms"
+                    xmlns:views="clr-namespace:$safeprojectname$.Views">
+
+    <ResourceDictionary.MergedDictionaries>
+        <dictionaries:Colors />
+        <dictionaries:Converters />
+        <dictionaries:Fonts />
+        <dictionaries:Values />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!--  Common Styles - Apply to every Controls(TargetTypes) implicitely  -->
+
+    <Style ApplyToDerivedTypes="True"
+           TargetType="ContentPage">
+        <Setter Property="Padding">
+            <Setter.Value>
+                <OnPlatform x:TypeArguments="Thickness">
+                    <On Platform="iOS">0, 0, 0, 0</On>
+                    <On Platform="Android">0, 0, 0, 0</On>
+                </OnPlatform>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="BackgroundColor" Value="{DynamicResource DynamicBackgroundColor}" />
+    </Style>
+
+    <Style ApplyToDerivedTypes="True"
+           TargetType="NavigationPage">
+        <Setter Property="BarBackgroundColor" Value="{DynamicResource DynamicNavigationBarColor}" />
+        <Setter Property="BarTextColor" Value="{DynamicResource DynamicBarTextColor}" />
+    </Style>
+
+    <Style ApplyToDerivedTypes="True"
+           TargetType="TabbedPage">
+        <Setter Property="BarBackgroundColor" Value="{DynamicResource DynamicNavigationBarColor}" />
+        <Setter Property="BarTextColor" Value="{DynamicResource DynamicBarTextColor}" />
+        <Setter Property="SelectedTabColor" Value="{DynamicResource DynamicBarTextColor}" />
+        <Setter Property="UnselectedTabColor" Value="Silver" />
+    </Style>
+
+    <Style TargetType="ActivityIndicator">
+        <Setter Property="Color" Value="{StaticResource Accent}" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource DynamicBackgroundColor}" />
+        <Setter Property="Visual" Value="Material" />
+        <Setter Property="HeightRequest" Value="50" />
+        <Setter Property="WidthRequest" Value="50" />
+    </Style>
+
+    <Style TargetType="Button">
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="BackgroundColor" Value="{StaticResource Accent}" />
+        <Setter Property="WidthRequest" Value="200" />
+        <Setter Property="FontFamily" Value="{StaticResource FontSemiBold}" />
+        <Setter Property="Visual" Value="Material" />
+    </Style>
+
+    <Style TargetType="CheckBox">
+        <Setter Property="Color" Value="{StaticResource Accent}" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource DynamicBackgroundColor}" />
+        <Setter Property="Visual" Value="Material" />
+    </Style>
+
+    <Style TargetType="Editor">
+        <Setter Property="PlaceholderColor" Value="{StaticResource Accent}" />
+        <Setter Property="TextColor" Value="{DynamicResource DynamicPrimaryTextColor}" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource DynamicBackgroundColor}" />
+        <Setter Property="AutoSize" Value="TextChanges" />
+        <Setter Property="Visual" Value="Material" />
+    </Style>
+
+    <Style TargetType="Entry">
+        <Setter Property="PlaceholderColor" Value="{StaticResource Accent}" />
+        <Setter Property="TextColor" Value="{DynamicResource DynamicPrimaryTextColor}" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource DynamicBackgroundColor}" />
+        <Setter Property="Visual" Value="Material" />
+    </Style>
+
+    <Style ApplyToDerivedTypes="True"
+           TargetType="material:MaterialFrame">
+        <Setter Property="MaterialBlurStyle" Value="{DynamicResource DynamicBlurStyle}" />
+        <Setter Property="MaterialTheme" Value="{DynamicResource DynamicMaterialTheme}" />
+        <Setter Property="LightThemeBackgroundColor" Value="{DynamicResource DynamicLightThemeColor}" />
+        <Setter Property="CornerRadius" Value="{DynamicResource DynamicCornerRadius}" />
+        <Setter Property="Elevation" Value="{DynamicResource DynamicElevation}" />
+        <Setter Property="Padding" Value="16,32" />
+    </Style>
+
+    <Style TargetType="Picker">
+        <Setter Property="FontFamily" Value="{StaticResource FontRegular}" />
+        <Setter Property="TitleColor" Value="{StaticResource Accent}" />
+        <Setter Property="TextColor" Value="{DynamicResource DynamicPrimaryTextColor}" />
+        <Setter Property="Visual" Value="Material" />
+    </Style>
+
+    <Style TargetType="DatePicker">
+        <Setter Property="TextColor" Value="{DynamicResource DynamicPrimaryTextColor}" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource DynamicBackgroundColor}" />
+        <Setter Property="Visual" Value="Material" />
+    </Style>
+
+    <Style TargetType="ctrl:CustomMaterialDatePicker">
+        <Setter Property="TextColor" Value="{DynamicResource DynamicPrimaryTextColor}" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource DynamicBackgroundColor}" />
+        <Setter Property="Visual" Value="Material" />
+        <Setter Property="PlaceHolderColor" Value="{StaticResource Accent}" />
+    </Style>
+
+    <Style TargetType="TimePicker">
+        <Setter Property="TextColor" Value="{DynamicResource DynamicPrimaryTextColor}" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource DynamicBackgroundColor}" />
+        <Setter Property="Visual" Value="Material" />
+    </Style>
+
+    <Style TargetType="ctrl:CustomMaterialTimePicker">
+        <Setter Property="TextColor" Value="{DynamicResource DynamicPrimaryTextColor}" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource DynamicBackgroundColor}" />
+        <Setter Property="Visual" Value="Material" />
+        <Setter Property="PlaceHolderColor" Value="{StaticResource Accent}" />
+    </Style>
+
+    <Style TargetType="ProgressBar">
+        <Setter Property="ProgressColor" Value="{StaticResource Accent}" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource DynamicBackgroundColor}" />
+        <Setter Property="Visual" Value="Material" />
+    </Style>
+
+    <Style TargetType="Slider">
+        <Setter Property="MinimumTrackColor" Value="{StaticResource Accent}" />
+        <Setter Property="MaximumTrackColor" Value="{StaticResource Accent}" />
+        <Setter Property="ThumbColor" Value="{StaticResource Accent}" />
+        <Setter Property="BackgroundColor" Value="{DynamicResource DynamicBackgroundColor}" />
+        <Setter Property="Visual" Value="Material" />
+    </Style>
+
+    <Style TargetType="Stepper">
+        <Setter Property="BackgroundColor" Value="{DynamicResource DynamicBackgroundColor}" />
+        <Setter Property="Visual" Value="Material" />
+    </Style>
+
+    <Style TargetType="ctrl:CustomMaterialStepper">
+        <Setter Property="BackgroundColor" Value="{DynamicResource DynamicBackgroundColor}" />
+        <Setter Property="Visual" Value="Material" />
+        <Setter Property="TintColor" Value="{StaticResource Accent}" />
+    </Style>
+
+
+    <!--<Style ApplyToDerivedTypes="True" TargetType="tabs:BottomTabItem">
+        <Setter Property="SelectedTabColor" Value="{StaticResource Accent}" />
+        <Setter Property="UnselectedLabelColor" Value="Gray" />
+        <Setter Property="UnselectedIconColor" Value="LightGray" />
+        <Setter Property="FontFamily" Value="{StaticResource FontLight}" />
+        <Setter Property="LabelSize" Value="14" />
+        <Setter Property="IconSize" Value="28" />
+        <Setter Property="IsTextVisible" Value="False" />
+    </Style>-->
+
+
+    <!--  Named Styles - Apply explicitely to Target with Style="{StaticResource key}"  -->
+
+    <!--  Style for CollectionView States (Grid as first layout in the itemTemplate)  -->
+    <Style x:Key="SelectableCollectionView"
+           TargetType="ctrl:SelectableCellBase">
+        <Setter Property="VisualStateManager.VisualStateGroups">
+            <VisualStateGroupList>
+                <VisualStateGroup x:Name="CommonStates">
+                    <VisualState x:Name="Normal">
+                        <VisualState.Setters>
+                            <Setter Property="ColorSelected_Tint" Value="Transparent" />
+                            <Setter Property="ColorSelected_Background" Value="Transparent" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="Selected">
+                        <VisualState.Setters>
+                            <Setter Property="ColorSelected_Tint" Value="{StaticResource Accent}" />
+                            <Setter Property="ColorSelected_Background" Value="{DynamicResource DynamicMenuBackgroundColor}" />
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateGroupList>
+        </Setter>
+    </Style>
+
+    <!--<Style x:Key="SelectableCollectionView" TargetType="Grid">
+        <Setter Property="VisualStateManager.VisualStateGroups">
+            <VisualStateGroupList>
+                <VisualStateGroup x:Name="CommonStates">
+                    <VisualState x:Name="Normal">
+                        <VisualState.Setters>
+                            <Setter Property="BackgroundColor" Value="Transparent" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="Selected">
+                        <VisualState.Setters>
+                            <Setter Property="BackgroundColor" Value="{StaticResource Accent}" />
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateGroupList>
+        </Setter>
+    </Style>-->
+
+    <Style x:Key="TextHeadline"
+           TargetType="Label">
+        <Setter Property="FontFamily" Value="{StaticResource FontExtraBold}" />
+        <Setter Property="TextColor" Value="{DynamicResource DynamicPrimaryTextColor}" />
+        <Setter Property="FontSize" Value="{StaticResource TextSizeHeadline}" />
+    </Style>
+
+    <Style x:Key="TextTitle"
+           TargetType="Label">
+        <Setter Property="FontFamily" Value="{StaticResource FontBold}" />
+        <Setter Property="TextColor" Value="{DynamicResource DynamicPrimaryTextColor}" />
+        <Setter Property="FontSize" Value="{StaticResource TextSizeTitle}" />
+    </Style>
+
+    <Style x:Key="TextSubheadline"
+           TargetType="Label">
+        <Setter Property="FontFamily" Value="{StaticResource FontExtraBold}" />
+        <Setter Property="TextColor" Value="{DynamicResource DynamicPrimaryTextColor}" />
+        <Setter Property="FontSize" Value="{StaticResource TextSizeSubhead}" />
+    </Style>
+
+    <Style x:Key="TextSubhead"
+           TargetType="Label">
+        <Setter Property="FontFamily" Value="{StaticResource FontSemiBold}" />
+        <Setter Property="TextColor" Value="{DynamicResource DynamicPrimaryTextColor}" />
+        <Setter Property="FontSize" Value="{StaticResource TextSizeSubhead}" />
+    </Style>
+
+    <Style x:Key="TextSubheadSecondary"
+           TargetType="Label">
+        <Setter Property="FontFamily" Value="{StaticResource FontSemiBold}" />
+        <Setter Property="TextColor" Value="{DynamicResource DynamicSecondaryTextColor}" />
+        <Setter Property="FontSize" Value="{StaticResource TextSizeSubhead}" />
+    </Style>
+
+    <Style x:Key="TextBody"
+           TargetType="Label">
+        <Setter Property="FontFamily" Value="{StaticResource FontRegular}" />
+        <Setter Property="TextColor" Value="{DynamicResource DynamicPrimaryTextColor}" />
+        <Setter Property="FontSize" Value="{StaticResource TextSizeBody}" />
+    </Style>
+
+    <Style x:Key="TextBodySecondary"
+           TargetType="Label">
+        <Setter Property="FontFamily" Value="{StaticResource FontLight}" />
+        <Setter Property="TextColor" Value="{DynamicResource DynamicPrimaryTextColor}" />
+        <Setter Property="FontSize" Value="{StaticResource TextSizeBody}" />
+    </Style>
+
+    <Style x:Key="TextCaption"
+           TargetType="Label">
+        <Setter Property="FontFamily" Value="{StaticResource FontRegular}" />
+        <Setter Property="TextColor" Value="{DynamicResource DynamicPrimaryTextColor}" />
+        <Setter Property="FontSize" Value="{StaticResource TextSizeCaption}" />
+    </Style>
+
+    <Style x:Key="TextSmallCaption"
+           BasedOn="{StaticResource TextCaption}"
+           TargetType="Label">
+        <Setter Property="FontSize" Value="{StaticResource TextSizeSmallCaption}" />
+    </Style>
+
+    <Style x:Key="TextCaptionSecondary"
+           TargetType="Label">
+        <Setter Property="FontFamily" Value="{StaticResource FontLight}" />
+        <Setter Property="TextColor" Value="{DynamicResource DynamicPrimaryTextColor}" />
+        <Setter Property="FontSize" Value="{StaticResource TextSizeCaption}" />
+    </Style>
+
+    <Style x:Key="TextCenter"
+           BasedOn="{StaticResource TextBody}"
+           TargetType="Label">
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+        <Setter Property="VerticalTextAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="TextSubheadCenter"
+           BasedOn="{StaticResource TextSubhead}"
+           TargetType="Label">
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+        <Setter Property="VerticalTextAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="TextSubheadSecondaryCenter"
+           BasedOn="{StaticResource TextSubheadSecondary}"
+           TargetType="Label">
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+        <Setter Property="VerticalTextAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="TextError"
+           BasedOn="{StaticResource TextCenter}"
+           TargetType="Label">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="TextColor" Value="{DynamicResource DynamicSecondaryTextColor}" />
+        <Setter Property="LineBreakMode" Value="CharacterWrap" />
+    </Style>
+
+    <Style x:Key="TextSnackbar"
+           BasedOn="{StaticResource TextCenter}"
+           TargetType="Label">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="LineBreakMode" Value="CharacterWrap" />
+        <Setter Property="TextColor" Value="{StaticResource White}" />
+    </Style>
+
+    <Style x:Key="TextHeader"
+           BasedOn="{StaticResource TextSubheadline}"
+           TargetType="Label">
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+        <Setter Property="VerticalTextAlignment" Value="End" />
+        <Setter Property="VerticalOptions" Value="End" />
+        <Setter Property="Margin" Value="0, 0, 0, 8" />
+        <Setter Property="TextColor" Value="{DynamicResource DynamicHeaderTextColor}" />
+    </Style>
+
+    <Style x:Key="SmallAvatar"
+           ApplyToDerivedTypes="True"
+           TargetType="Image">
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="Center" />
+        <Setter Property="HeightRequest" Value="50" />
+        <Setter Property="WidthRequest" Value="50" />
+    </Style>
+
+    <Style x:Key="MediumAvatar"
+           ApplyToDerivedTypes="True"
+           TargetType="Image">
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="Center" />
+        <Setter Property="HeightRequest" Value="80" />
+        <Setter Property="WidthRequest" Value="80" />
+    </Style>
+
+    <Style x:Key="LargeAvatar"
+           ApplyToDerivedTypes="True"
+           TargetType="Image">
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="Center" />
+        <Setter Property="HeightRequest" Value="100" />
+        <Setter Property="WidthRequest" Value="100" />
+    </Style>
+
+    <!--<Style x:Key="SillyTaskLoader" TargetType="loader:TaskLoaderView">
+        <Setter Property="AccentColor" Value="{StaticResource Accent}" />
+        <Setter Property="FontFamily" Value="{StaticResource FontItalic}" />
+        <Setter Property="EmptyStateMessage" Value="{localization:Translate Empty_Screen}" />
+        <Setter Property="EmptyStateImageSource" Value="dougal.png" />
+        <Setter Property="RetryButtonText" Value="{localization:Translate ErrorButton_Retry}" />
+        <Setter Property="TextColor" Value="{DynamicResource DynamicPrimaryTextColor}" />
+        <Setter Property="ErrorImageConverter" Value="{StaticResource ExceptionToImageSourceConverter}" />
+        <Setter Property="ErrorMessageConverter" Value="{StaticResource ExceptionToErrorMessageConverter}" />
+        </Style>-->
+
+</ResourceDictionary>

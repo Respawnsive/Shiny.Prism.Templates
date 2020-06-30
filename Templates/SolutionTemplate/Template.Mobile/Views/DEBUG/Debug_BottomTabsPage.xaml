@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:BottomTabbedPageBase x:Class="$safeprojectname$.Views.Debug_BottomTabsPage"
+            xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:lazyView="clr-namespace:Prism.Forms.LazyView;assembly=Prism.Forms.LazyView"
+            xmlns:ctrl="clr-namespace:$safeprojectname$.CustomCtrl"
+            xmlns:viewModels="clr-namespace:$safeprojectname$.ViewModels;assembly=$safeprojectname$"
+            xmlns:views="clr-namespace:$safeprojectname$.Views;assembly=$safeprojectname$"
+            Title="{Binding [Debug_BottomTabsPage_Title]}"
+            x:DataType="viewModels:Debug_BottomTabsViewModel">
+
+    <!--
+        BarBackgroundColor="{DynamicResource DynamicNavigationBarColor}"
+        BarTextColor="White"
+        SelectedTabColor="White"
+        UnselectedTabColor="Silver"
+    -->
+
+    <!--  ! Do not forget to RegisterForNavigation for each LazyContentPage dynamicaly generated  -->
+
+    <lazyView:LazyContentPage BindingContextChanged="TabPage_OnBindingContextChanged"
+                              x:TypeArguments="ctrl:LoadingView, views:Debug_SamplesView"
+                              IconImageSource="ic_list.png" />
+
+
+    <lazyView:LazyContentPage BindingContextChanged="TabPage_OnBindingContextChanged"
+                              x:TypeArguments="ctrl:LoadingView,views:Debug_ImagesView"
+                              IconImageSource="ic_image.png" />
+
+
+    <lazyView:LazyContentPage BindingContextChanged="TabPage_OnBindingContextChanged"
+                              x:TypeArguments="ctrl:LoadingView,views:Debug_ThemesView"
+                              IconImageSource="ic_brightness_6.png" />
+
+</views:BottomTabbedPageBase>
