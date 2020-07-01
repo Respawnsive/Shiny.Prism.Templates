@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<views:BottomTabbedPageBase x:Class="$rootnamespace$Views.$safeitemname$"
+<views:BottomTabbedPageBase x:Class="$rootnamespace$.Views.$safeitemname$"
                             xmlns="http://xamarin.com/schemas/2014/forms"
                             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                            xmlns:ctrl="clr-namespace:Template.Mobile.CustomCtrl"
+                            xmlns:ctrl="clr-namespace:$rootnamespace$.CustomCtrl"
                             xmlns:lazyView="clr-namespace:Prism.Forms.LazyView;assembly=Prism.Forms.LazyView"
-                            xmlns:viewModels="clr-namespace:Template.Mobile.ViewModels;assembly=Template.Mobile"
-                            xmlns:views="clr-namespace:Template.Mobile.Views;assembly=Template.Mobile"
+                            xmlns:viewModels="clr-namespace:$rootnamespace$.ViewModels;assembly=$rootnamespace$"
+                            xmlns:views="clr-namespace:$rootnamespace$.Views;assembly=$rootnamespace$"
                             Title="{Binding [$safeitemname$_Title]}"
                             x:DataType="viewModels:$viewmodelName$" />

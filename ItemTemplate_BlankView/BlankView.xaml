@@ -5,5 +5,4 @@
                        xmlns:materialFrame="clr-namespace:Sharpnado.MaterialFrame;assembly=Sharpnado.MaterialFrame"
                        xmlns:viewModels="clr-namespace:$rootnamespace$.ViewModels;assembly=$rootnamespace$"
                        xmlns:views="clr-namespace:$rootnamespace$.Views;assembly=$rootnamespace$"
-                       Title="{Binding [$safeitemname$_Title]}"
                        x:DataType="viewModels:$viewmodelName$" />

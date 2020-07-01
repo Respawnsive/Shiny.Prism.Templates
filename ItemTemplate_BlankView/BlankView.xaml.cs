@@ -1,6 +1,10 @@
 ﻿using System;
-using Xamarin.Forms;
+using System.Threading.Tasks;
+using System.Windows.Input;
+using Prism.Commands;
+using Prism.Navigation;
 using Xamarin.Forms.Xaml;
+using $rootnamespace$.Helpers;
 
 namespace $rootnamespace$.Views
 {

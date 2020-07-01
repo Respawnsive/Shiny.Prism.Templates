@@ -1,16 +1,10 @@
-﻿using Sharpnado.Tasks;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ReactiveUI;
-using Template.Mobile.Helpers;
-using Template.Mobile.ViewModels;
+﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.PlatformConfiguration;
 using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
 using Xamarin.Forms.Xaml;
+using $rootnamespace$.Helpers;
+using $rootnamespace$.ViewModels;
 
 namespace $rootnamespace$.Views
 {

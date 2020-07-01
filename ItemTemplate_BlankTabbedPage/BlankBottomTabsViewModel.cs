@@ -1,13 +1,8 @@
-﻿using Prism.Commands;
-using Prism.Navigation;
-using ReactiveUI;
-using ReactiveUI.Fody.Helpers;
-using Shiny;
-using System;
-using System.Reactive.Disposables;
+﻿using System;
 using System.Threading.Tasks;
-using System.Windows.Input;
-using Template.Mobile.Helpers;
+using Prism.Commands;
+using Prism.Navigation;
+using $rootnamespace$.Helpers;
 
 namespace $rootnamespace$.ViewModels
 {
