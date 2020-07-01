@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>ItemTemplate_BlankPage</Name>
+    <Description>ItemTemplate_BlankPage</Description>
+    <Icon>RespawnsiveLogo.png</Icon>
+    <TemplateID>4c0163d0-2693-432d-b0ec-bf6bc673a430</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+	  <LanguageTag>csharp</LanguageTag>
+	  <PlatformTag>android</PlatformTag>
+	  <PlatformTag>ios</PlatformTag>
+	  <ProjectTypeTag>mobile</ProjectTypeTag>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>BlankPage.xaml</DefaultName>
+  </TemplateData>
+	<TemplateContent>
+		<ProjectItem ItemType="EmbeddedResource" CustomTool="MSBuild:UpdateDesignTimeXaml" TargetFileName="Views\$fileinputname$.xaml" ReplaceParameters="true">BlankPage.xaml</ProjectItem>
+		<ProjectItem SubType="Code" TargetFileName="Views\$fileinputname$.xaml.cs" ReplaceParameters="true">BlankPage.xaml.cs</ProjectItem>
+		<ProjectItem SubType="Code" TargetFileName="ViewModels\$viewmodelName$.cs" ReplaceParameters="true">BlankViewModel.cs</ProjectItem>
+	</TemplateContent>
+	<WizardExtension>
+		<Assembly>Template.Installer, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=35cfebc95b194ff6</Assembly>
+		<FullClassName>Template.Installer.WizardImplementation</FullClassName>
+	</WizardExtension>
+</VSTemplate>
