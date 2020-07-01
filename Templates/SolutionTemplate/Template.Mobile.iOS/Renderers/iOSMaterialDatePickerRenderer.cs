@@ -1,4 +1,4 @@
-﻿using $safeprojectname$.Mobile.CustomCtrl;
+﻿using $ext_safeprojectname$.Mobile.CustomCtrl;
 using $safeprojectname$.Renderers;
 using Xamarin.Forms;
 using Xamarin.Forms.Material.iOS;

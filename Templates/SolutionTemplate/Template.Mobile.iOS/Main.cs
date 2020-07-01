@@ -1,5 +1,5 @@
 ﻿using System;
-using $safeprojectname$.Mobile.Helpers;
+using $ext_safeprojectname$.Mobile.Helpers;
 using UIKit;
 
 namespace $safeprojectname$

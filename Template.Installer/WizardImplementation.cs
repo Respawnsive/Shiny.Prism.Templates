@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 using EnvDTE;
 using Microsoft.VisualStudio.TemplateWizard;
@@ -34,9 +35,12 @@ namespace Template.Installer
         {
             try
             {
-                string ViewName = replacementsDictionary["$safeitemname$"];
-                string ViewModelName = ViewName.Replace(".xaml", "").Replace("View", "ViewModel").Replace("Page", "ViewModel");
-                replacementsDictionary.Add("$viewmodelName$", ViewModelName);
+                if (replacementsDictionary.Keys.Contains("$safeitemname$"))
+                {
+                    string ViewName = replacementsDictionary["$safeitemname$"];
+                    string ViewModelName = ViewName.Replace(".xaml", "").Replace("View", "ViewModel").Replace("Page", "ViewModel");
+                    replacementsDictionary.Add("$viewmodelName$", ViewModelName);
+                }
             }
             catch (Exception ex)
             {

@@ -5,9 +5,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Sharpnado.MaterialFrame.iOS;
 using Sharpnado.Presentation.Forms.iOS;
 using Shiny;
-using $safeprojectname$.Mobile.Helpers;
+using $ext_safeprojectname$.Mobile.Helpers;
 using $safeprojectname$.Services;
-using $safeprojectname$.Mobile.Services;
+using $ext_safeprojectname$.Mobile.Services;
 using UIKit;
 
 namespace $safeprojectname$

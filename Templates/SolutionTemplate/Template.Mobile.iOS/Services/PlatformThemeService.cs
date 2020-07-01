@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 
 using Foundation;
-using $safeprojectname$.Mobile.Services;
+using $ext_safeprojectname$.Mobile.Services;
 using UIKit;
 
 namespace $safeprojectname$.Services
