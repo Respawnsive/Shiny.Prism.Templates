@@ -29,480 +29,951 @@
         </Folder>
         <Folder Name="Material_icons" TargetFolderName="Material_icons">
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_3d_rotation.svg">ic_3d_rotation.svg</ProjectItem>
-          <ProjectItem ReplaceParameters="false" TargetFileName="ic_ac_unit.svg">ic_ac_unit.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_accessibility.svg">ic_accessibility.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_accessible.svg">ic_accessible.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_access_alarm.svg">ic_access_alarm.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_access_alarms.svg">ic_access_alarms.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_access_time.svg">ic_access_time.svg</ProjectItem>
-          <ProjectItem ReplaceParameters="false" TargetFileName="ic_accessible.svg">ic_accessible.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_account_balance.svg">ic_account_balance.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_account_balance_wallet.svg">ic_account_balance_wallet.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_account_box.svg">ic_account_box.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_account_circle.svg">ic_account_circle.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_ac_unit.svg">ic_ac_unit.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_adb.svg">ic_adb.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_add.svg">ic_add.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_add_alarm.svg">ic_add_alarm.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_add_alert.svg">ic_add_alert.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_add_a_photo.svg">ic_add_a_photo.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_add_box.svg">ic_add_box.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_add_circle.svg">ic_add_circle.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_add_circle_outline.svg">ic_add_circle_outline.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_add_location.svg">ic_add_location.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_add_shopping_cart.svg">ic_add_shopping_cart.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_add_to_photos.svg">ic_add_to_photos.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_add_to_queue.svg">ic_add_to_queue.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_adjust.svg">ic_adjust.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_airline_seat_flat.svg">ic_airline_seat_flat.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_airline_seat_flat_angled.svg">ic_airline_seat_flat_angled.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_airline_seat_individual_suite.svg">ic_airline_seat_individual_suite.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_airline_seat_legroom_extra.svg">ic_airline_seat_legroom_extra.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_airline_seat_legroom_normal.svg">ic_airline_seat_legroom_normal.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_airline_seat_legroom_reduced.svg">ic_airline_seat_legroom_reduced.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_airline_seat_recline_extra.svg">ic_airline_seat_recline_extra.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_airline_seat_recline_normal.svg">ic_airline_seat_recline_normal.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_airplanemode_active.svg">ic_airplanemode_active.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_airplanemode_inactive.svg">ic_airplanemode_inactive.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_airplay.svg">ic_airplay.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_airport_shuttle.svg">ic_airport_shuttle.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_alarm.svg">ic_alarm.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_alarm_add.svg">ic_alarm_add.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_alarm_off.svg">ic_alarm_off.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_alarm_on.svg">ic_alarm_on.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_album.svg">ic_album.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_all_inclusive.svg">ic_all_inclusive.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_all_out.svg">ic_all_out.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_android.svg">ic_android.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_announcement.svg">ic_announcement.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_apps.svg">ic_apps.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_archive.svg">ic_archive.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_arrow_back.svg">ic_arrow_back.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_arrow_downward.svg">ic_arrow_downward.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_arrow_drop_down.svg">ic_arrow_drop_down.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_arrow_drop_down_circle.svg">ic_arrow_drop_down_circle.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_arrow_drop_up.svg">ic_arrow_drop_up.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_arrow_forward.svg">ic_arrow_forward.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_arrow_upward.svg">ic_arrow_upward.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_art_track.svg">ic_art_track.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_aspect_ratio.svg">ic_aspect_ratio.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_assessment.svg">ic_assessment.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_assignment.svg">ic_assignment.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_assignment_ind.svg">ic_assignment_ind.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_assignment_late.svg">ic_assignment_late.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_assignment_return.svg">ic_assignment_return.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_assignment_returned.svg">ic_assignment_returned.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_assignment_turned_in.svg">ic_assignment_turned_in.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_assistant.svg">ic_assistant.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_assistant_photo.svg">ic_assistant_photo.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_attachment.svg">ic_attachment.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_attach_file.svg">ic_attach_file.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_attach_money.svg">ic_attach_money.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_audiotrack.svg">ic_audiotrack.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_autorenew.svg">ic_autorenew.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_av_timer.svg">ic_av_timer.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_backspace.svg">ic_backspace.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_backup.svg">ic_backup.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_battery_20.svg">ic_battery_20.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_battery_30.svg">ic_battery_30.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_battery_50.svg">ic_battery_50.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_battery_60.svg">ic_battery_60.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_battery_80.svg">ic_battery_80.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_battery_90.svg">ic_battery_90.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_battery_alert.svg">ic_battery_alert.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_battery_charging_20.svg">ic_battery_charging_20.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_battery_charging_30.svg">ic_battery_charging_30.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_battery_charging_50.svg">ic_battery_charging_50.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_battery_charging_60.svg">ic_battery_charging_60.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_battery_charging_80.svg">ic_battery_charging_80.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_battery_charging_90.svg">ic_battery_charging_90.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_battery_charging_full.svg">ic_battery_charging_full.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_battery_full.svg">ic_battery_full.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_battery_std.svg">ic_battery_std.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_battery_unknown.svg">ic_battery_unknown.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_beach_access.svg">ic_beach_access.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_beenhere.svg">ic_beenhere.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_block.svg">ic_block.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_bluetooth.svg">ic_bluetooth.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_bluetooth_audio.svg">ic_bluetooth_audio.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_bluetooth_connected.svg">ic_bluetooth_connected.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_bluetooth_disabled.svg">ic_bluetooth_disabled.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_bluetooth_searching.svg">ic_bluetooth_searching.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_blur_circular.svg">ic_blur_circular.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_blur_linear.svg">ic_blur_linear.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_blur_off.svg">ic_blur_off.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_blur_on.svg">ic_blur_on.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_book.svg">ic_book.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_bookmark.svg">ic_bookmark.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_bookmark_border.svg">ic_bookmark_border.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_border_all.svg">ic_border_all.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_border_bottom.svg">ic_border_bottom.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_border_clear.svg">ic_border_clear.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_border_color.svg">ic_border_color.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_border_horizontal.svg">ic_border_horizontal.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_border_inner.svg">ic_border_inner.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_border_left.svg">ic_border_left.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_border_outer.svg">ic_border_outer.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_border_right.svg">ic_border_right.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_border_style.svg">ic_border_style.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_border_top.svg">ic_border_top.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_border_vertical.svg">ic_border_vertical.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_branding_watermark.svg">ic_branding_watermark.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_brightness_1.svg">ic_brightness_1.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_brightness_2.svg">ic_brightness_2.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_brightness_3.svg">ic_brightness_3.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_brightness_4.svg">ic_brightness_4.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_brightness_5.svg">ic_brightness_5.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_brightness_6.svg">ic_brightness_6.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_brightness_7.svg">ic_brightness_7.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_brightness_auto.svg">ic_brightness_auto.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_brightness_high.svg">ic_brightness_high.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_brightness_low.svg">ic_brightness_low.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_brightness_medium.svg">ic_brightness_medium.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_broken_image.svg">ic_broken_image.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_brush.svg">ic_brush.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_bubble_chart.svg">ic_bubble_chart.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_bug_report.svg">ic_bug_report.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_build.svg">ic_build.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_burst_mode.svg">ic_burst_mode.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_business.svg">ic_business.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_business_center.svg">ic_business_center.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_cached.svg">ic_cached.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_cake.svg">ic_cake.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_call.svg">ic_call.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_call_end.svg">ic_call_end.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_call_made.svg">ic_call_made.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_call_merge.svg">ic_call_merge.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_call_missed.svg">ic_call_missed.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_call_missed_outgoing.svg">ic_call_missed_outgoing.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_call_received.svg">ic_call_received.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_call_split.svg">ic_call_split.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_call_to_action.svg">ic_call_to_action.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_camera.svg">ic_camera.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_camera_alt.svg">ic_camera_alt.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_camera_front.svg">ic_camera_front.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_camera_rear.svg">ic_camera_rear.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_camera_roll.svg">ic_camera_roll.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_cancel.svg">ic_cancel.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_card_giftcard.svg">ic_card_giftcard.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_card_membership.svg">ic_card_membership.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_card_travel.svg">ic_card_travel.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_casino.svg">ic_casino.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_cast.svg">ic_cast.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_cast_connected.svg">ic_cast_connected.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_center_focus_strong.svg">ic_center_focus_strong.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_center_focus_weak.svg">ic_center_focus_weak.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_change_history.svg">ic_change_history.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_chat.svg">ic_chat.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_chat_bubble.svg">ic_chat_bubble.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_chat_bubble_outline.svg">ic_chat_bubble_outline.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_check.svg">ic_check.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_check_box.svg">ic_check_box.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_check_box_outline_blank.svg">ic_check_box_outline_blank.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_check_circle.svg">ic_check_circle.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_chevron_left.svg">ic_chevron_left.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_chevron_right.svg">ic_chevron_right.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_child_care.svg">ic_child_care.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_child_friendly.svg">ic_child_friendly.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_chrome_reader_mode.svg">ic_chrome_reader_mode.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_class.svg">ic_class.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_clear.svg">ic_clear.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_clear_all.svg">ic_clear_all.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_close.svg">ic_close.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_closed_caption.svg">ic_closed_caption.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_cloud.svg">ic_cloud.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_cloud_circle.svg">ic_cloud_circle.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_cloud_done.svg">ic_cloud_done.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_cloud_download.svg">ic_cloud_download.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_cloud_off.svg">ic_cloud_off.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_cloud_queue.svg">ic_cloud_queue.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_cloud_upload.svg">ic_cloud_upload.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_code.svg">ic_code.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_collections.svg">ic_collections.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_colorize.svg">ic_colorize.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_color_lens.svg">ic_color_lens.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_comment.svg">ic_comment.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_compare.svg">ic_compare.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_compare_arrows.svg">ic_compare_arrows.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_computer.svg">ic_computer.svg</ProjectItem>
-          <ProjectItem ReplaceParameters="false" TargetFileName="ic_contact_mail.svg">ic_contact_mail.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_confirmation_number.svg">ic_confirmation_number.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_contacts.svg">ic_contacts.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_contact_mail.svg">ic_contact_mail.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_contact_phone.svg">ic_contact_phone.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_content_copy.svg">ic_content_copy.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_content_cut.svg">ic_content_cut.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_content_paste.svg">ic_content_paste.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_control_point.svg">ic_control_point.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_control_point_duplicate.svg">ic_control_point_duplicate.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_copyright.svg">ic_copyright.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_create.svg">ic_create.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_create_new_folder.svg">ic_create_new_folder.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_credit_card.svg">ic_credit_card.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_crop.svg">ic_crop.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_crop_16_9.svg">ic_crop_16_9.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_crop_3_2.svg">ic_crop_3_2.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_crop_5_4.svg">ic_crop_5_4.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_crop_7_5.svg">ic_crop_7_5.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_crop_din.svg">ic_crop_din.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_crop_free.svg">ic_crop_free.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_crop_landscape.svg">ic_crop_landscape.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_crop_original.svg">ic_crop_original.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_crop_portrait.svg">ic_crop_portrait.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_crop_rotate.svg">ic_crop_rotate.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_crop_square.svg">ic_crop_square.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_dashboard.svg">ic_dashboard.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_data_usage.svg">ic_data_usage.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_date_range.svg">ic_date_range.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_dehaze.svg">ic_dehaze.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_delete.svg">ic_delete.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_delete_forever.svg">ic_delete_forever.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_delete_sweep.svg">ic_delete_sweep.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_description.svg">ic_description.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_desktop_mac.svg">ic_desktop_mac.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_desktop_windows.svg">ic_desktop_windows.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_details.svg">ic_details.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_developer_board.svg">ic_developer_board.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_developer_mode.svg">ic_developer_mode.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_devices.svg">ic_devices.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_devices_other.svg">ic_devices_other.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_dialer_sip.svg">ic_dialer_sip.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_dialpad.svg">ic_dialpad.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_directions.svg">ic_directions.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_directions_bike.svg">ic_directions_bike.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_directions_boat.svg">ic_directions_boat.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_directions_bus.svg">ic_directions_bus.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_directions_car.svg">ic_directions_car.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_directions_railway.svg">ic_directions_railway.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_directions_run.svg">ic_directions_run.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_directions_subway.svg">ic_directions_subway.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_directions_transit.svg">ic_directions_transit.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_directions_walk.svg">ic_directions_walk.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_disc_full.svg">ic_disc_full.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_dns.svg">ic_dns.svg</ProjectItem>
-          <ProjectItem ReplaceParameters="false" TargetFileName="ic_do_not_disturb_alt.svg">ic_do_not_disturb_alt.svg</ProjectItem>
-          <ProjectItem ReplaceParameters="false" TargetFileName="ic_do_not_disturb_on.svg">ic_do_not_disturb_on.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_dock.svg">ic_dock.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_domain.svg">ic_domain.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_done.svg">ic_done.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_done_all.svg">ic_done_all.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_donut_large.svg">ic_donut_large.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_donut_small.svg">ic_donut_small.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_do_not_disturb.svg">ic_do_not_disturb.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_do_not_disturb_alt.svg">ic_do_not_disturb_alt.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_do_not_disturb_off.svg">ic_do_not_disturb_off.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_do_not_disturb_on.svg">ic_do_not_disturb_on.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_drafts.svg">ic_drafts.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_drag_handle.svg">ic_drag_handle.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_drive_eta.svg">ic_drive_eta.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_dvr.svg">ic_dvr.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_edit.svg">ic_edit.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_edit_location.svg">ic_edit_location.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_email.svg">ic_email.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_enhanced_encryption.svg">ic_enhanced_encryption.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_equalizer.svg">ic_equalizer.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_error.svg">ic_error.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_error_outline.svg">ic_error_outline.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_euro_symbol.svg">ic_euro_symbol.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_event.svg">ic_event.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_event_available.svg">ic_event_available.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_event_busy.svg">ic_event_busy.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_event_note.svg">ic_event_note.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_event_seat.svg">ic_event_seat.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_ev_station.svg">ic_ev_station.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_exit_to_app.svg">ic_exit_to_app.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_expand_less.svg">ic_expand_less.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_expand_more.svg">ic_expand_more.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_explicit.svg">ic_explicit.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_explore.svg">ic_explore.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_exposure.svg">ic_exposure.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_exposure_neg_1.svg">ic_exposure_neg_1.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_exposure_neg_2.svg">ic_exposure_neg_2.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_exposure_plus_1.svg">ic_exposure_plus_1.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_exposure_plus_2.svg">ic_exposure_plus_2.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_exposure_zero.svg">ic_exposure_zero.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_extension.svg">ic_extension.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_face.svg">ic_face.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_fast_forward.svg">ic_fast_forward.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_fast_rewind.svg">ic_fast_rewind.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_favorite.svg">ic_favorite.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_favorite_border.svg">ic_favorite_border.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_featured_play_list.svg">ic_featured_play_list.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_featured_video.svg">ic_featured_video.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_feedback.svg">ic_feedback.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_fiber_dvr.svg">ic_fiber_dvr.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_fiber_manual_record.svg">ic_fiber_manual_record.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_fiber_new.svg">ic_fiber_new.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_fiber_pin.svg">ic_fiber_pin.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_fiber_smart_record.svg">ic_fiber_smart_record.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_file_download.svg">ic_file_download.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_file_upload.svg">ic_file_upload.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_filter.svg">ic_filter.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_filter_1.svg">ic_filter_1.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_filter_2.svg">ic_filter_2.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_filter_3.svg">ic_filter_3.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_filter_4.svg">ic_filter_4.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_filter_5.svg">ic_filter_5.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_filter_6.svg">ic_filter_6.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_filter_7.svg">ic_filter_7.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_filter_8.svg">ic_filter_8.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_filter_9.svg">ic_filter_9.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_filter_9_plus.svg">ic_filter_9_plus.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_filter_b_and_w.svg">ic_filter_b_and_w.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_filter_center_focus.svg">ic_filter_center_focus.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_filter_drama.svg">ic_filter_drama.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_filter_frames.svg">ic_filter_frames.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_filter_hdr.svg">ic_filter_hdr.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_filter_list.svg">ic_filter_list.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_filter_none.svg">ic_filter_none.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_filter_tilt_shift.svg">ic_filter_tilt_shift.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_filter_vintage.svg">ic_filter_vintage.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_find_in_page.svg">ic_find_in_page.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_find_replace.svg">ic_find_replace.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_fingerprint.svg">ic_fingerprint.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_first_page.svg">ic_first_page.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_fitness_center.svg">ic_fitness_center.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_flag.svg">ic_flag.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_flare.svg">ic_flare.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_flash_auto.svg">ic_flash_auto.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_flash_off.svg">ic_flash_off.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_flash_on.svg">ic_flash_on.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_flight.svg">ic_flight.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_flight_land.svg">ic_flight_land.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_flight_takeoff.svg">ic_flight_takeoff.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_flip.svg">ic_flip.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_flip_to_back.svg">ic_flip_to_back.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_flip_to_front.svg">ic_flip_to_front.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_folder.svg">ic_folder.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_folder_open.svg">ic_folder_open.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_folder_shared.svg">ic_folder_shared.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_folder_special.svg">ic_folder_special.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_format_align_center.svg">ic_format_align_center.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_format_align_justify.svg">ic_format_align_justify.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_format_align_left.svg">ic_format_align_left.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_format_align_right.svg">ic_format_align_right.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_format_bold.svg">ic_format_bold.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_format_clear.svg">ic_format_clear.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_format_color_fill.svg">ic_format_color_fill.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_format_color_reset.svg">ic_format_color_reset.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_format_color_text.svg">ic_format_color_text.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_format_indent_decrease.svg">ic_format_indent_decrease.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_format_indent_increase.svg">ic_format_indent_increase.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_format_italic.svg">ic_format_italic.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_format_line_spacing.svg">ic_format_line_spacing.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_format_list_bulleted.svg">ic_format_list_bulleted.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_format_list_numbered.svg">ic_format_list_numbered.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_format_paint.svg">ic_format_paint.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_format_quote.svg">ic_format_quote.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_format_shapes.svg">ic_format_shapes.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_format_size.svg">ic_format_size.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_format_strikethrough.svg">ic_format_strikethrough.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_format_textdirection_l_to_r.svg">ic_format_textdirection_l_to_r.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_format_textdirection_r_to_l.svg">ic_format_textdirection_r_to_l.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_format_underlined.svg">ic_format_underlined.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_forum.svg">ic_forum.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_forward.svg">ic_forward.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_forward_10.svg">ic_forward_10.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_forward_30.svg">ic_forward_30.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_forward_5.svg">ic_forward_5.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_free_breakfast.svg">ic_free_breakfast.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_fullscreen.svg">ic_fullscreen.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_fullscreen_exit.svg">ic_fullscreen_exit.svg</ProjectItem>
-          <ProjectItem ReplaceParameters="false" TargetFileName="ic_g_translate.svg">ic_g_translate.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_functions.svg">ic_functions.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_gamepad.svg">ic_gamepad.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_games.svg">ic_games.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_gavel.svg">ic_gavel.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_gesture.svg">ic_gesture.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_get_app.svg">ic_get_app.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_golf_course.svg">ic_golf_course.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_gps_fixed.svg">ic_gps_fixed.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_gps_not_fixed.svg">ic_gps_not_fixed.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_gps_off.svg">ic_gps_off.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_grade.svg">ic_grade.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_gradient.svg">ic_gradient.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_grain.svg">ic_grain.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_graphic_eq.svg">ic_graphic_eq.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_grid_off.svg">ic_grid_off.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_grid_on.svg">ic_grid_on.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_group.svg">ic_group.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_group_add.svg">ic_group_add.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_group_work.svg">ic_group_work.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_g_translate.svg">ic_g_translate.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_hdr_off.svg">ic_hdr_off.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_hdr_on.svg">ic_hdr_on.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_hdr_strong.svg">ic_hdr_strong.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_hdr_weak.svg">ic_hdr_weak.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_headset.svg">ic_headset.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_headset_mic.svg">ic_headset_mic.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_healing.svg">ic_healing.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_hearing.svg">ic_hearing.svg</ProjectItem>
-          <ProjectItem ReplaceParameters="false" TargetFileName="ic_high_quality.svg">ic_high_quality.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_help.svg">ic_help.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_highlight.svg">ic_highlight.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_highlight_off.svg">ic_highlight_off.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_high_quality.svg">ic_high_quality.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_history.svg">ic_history.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_home.svg">ic_home.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_hotel.svg">ic_hotel.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_hot_tub.svg">ic_hot_tub.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_hourglass_empty.svg">ic_hourglass_empty.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_hourglass_full.svg">ic_hourglass_full.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_http.svg">ic_http.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_https.svg">ic_https.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_image.svg">ic_image.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_image_aspect_ratio.svg">ic_image_aspect_ratio.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_important_devices.svg">ic_important_devices.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_import_contacts.svg">ic_import_contacts.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_import_export.svg">ic_import_export.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_inbox.svg">ic_inbox.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_info.svg">ic_info.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_info_outline.svg">ic_info_outline.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_input.svg">ic_input.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_insert_chart.svg">ic_insert_chart.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_insert_comment.svg">ic_insert_comment.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_insert_drive_file.svg">ic_insert_drive_file.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_insert_emoticon.svg">ic_insert_emoticon.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_insert_invitation.svg">ic_insert_invitation.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_insert_link.svg">ic_insert_link.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_insert_photo.svg">ic_insert_photo.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_invert_colors.svg">ic_invert_colors.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_invert_colors_off.svg">ic_invert_colors_off.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_iso.svg">ic_iso.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_keyboard.svg">ic_keyboard.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_keyboard_arrow_down.svg">ic_keyboard_arrow_down.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_keyboard_arrow_left.svg">ic_keyboard_arrow_left.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_keyboard_arrow_right.svg">ic_keyboard_arrow_right.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_keyboard_arrow_up.svg">ic_keyboard_arrow_up.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_keyboard_backspace.svg">ic_keyboard_backspace.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_keyboard_capslock.svg">ic_keyboard_capslock.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_keyboard_hide.svg">ic_keyboard_hide.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_keyboard_return.svg">ic_keyboard_return.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_keyboard_tab.svg">ic_keyboard_tab.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_keyboard_voice.svg">ic_keyboard_voice.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_kitchen.svg">ic_kitchen.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_label.svg">ic_label.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_label_outline.svg">ic_label_outline.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_landscape.svg">ic_landscape.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_language.svg">ic_language.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_laptop.svg">ic_laptop.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_laptop_chromebook.svg">ic_laptop_chromebook.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_laptop_mac.svg">ic_laptop_mac.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_laptop_windows.svg">ic_laptop_windows.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_last_page.svg">ic_last_page.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_launch.svg">ic_launch.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_layers.svg">ic_layers.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_layers_clear.svg">ic_layers_clear.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_leak_add.svg">ic_leak_add.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_leak_remove.svg">ic_leak_remove.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_lens.svg">ic_lens.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_library_add.svg">ic_library_add.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_library_books.svg">ic_library_books.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_library_music.svg">ic_library_music.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_lightbulb_outline.svg">ic_lightbulb_outline.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_linear_scale.svg">ic_linear_scale.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_line_style.svg">ic_line_style.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_line_weight.svg">ic_line_weight.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_link.svg">ic_link.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_linked_camera.svg">ic_linked_camera.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_list.svg">ic_list.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_live_help.svg">ic_live_help.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_live_tv.svg">ic_live_tv.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_activity.svg">ic_local_activity.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_airport.svg">ic_local_airport.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_atm.svg">ic_local_atm.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_bar.svg">ic_local_bar.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_cafe.svg">ic_local_cafe.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_car_wash.svg">ic_local_car_wash.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_convenience_store.svg">ic_local_convenience_store.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_dining.svg">ic_local_dining.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_drink.svg">ic_local_drink.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_florist.svg">ic_local_florist.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_gas_station.svg">ic_local_gas_station.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_grocery_store.svg">ic_local_grocery_store.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_hospital.svg">ic_local_hospital.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_hotel.svg">ic_local_hotel.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_laundry_service.svg">ic_local_laundry_service.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_library.svg">ic_local_library.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_mall.svg">ic_local_mall.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_movies.svg">ic_local_movies.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_offer.svg">ic_local_offer.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_parking.svg">ic_local_parking.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_pharmacy.svg">ic_local_pharmacy.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_phone.svg">ic_local_phone.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_pizza.svg">ic_local_pizza.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_play.svg">ic_local_play.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_post_office.svg">ic_local_post_office.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_printshop.svg">ic_local_printshop.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_see.svg">ic_local_see.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_shipping.svg">ic_local_shipping.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_local_taxi.svg">ic_local_taxi.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_location_city.svg">ic_location_city.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_location_disabled.svg">ic_location_disabled.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_location_off.svg">ic_location_off.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_location_on.svg">ic_location_on.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_location_searching.svg">ic_location_searching.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_lock.svg">ic_lock.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_lock_open.svg">ic_lock_open.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_lock_outline.svg">ic_lock_outline.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_looks.svg">ic_looks.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_looks_3.svg">ic_looks_3.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_looks_4.svg">ic_looks_4.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_looks_5.svg">ic_looks_5.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_looks_6.svg">ic_looks_6.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_looks_one.svg">ic_looks_one.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_looks_two.svg">ic_looks_two.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_loop.svg">ic_loop.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_loupe.svg">ic_loupe.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_low_priority.svg">ic_low_priority.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_loyalty.svg">ic_loyalty.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_mail.svg">ic_mail.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_mail_outline.svg">ic_mail_outline.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_map.svg">ic_map.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_markunread.svg">ic_markunread.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_markunread_mailbox.svg">ic_markunread_mailbox.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_memory.svg">ic_memory.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_menu.svg">ic_menu.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_merge_type.svg">ic_merge_type.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_message.svg">ic_message.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_mic.svg">ic_mic.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_mic_none.svg">ic_mic_none.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_mic_off.svg">ic_mic_off.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_mms.svg">ic_mms.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_mode_comment.svg">ic_mode_comment.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_mode_edit.svg">ic_mode_edit.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_monetization_on.svg">ic_monetization_on.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_monochrome_photos.svg">ic_monochrome_photos.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_mood.svg">ic_mood.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_mood_bad.svg">ic_mood_bad.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_more.svg">ic_more.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_more_horiz.svg">ic_more_horiz.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_more_vert.svg">ic_more_vert.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_motorcycle.svg">ic_motorcycle.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_mouse.svg">ic_mouse.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_move_to_inbox.svg">ic_move_to_inbox.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_movie.svg">ic_movie.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_movie_creation.svg">ic_movie_creation.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_movie_filter.svg">ic_movie_filter.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_multiline_chart.svg">ic_multiline_chart.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_music_note.svg">ic_music_note.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_music_video.svg">ic_music_video.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_my_location.svg">ic_my_location.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_nature.svg">ic_nature.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_nature_people.svg">ic_nature_people.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_navigate_before.svg">ic_navigate_before.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_navigate_next.svg">ic_navigate_next.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_navigation.svg">ic_navigation.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_near_me.svg">ic_near_me.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_network_cell.svg">ic_network_cell.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_network_check.svg">ic_network_check.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_network_locked.svg">ic_network_locked.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_network_wifi.svg">ic_network_wifi.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_new_releases.svg">ic_new_releases.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_next_week.svg">ic_next_week.svg</ProjectItem>
-          <ProjectItem ReplaceParameters="false" TargetFileName="ic_no_encryption.svg">ic_no_encryption.svg</ProjectItem>
-          <ProjectItem ReplaceParameters="false" TargetFileName="ic_not_interested.svg">ic_not_interested.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_nfc.svg">ic_nfc.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_note.svg">ic_note.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_note_add.svg">ic_note_add.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_notifications.svg">ic_notifications.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_notifications_active.svg">ic_notifications_active.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_notifications_none.svg">ic_notifications_none.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_notifications_off.svg">ic_notifications_off.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_notifications_paused.svg">ic_notifications_paused.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_not_interested.svg">ic_not_interested.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_no_encryption.svg">ic_no_encryption.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_no_sim.svg">ic_no_sim.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_ondemand_video.svg">ic_ondemand_video.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_opacity.svg">ic_opacity.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_open_in_browser.svg">ic_open_in_browser.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_open_in_new.svg">ic_open_in_new.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_open_with.svg">ic_open_with.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_pages.svg">ic_pages.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_pageview.svg">ic_pageview.svg</ProjectItem>
-          <ProjectItem ReplaceParameters="false" TargetFileName="ic_pan_tool.svg">ic_pan_tool.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_palette.svg">ic_palette.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_panorama.svg">ic_panorama.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_panorama_fish_eye.svg">ic_panorama_fish_eye.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_panorama_horizontal.svg">ic_panorama_horizontal.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_panorama_vertical.svg">ic_panorama_vertical.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_panorama_wide_angle.svg">ic_panorama_wide_angle.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_pan_tool.svg">ic_pan_tool.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_party_mode.svg">ic_party_mode.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_pause.svg">ic_pause.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_pause_circle_filled.svg">ic_pause_circle_filled.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_pause_circle_outline.svg">ic_pause_circle_outline.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_payment.svg">ic_payment.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_people.svg">ic_people.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_people_outline.svg">ic_people_outline.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_perm_camera_mic.svg">ic_perm_camera_mic.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_perm_contact_calendar.svg">ic_perm_contact_calendar.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_perm_data_setting.svg">ic_perm_data_setting.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_perm_device_information.svg">ic_perm_device_information.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_perm_identity.svg">ic_perm_identity.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_perm_media.svg">ic_perm_media.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_perm_phone_msg.svg">ic_perm_phone_msg.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_perm_scan_wifi.svg">ic_perm_scan_wifi.svg</ProjectItem>
-          <ProjectItem ReplaceParameters="false" TargetFileName="ic_person_add.svg">ic_person_add.svg</ProjectItem>
-          <ProjectItem ReplaceParameters="false" TargetFileName="ic_person_pin.svg">ic_person_pin.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_person.svg">ic_person.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_personal_video.svg">ic_personal_video.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_person_add.svg">ic_person_add.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_person_outline.svg">ic_person_outline.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_person_pin.svg">ic_person_pin.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_person_pin_circle.svg">ic_person_pin_circle.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_pets.svg">ic_pets.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_phone.svg">ic_phone.svg</ProjectItem>
-          <ProjectItem ReplaceParameters="false" TargetFileName="ic_phone_bluetooth_speaker.svg">ic_phone_bluetooth_speaker.svg</ProjectItem>
-          <ProjectItem ReplaceParameters="false" TargetFileName="ic_phone_in_talk.svg">ic_phone_in_talk.svg</ProjectItem>
-          <ProjectItem ReplaceParameters="false" TargetFileName="ic_phone_locked.svg">ic_phone_locked.svg</ProjectItem>
-          <ProjectItem ReplaceParameters="false" TargetFileName="ic_phone_paused.svg">ic_phone_paused.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_phonelink.svg">ic_phonelink.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_phonelink_off.svg">ic_phonelink_off.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_phone_android.svg">ic_phone_android.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_phone_bluetooth_speaker.svg">ic_phone_bluetooth_speaker.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_phone_forwarded.svg">ic_phone_forwarded.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_phone_in_talk.svg">ic_phone_in_talk.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_phone_iphone.svg">ic_phone_iphone.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_phone_locked.svg">ic_phone_locked.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_phone_missed.svg">ic_phone_missed.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_phone_paused.svg">ic_phone_paused.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_photo.svg">ic_photo.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_photo_album.svg">ic_photo_album.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_photo_camera.svg">ic_photo_camera.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_photo_filter.svg">ic_photo_filter.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_photo_library.svg">ic_photo_library.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_picture_as_pdf.svg">ic_picture_as_pdf.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_picture_in_picture.svg">ic_picture_in_picture.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_picture_in_picture_alt.svg">ic_picture_in_picture_alt.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_pie_chart.svg">ic_pie_chart.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_pie_chart_outlined.svg">ic_pie_chart_outlined.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_pin_drop.svg">ic_pin_drop.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_place.svg">ic_place.svg</ProjectItem>
-          <ProjectItem ReplaceParameters="false" TargetFileName="ic_play_circle_filled.svg">ic_play_circle_filled.svg</ProjectItem>
-          <ProjectItem ReplaceParameters="false" TargetFileName="ic_play_circle_outline.svg">ic_play_circle_outline.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_playlist_add.svg">ic_playlist_add.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_playlist_add_check.svg">ic_playlist_add_check.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_playlist_play.svg">ic_playlist_play.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_play_arrow.svg">ic_play_arrow.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_play_circle_filled.svg">ic_play_circle_filled.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_play_circle_filled_white.svg">ic_play_circle_filled_white.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_play_circle_outline.svg">ic_play_circle_outline.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_play_for_work.svg">ic_play_for_work.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_plus_one.svg">ic_plus_one.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_poll.svg">ic_poll.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_polymer.svg">ic_polymer.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_pool.svg">ic_pool.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_portable_wifi_off.svg">ic_portable_wifi_off.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_portrait.svg">ic_portrait.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_power.svg">ic_power.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_power_input.svg">ic_power_input.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_power_settings_new.svg">ic_power_settings_new.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_pregnant_woman.svg">ic_pregnant_woman.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_present_to_all.svg">ic_present_to_all.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_print.svg">ic_print.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_priority_high.svg">ic_priority_high.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_priority_high_12px.svg">ic_priority_high_12px.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_public.svg">ic_public.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_publish.svg">ic_publish.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_query_builder.svg">ic_query_builder.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_question_answer.svg">ic_question_answer.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_queue.svg">ic_queue.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_queue_music.svg">ic_queue_music.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_queue_play_next.svg">ic_queue_play_next.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_radio.svg">ic_radio.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_radio_button_checked.svg">ic_radio_button_checked.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_radio_button_unchecked.svg">ic_radio_button_unchecked.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_rate_review.svg">ic_rate_review.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_receipt.svg">ic_receipt.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_recent_actors.svg">ic_recent_actors.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_record_voice_over.svg">ic_record_voice_over.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_redeem.svg">ic_redeem.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_redo.svg">ic_redo.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_refresh.svg">ic_refresh.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_remove.svg">ic_remove.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_remove_circle.svg">ic_remove_circle.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_remove_circle_outline.svg">ic_remove_circle_outline.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_remove_from_queue.svg">ic_remove_from_queue.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_remove_red_eye.svg">ic_remove_red_eye.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_remove_shopping_cart.svg">ic_remove_shopping_cart.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_repeat.svg">ic_repeat.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_repeat_one.svg">ic_repeat_one.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_replay.svg">ic_replay.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_replay_10.svg">ic_replay_10.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_replay_30.svg">ic_replay_30.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_replay_5.svg">ic_replay_5.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_reply.svg">ic_reply.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_reply_all.svg">ic_reply_all.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_report.svg">ic_report.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_report_problem.svg">ic_report_problem.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_restaurant.svg">ic_restaurant.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_restaurant_menu.svg">ic_restaurant_menu.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_restore.svg">ic_restore.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_restore_page.svg">ic_restore_page.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_ring_volume.svg">ic_ring_volume.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_room.svg">ic_room.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_room_service.svg">ic_room_service.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_rotate_90_degrees_ccw.svg">ic_rotate_90_degrees_ccw.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_rotate_left.svg">ic_rotate_left.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_rotate_right.svg">ic_rotate_right.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_rounded_corner.svg">ic_rounded_corner.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_router.svg">ic_router.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_rowing.svg">ic_rowing.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_rss_feed.svg">ic_rss_feed.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_rv_hookup.svg">ic_rv_hookup.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_satellite.svg">ic_satellite.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_save.svg">ic_save.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_scanner.svg">ic_scanner.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_schedule.svg">ic_schedule.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_school.svg">ic_school.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_screen_lock_landscape.svg">ic_screen_lock_landscape.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_screen_lock_portrait.svg">ic_screen_lock_portrait.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_screen_lock_rotation.svg">ic_screen_lock_rotation.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_screen_rotation.svg">ic_screen_rotation.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_screen_share.svg">ic_screen_share.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_sd_card.svg">ic_sd_card.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_sd_storage.svg">ic_sd_storage.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_search.svg">ic_search.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_security.svg">ic_security.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_select_all.svg">ic_select_all.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_send.svg">ic_send.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_sentiment_dissatisfied.svg">ic_sentiment_dissatisfied.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_sentiment_neutral.svg">ic_sentiment_neutral.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_sentiment_satisfied.svg">ic_sentiment_satisfied.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_sentiment_very_dissatisfied.svg">ic_sentiment_very_dissatisfied.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_sentiment_very_satisfied.svg">ic_sentiment_very_satisfied.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_settings.svg">ic_settings.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_settings_applications.svg">ic_settings_applications.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_settings_backup_restore.svg">ic_settings_backup_restore.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_settings_bluetooth.svg">ic_settings_bluetooth.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_settings_brightness.svg">ic_settings_brightness.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_settings_cell.svg">ic_settings_cell.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_settings_ethernet.svg">ic_settings_ethernet.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_settings_input_antenna.svg">ic_settings_input_antenna.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_settings_input_component.svg">ic_settings_input_component.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_settings_input_composite.svg">ic_settings_input_composite.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_settings_input_hdmi.svg">ic_settings_input_hdmi.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_settings_input_svideo.svg">ic_settings_input_svideo.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_settings_overscan.svg">ic_settings_overscan.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_settings_phone.svg">ic_settings_phone.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_settings_power.svg">ic_settings_power.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_settings_remote.svg">ic_settings_remote.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_settings_system_daydream.svg">ic_settings_system_daydream.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_settings_voice.svg">ic_settings_voice.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_share.svg">ic_share.svg</ProjectItem>
-          <ProjectItem ReplaceParameters="false" TargetFileName="ic_shop_two.svg">ic_shop_two.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_shop.svg">ic_shop.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_shopping_basket.svg">ic_shopping_basket.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_shopping_cart.svg">ic_shopping_cart.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_shop_two.svg">ic_shop_two.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_short_text.svg">ic_short_text.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_show_chart.svg">ic_show_chart.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_shuffle.svg">ic_shuffle.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_cellular_0_bar.svg">ic_signal_cellular_0_bar.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_cellular_1_bar.svg">ic_signal_cellular_1_bar.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_cellular_2_bar.svg">ic_signal_cellular_2_bar.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_cellular_3_bar.svg">ic_signal_cellular_3_bar.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_cellular_4_bar.svg">ic_signal_cellular_4_bar.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_cellular_connected_no_internet_0_bar.svg">ic_signal_cellular_connected_no_internet_0_bar.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_cellular_connected_no_internet_1_bar.svg">ic_signal_cellular_connected_no_internet_1_bar.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_cellular_connected_no_internet_2_bar.svg">ic_signal_cellular_connected_no_internet_2_bar.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_cellular_connected_no_internet_3_bar.svg">ic_signal_cellular_connected_no_internet_3_bar.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_cellular_connected_no_internet_4_bar.svg">ic_signal_cellular_connected_no_internet_4_bar.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_cellular_no_sim.svg">ic_signal_cellular_no_sim.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_cellular_null.svg">ic_signal_cellular_null.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_cellular_off.svg">ic_signal_cellular_off.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_wifi_0_bar.svg">ic_signal_wifi_0_bar.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_wifi_1_bar.svg">ic_signal_wifi_1_bar.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_wifi_1_bar_lock.svg">ic_signal_wifi_1_bar_lock.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_wifi_2_bar.svg">ic_signal_wifi_2_bar.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_wifi_2_bar_lock.svg">ic_signal_wifi_2_bar_lock.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_wifi_3_bar.svg">ic_signal_wifi_3_bar.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_wifi_3_bar_lock.svg">ic_signal_wifi_3_bar_lock.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_wifi_4_bar.svg">ic_signal_wifi_4_bar.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_wifi_4_bar_lock.svg">ic_signal_wifi_4_bar_lock.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_wifi_off.svg">ic_signal_wifi_off.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_wifi_statusbar_1_bar_26x24px.svg">ic_signal_wifi_statusbar_1_bar_26x24px.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_wifi_statusbar_2_bar_26x24px.svg">ic_signal_wifi_statusbar_2_bar_26x24px.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_wifi_statusbar_3_bar_26x24px.svg">ic_signal_wifi_statusbar_3_bar_26x24px.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_wifi_statusbar_4_bar_26x24px.svg">ic_signal_wifi_statusbar_4_bar_26x24px.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_wifi_statusbar_connected_no_internet_1_26x24px.svg">ic_signal_wifi_statusbar_connected_no_internet_1_26x24px.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_wifi_statusbar_connected_no_internet_26x24px.svg">ic_signal_wifi_statusbar_connected_no_internet_26x24px.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_wifi_statusbar_connected_no_internet_2_26x24px.svg">ic_signal_wifi_statusbar_connected_no_internet_2_26x24px.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_wifi_statusbar_connected_no_internet_3_26x24px.svg">ic_signal_wifi_statusbar_connected_no_internet_3_26x24px.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_wifi_statusbar_connected_no_internet_4_26x24px.svg">ic_signal_wifi_statusbar_connected_no_internet_4_26x24px.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_wifi_statusbar_not_connected_26x24px.svg">ic_signal_wifi_statusbar_not_connected_26x24px.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_signal_wifi_statusbar_null_26x24px.svg">ic_signal_wifi_statusbar_null_26x24px.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_sim_card.svg">ic_sim_card.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_sim_card_alert.svg">ic_sim_card_alert.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_skip_next.svg">ic_skip_next.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_skip_previous.svg">ic_skip_previous.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_slideshow.svg">ic_slideshow.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_slow_motion_video.svg">ic_slow_motion_video.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_smartphone.svg">ic_smartphone.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_smoke_free.svg">ic_smoke_free.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_smoking_rooms.svg">ic_smoking_rooms.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_sms.svg">ic_sms.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_sms_failed.svg">ic_sms_failed.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_snooze.svg">ic_snooze.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_sort.svg">ic_sort.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_spa.svg">ic_spa.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_space_bar.svg">ic_space_bar.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_speaker.svg">ic_speaker.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_speaker_group.svg">ic_speaker_group.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_speaker_notes.svg">ic_speaker_notes.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_speaker_notes_off.svg">ic_speaker_notes_off.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_speaker_phone.svg">ic_speaker_phone.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_spellcheck.svg">ic_spellcheck.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_stars.svg">ic_stars.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_star_half.svg">ic_star_half.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_stay_current_landscape.svg">ic_stay_current_landscape.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_stay_current_portrait.svg">ic_stay_current_portrait.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_stay_primary_landscape.svg">ic_stay_primary_landscape.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_stay_primary_portrait.svg">ic_stay_primary_portrait.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_stop.svg">ic_stop.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_stop_screen_share.svg">ic_stop_screen_share.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_storage.svg">ic_storage.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_store.svg">ic_store.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_store_mall_directory.svg">ic_store_mall_directory.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_straighten.svg">ic_straighten.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_streetview.svg">ic_streetview.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_strikethrough_s.svg">ic_strikethrough_s.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_style.svg">ic_style.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_subdirectory_arrow_left.svg">ic_subdirectory_arrow_left.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_subdirectory_arrow_right.svg">ic_subdirectory_arrow_right.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_subject.svg">ic_subject.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_subscriptions.svg">ic_subscriptions.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_subtitles.svg">ic_subtitles.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_subway.svg">ic_subway.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_supervisor_account.svg">ic_supervisor_account.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_surround_sound.svg">ic_surround_sound.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_swap_calls.svg">ic_swap_calls.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_swap_horiz.svg">ic_swap_horiz.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_swap_vert.svg">ic_swap_vert.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_swap_vertical_circle.svg">ic_swap_vertical_circle.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_switch_camera.svg">ic_switch_camera.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_switch_video.svg">ic_switch_video.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_sync.svg">ic_sync.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_sync_disabled.svg">ic_sync_disabled.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_sync_problem.svg">ic_sync_problem.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_system_update.svg">ic_system_update.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_system_update_alt.svg">ic_system_update_alt.svg</ProjectItem>
-          <ProjectItem ReplaceParameters="false" TargetFileName="ic_tab_unselected.svg">ic_tab_unselected.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_tab.svg">ic_tab.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_tablet.svg">ic_tablet.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_tablet_android.svg">ic_tablet_android.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_tablet_mac.svg">ic_tablet_mac.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_tab_unselected.svg">ic_tab_unselected.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_tag_faces.svg">ic_tag_faces.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_tap_and_play.svg">ic_tap_and_play.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_terrain.svg">ic_terrain.svg</ProjectItem>
-          <ProjectItem ReplaceParameters="false" TargetFileName="ic_text_format.svg">ic_text_format.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_textsms.svg">ic_textsms.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_texture.svg">ic_texture.svg</ProjectItem>
-          <ProjectItem ReplaceParameters="false" TargetFileName="ic_thumb_down.svg">ic_thumb_down.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_text_fields.svg">ic_text_fields.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_text_format.svg">ic_text_format.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_theaters.svg">ic_theaters.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_thumbs_up_down.svg">ic_thumbs_up_down.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_thumb_down.svg">ic_thumb_down.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_thumb_up.svg">ic_thumb_up.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_timelapse.svg">ic_timelapse.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_timeline.svg">ic_timeline.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_timer.svg">ic_timer.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_timer_10.svg">ic_timer_10.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_timer_3.svg">ic_timer_3.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_timer_off.svg">ic_timer_off.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_time_to_leave.svg">ic_time_to_leave.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_title.svg">ic_title.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_toc.svg">ic_toc.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_today.svg">ic_today.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_toll.svg">ic_toll.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_tonality.svg">ic_tonality.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_touch_app.svg">ic_touch_app.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_toys.svg">ic_toys.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_track_changes.svg">ic_track_changes.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_traffic.svg">ic_traffic.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_train.svg">ic_train.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_tram.svg">ic_tram.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_transfer_within_a_station.svg">ic_transfer_within_a_station.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_transform.svg">ic_transform.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_translate.svg">ic_translate.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_trending_down.svg">ic_trending_down.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_trending_flat.svg">ic_trending_flat.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_trending_up.svg">ic_trending_up.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_tune.svg">ic_tune.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_turned_in.svg">ic_turned_in.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_turned_in_not.svg">ic_turned_in_not.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_tv.svg">ic_tv.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_unarchive.svg">ic_unarchive.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_undo.svg">ic_undo.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_unfold_less.svg">ic_unfold_less.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_unfold_more.svg">ic_unfold_more.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_update.svg">ic_update.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_usb.svg">ic_usb.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_verified_user.svg">ic_verified_user.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_vertical_align_bottom.svg">ic_vertical_align_bottom.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_vertical_align_center.svg">ic_vertical_align_center.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_vertical_align_top.svg">ic_vertical_align_top.svg</ProjectItem>
-          <ProjectItem ReplaceParameters="false" TargetFileName="ic_video_call.svg">ic_video_call.svg</ProjectItem>
-          <ProjectItem ReplaceParameters="false" TargetFileName="ic_video_library.svg">ic_video_library.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_vibration.svg">ic_vibration.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_videocam.svg">ic_videocam.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_videocam_off.svg">ic_videocam_off.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_videogame_asset.svg">ic_videogame_asset.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_video_call.svg">ic_video_call.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_video_label.svg">ic_video_label.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_video_library.svg">ic_video_library.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_view_agenda.svg">ic_view_agenda.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_view_array.svg">ic_view_array.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_view_carousel.svg">ic_view_carousel.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_view_column.svg">ic_view_column.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_view_comfy.svg">ic_view_comfy.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_view_compact.svg">ic_view_compact.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_view_day.svg">ic_view_day.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_view_headline.svg">ic_view_headline.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_view_list.svg">ic_view_list.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_view_module.svg">ic_view_module.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_view_quilt.svg">ic_view_quilt.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_view_stream.svg">ic_view_stream.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_view_week.svg">ic_view_week.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_visibility.svg">ic_visibility.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_visibility_off.svg">ic_visibility_off.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_voicemail.svg">ic_voicemail.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_voice_chat.svg">ic_voice_chat.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_volume_down.svg">ic_volume_down.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_volume_mute.svg">ic_volume_mute.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_volume_off.svg">ic_volume_off.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_volume_up.svg">ic_volume_up.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_vpn_key.svg">ic_vpn_key.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_vpn_lock.svg">ic_vpn_lock.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_wallpaper.svg">ic_wallpaper.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_warning.svg">ic_warning.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_watch.svg">ic_watch.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_watch_later.svg">ic_watch_later.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_wb_auto.svg">ic_wb_auto.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_wb_cloudy.svg">ic_wb_cloudy.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_wb_incandescent.svg">ic_wb_incandescent.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_wb_iridescent.svg">ic_wb_iridescent.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_wb_sunny.svg">ic_wb_sunny.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_wc.svg">ic_wc.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_web.svg">ic_web.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_web_asset.svg">ic_web_asset.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_weekend.svg">ic_weekend.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_whatshot.svg">ic_whatshot.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_widgets.svg">ic_widgets.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_wifi.svg">ic_wifi.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_wifi_lock.svg">ic_wifi_lock.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_wifi_tethering.svg">ic_wifi_tethering.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_work.svg">ic_work.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_wrap_text.svg">ic_wrap_text.svg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_youtube_searched_for.svg">ic_youtube_searched_for.svg</ProjectItem>
           <ProjectItem ReplaceParameters="false" TargetFileName="ic_zoom_out_map.svg">ic_zoom_out_map.svg</ProjectItem>
         </Folder>
         <ProjectItem ReplaceParameters="true" TargetFileName="_Readme.txt">_Readme.txt</ProjectItem>

@@ -210,11 +210,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\$ext_safeprojectname$.Mobile\$ext_safeprojectname$.Mobile.csproj">
-      <Project>{fdbca5b6-1604-4494-99b7-a0693064b35c}</Project>
       <Name>$ext_safeprojectname$.Mobile</Name>
     </ProjectReference>
     <ProjectReference Include="..\$ext_safeprojectname$.Resources\$ext_safeprojectname$.Resources.csproj">
-      <Project>{e3c601c5-fdad-455e-a210-53081b9c1532}</Project>
       <Name>$ext_safeprojectname$.Resources</Name>
     </ProjectReference>
   </ItemGroup>

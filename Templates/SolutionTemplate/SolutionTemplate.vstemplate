@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
-    <Name>Ultimate Template</Name>
-    <Description>Respawnsive Ultimate Template (entire solution) V2</Description>
+    <Name>Respawnsive Ultimate Template V4</Name>
+    <Description>Respawnsive Ultimate Template (entire solution) V4</Description>
     <Icon>RespawnsiveLogo.png</Icon>
     <ProjectType>CSharp</ProjectType>
     <LanguageTag>csharp</LanguageTag>
@@ -15,10 +15,10 @@
   </TemplateData>
   <TemplateContent>
     <ProjectCollection>
-      <ProjectTemplateLink ProjectName="$safeprojectname$.Mobile" CopyParameters="true">Template.Mobile\Template.Mobile.vstemplate</ProjectTemplateLink>
-      <ProjectTemplateLink ProjectName="$safeprojectname$.Mobile.Android" CopyParameters="true">Template.Mobile.Android\Template.Mobile.Android.vstemplate</ProjectTemplateLink>
-      <ProjectTemplateLink ProjectName="$safeprojectname$.Mobile.iOS" CopyParameters="true">Template.Mobile.iOS\Template.Mobile.iOS.vstemplate</ProjectTemplateLink>
       <ProjectTemplateLink ProjectName="$safeprojectname$.Resources" CopyParameters="true">Template.Resources\Template.Resources.vstemplate</ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Mobile" CopyParameters="true">Template.Mobile\Template.Mobile.vstemplate</ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Mobile.Droid" CopyParameters="true">Template.Mobile.Droid\Template.Mobile.Droid.vstemplate</ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Mobile.iOS" CopyParameters="true">Template.Mobile.iOS\Template.Mobile.iOS.vstemplate</ProjectTemplateLink>
     </ProjectCollection>
   </TemplateContent>
 </VSTemplate>
