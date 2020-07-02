@@ -7,4 +7,12 @@
                             xmlns:viewModels="clr-namespace:$rootnamespace$.ViewModels;assembly=$rootnamespace$"
                             xmlns:views="clr-namespace:$rootnamespace$.Views;assembly=$rootnamespace$"
                             Title="{Binding [$safeitemname$_Title]}"
-                            x:DataType="viewModels:$viewmodelName$" />
+                            x:DataType="viewModels:$viewmodelName$">
+
+    <!--  ! Do not forget to RegisterForNavigation for each LazyContentPage dynamicaly generated  -->
+
+    <!--<lazyView:LazyContentPage BindingContextChanged="TabPage_OnBindingContextChanged"
+                              x:TypeArguments="ctrl:LoadingView, views:"
+                              IconImageSource=".png" />-->
+
+</views:BottomTabbedPageBase>
