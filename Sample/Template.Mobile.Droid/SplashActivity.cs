@@ -2,6 +2,7 @@
 using Android.Content;
 using Android.Content.PM;
 using Android.OS;
+using System;
 
 namespace Template.Mobile.Droid
 {
@@ -16,14 +17,21 @@ namespace Template.Mobile.Droid
         // Launches the startup task
         protected override void OnResume()
         {
-            base.OnResume();
+            try
+            {
+                base.OnResume();
 
-            var mainIntent = new Intent(Application.Context, typeof(MainActivity));
+                var mainIntent = new Intent(Application.Context, typeof(MainActivity));
 
-            if (Intent.Extras != null)
-                mainIntent.PutExtras(Intent.Extras);
+                if (Intent.Extras != null)
+                    mainIntent.PutExtras(Intent.Extras);
 
-            StartActivity(mainIntent);
+                StartActivity(mainIntent);
+            }
+            catch(Exception ex)
+            {
+
+            }
         }
     }
 }

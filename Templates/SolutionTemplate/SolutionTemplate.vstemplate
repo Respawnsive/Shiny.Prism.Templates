@@ -1,17 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
-    <Name>Respawnsive Ultimate Template V4</Name>
-    <Description>Respawnsive Ultimate Template (entire solution) V4</Description>
+    <Name>Respawnsive Ultimate Template V5</Name>
+    <Description>Respawnsive Ultimate Template (entire solution) V5</Description>
     <Icon>RespawnsiveLogo.png</Icon>
+    <TemplateID>Respawnsive.Xamarin.Forms.Prism.Shiny</TemplateID>
     <ProjectType>CSharp</ProjectType>
     <LanguageTag>csharp</LanguageTag>
     <PlatformTag>android</PlatformTag>
     <PlatformTag>ios</PlatformTag>
+    <ProjectTypeTag>Respawnsive</ProjectTypeTag>
     <ProjectTypeTag>mobile</ProjectTypeTag>
-    <!--<CreateNewFolder>true</CreateNewFolder>-->
+    <CreateInPlace>true</CreateInPlace>
+    <CreateNewFolder>false</CreateNewFolder>
     <DefaultName>SolutionName</DefaultName>
-    <!--<ProvideDefaultName>true</ProvideDefaultName>-->
+    <ProvideDefaultName>true</ProvideDefaultName>
   </TemplateData>
   <TemplateContent>
     <ProjectCollection>
@@ -20,5 +23,8 @@
       <ProjectTemplateLink ProjectName="$safeprojectname$.Mobile.Droid" CopyParameters="true">Template.Mobile.Droid\Template.Mobile.Droid.vstemplate</ProjectTemplateLink>
       <ProjectTemplateLink ProjectName="$safeprojectname$.Mobile.iOS" CopyParameters="true">Template.Mobile.iOS\Template.Mobile.iOS.vstemplate</ProjectTemplateLink>
     </ProjectCollection>
+    <ProjectItem ReplaceParameters="false" TargetFileName="azure-pipelines.yml">azure-pipelines.yml</ProjectItem>
+    <ProjectItem ReplaceParameters="false" TargetFileName="Clean Bin-Obj.bat">Clean Bin-Obj.bat</ProjectItem>
+    <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
   </TemplateContent>
 </VSTemplate>
