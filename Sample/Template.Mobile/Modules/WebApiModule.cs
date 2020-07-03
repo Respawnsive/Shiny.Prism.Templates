@@ -36,7 +36,7 @@ namespace Template.Mobile.Modules
             services.UseRepositoryCache();
 
             // Apizr
-            services.UseApizr<ISampleApiService>();
+            services.UseApizrFor<ISampleApiService>();
         }
     }
 }
