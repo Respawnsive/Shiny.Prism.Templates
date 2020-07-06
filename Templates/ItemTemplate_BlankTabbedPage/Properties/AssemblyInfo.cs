@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ItemTemplate_BlankView")]
+[assembly: AssemblyTitle("ItemTemplate_BlankTabbedPage")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Pablo GODONT")]
-[assembly: AssemblyProduct("ItemTemplate_BlankView")]
-[assembly: AssemblyCopyright("Copyright © Pablo GODONT 2020")]
+[assembly: AssemblyCompany("Respawnsive")]
+[assembly: AssemblyProduct("ItemTemplate_BlankTabbedPage")]
+[assembly: AssemblyCopyright("Copyright © 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("33b05fab-828f-4481-87f4-f2969fc496a7")]
+[assembly: Guid("419a6aaf-c16e-4c71-8b4f-f9217174297c")]
 
 // Version information for an assembly consists of the following four values:
 //

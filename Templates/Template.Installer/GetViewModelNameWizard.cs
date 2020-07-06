@@ -7,7 +7,7 @@ using Microsoft.VisualStudio.TemplateWizard;
 
 namespace Template.Installer
 {
-    public class WizardImplementation : IWizard
+    public class GetViewModelNameWizard : IWizard
     {
         // This method is called before opening any item that
         // has the OpenInEditor attribute.

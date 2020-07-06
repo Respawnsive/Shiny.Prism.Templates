@@ -21,6 +21,6 @@
 	</TemplateContent>
 	<WizardExtension>
 		<Assembly>Template.Installer, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=35cfebc95b194ff6</Assembly>
-		<FullClassName>Template.Installer.WizardImplementation</FullClassName>
+		<FullClassName>Template.Installer.GetViewModelNameWizard</FullClassName>
 	</WizardExtension>
 </VSTemplate>
