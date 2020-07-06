@@ -127,7 +127,7 @@ namespace $safeprojectname$.ViewModels
                 Console.WriteLine("PRISM GetNavigationUriPath() : ");
                 Console.WriteLine(NavigationService.GetNavigationUriPath());
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
             }
         }

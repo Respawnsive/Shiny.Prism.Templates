@@ -13,7 +13,7 @@ namespace $rootnamespace$.Views
             {
                 InitializeComponent();
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 Logger.Write(ex);
             }

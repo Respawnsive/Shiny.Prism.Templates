@@ -13,7 +13,7 @@ namespace Template.Mobile.Views
             {
                 InitializeComponent();
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 Logger.Write(ex);
             }

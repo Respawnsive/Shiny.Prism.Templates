@@ -12,7 +12,7 @@ namespace $safeprojectname$.Resources.Dictionaries
             {
                 InitializeComponent();
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 Logger.Write(ex);
             }

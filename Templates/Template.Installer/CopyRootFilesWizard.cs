@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
@@ -36,7 +37,7 @@ namespace Template.Installer
             {
 
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
@@ -46,14 +47,12 @@ namespace Template.Installer
         {
             try
             {
-                Microsoft.VisualStudio.Shell.ThreadHelper.ThrowIfNotOnUIThread();
-                _dte = automationObject as DTE;
-
-                var SolutionPath = replacementsDictionary["$solutiondirectory$"];
-                var assembly = Assembly.GetExecutingAssembly();
-                var resourceName = "MyCompany.MyProduct.MyFile.txt";
+                string SolutionPath = replacementsDictionary["$solutiondirectory$"];
+                CopyRootFile(SolutionPath, "README.md");
+                CopyRootFile(SolutionPath, "azure-pipelines.yml");
+                CopyRootFile(SolutionPath, "Clean Bin-Obj.bat");
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
@@ -64,6 +63,23 @@ namespace Template.Installer
         public bool ShouldAddProjectItem(string filePath)
         {
             return true;
+        }
+
+        private void CopyRootFile(string TargetFolderPath, string filename)
+        {
+            var assembly = Assembly.GetExecutingAssembly();
+            var stream = assembly.GetManifestResourceStream($"Template.Installer.RootFiles.{filename}");
+            if (stream != null)
+            {
+                using (StreamReader sr = new StreamReader(stream))
+                {
+                    var content = sr.ReadToEnd();
+                    using (StreamWriter sw = new StreamWriter(Path.Combine(TargetFolderPath, filename)))
+                    {
+                        sw.Write(content);
+                    }
+                }
+            }
         }
     }
 }

@@ -69,7 +69,7 @@ namespace $safeprojectname$.ViewModels
                 SelectedTheme = Enum.GetName(typeof(AppTheme), ThemeHelper.GetCurrentTheme());
 
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 DialogsService?.Toast(this["Msg_RedToast_Error_Unknown"]);
                 Logger.Write(ex);

@@ -82,7 +82,7 @@ namespace $safeprojectname$.ViewModels
 
                 await Device.InvokeOnMainThreadAsync(async () => await NavigationService.NavigateAsync(nextPage));
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 error = this["Msg_RedToast_Error_Unknown"];
                 Logger.Write(ex);

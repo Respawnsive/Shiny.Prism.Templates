@@ -24,7 +24,7 @@ namespace Template.Mobile.Views
                 InitializeComponent();
                 On<Android>().SetToolbarPlacement(ToolbarPlacement.Bottom);
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 Logger.Write(ex);
             }

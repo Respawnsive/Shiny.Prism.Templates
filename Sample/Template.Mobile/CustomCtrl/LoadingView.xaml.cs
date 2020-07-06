@@ -19,7 +19,7 @@ namespace Template.Mobile.CustomCtrl
             {
                 InitializeComponent();
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 Logger.Write(ex);
             }

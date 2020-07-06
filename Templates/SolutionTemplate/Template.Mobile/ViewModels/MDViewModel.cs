@@ -82,7 +82,7 @@ namespace $safeprojectname$.ViewModels
                     DialogsService.HideLoading();
                 }
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 Logger.Write(ex);
             }
@@ -97,7 +97,7 @@ namespace $safeprojectname$.ViewModels
                     await NavigationService.NavigateAsync(item.NavigationPath);
                 }
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 Logger.Write(ex);
             }
@@ -159,7 +159,7 @@ namespace $safeprojectname$.ViewModels
                 //    SelectedMenuItem = MenuItems.Count > 0 ? MenuItems[0] : null;
 
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 DialogsService?.Toast(this["Msg_RedToast_Error_Unknown"]);
                 Logger.Write(ex);

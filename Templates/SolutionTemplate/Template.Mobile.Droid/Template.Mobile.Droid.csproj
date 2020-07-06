@@ -59,13 +59,11 @@
     <AndroidEnableProfiledAot>true</AndroidEnableProfiledAot>
     <BundleAssemblies>false</BundleAssemblies>
     <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
-    <AndroidPackageFormat>aab</AndroidPackageFormat>
+    <AndroidPackageFormat>apk</AndroidPackageFormat>
     <AndroidUseAapt2>true</AndroidUseAapt2>
     <AndroidCreatePackagePerAbi>false</AndroidCreatePackagePerAbi>
     <JavaMaximumHeapSize>2G</JavaMaximumHeapSize>
-    <AndroidLinkTool>r8</AndroidLinkTool>
     <AndroidDexTool>dx</AndroidDexTool>
-    <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -93,9 +91,6 @@
       <Version>2.1.0.4</Version>
     </PackageReference>
     <PackageReference Include="Prism.Forms.Extended">
-      <Version>7.2.0.1054</Version>
-    </PackageReference>
-    <PackageReference Include="Prism.Microsoft.DependencyInjection.Extensions">
       <Version>7.2.0.1054</Version>
     </PackageReference>
     <PackageReference Include="Prism.Plugin.Popups">

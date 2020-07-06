@@ -59,7 +59,7 @@ namespace $safeprojectname$.ViewModels
                 await Task.Delay(1000);
 
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 DialogsService?.Toast(this["Msg_RedToast_Error_Unknown"]);
                 Logger.Write(ex);

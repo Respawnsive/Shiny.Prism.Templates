@@ -23,7 +23,7 @@ namespace $safeprojectname$.Views
                 // Simulating a complex view
                 Task.Delay(TimeSpan.FromSeconds(3)).Wait();
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 Logger.Write(ex);
             }

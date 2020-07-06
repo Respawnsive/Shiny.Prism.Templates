@@ -42,6 +42,8 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DeployExtension>True</DeployExtension>
+    <CopyVsixExtensionFiles>False</CopyVsixExtensionFiles>
+    <CopyVsixExtensionLocation>C:\Users\jerome.liger\AppData\Local\Microsoft\VisualStudio\16.0_affc39c5Exp\Extensions\Respawnsive</CopyVsixExtensionLocation>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -58,15 +60,9 @@
     <Compile Include="GetViewModelNameWizard.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="RootFiles\azure-pipelines.yml">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="RootFiles\Clean Bin-Obj.bat">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="RootFiles\README.md">
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
+    <EmbeddedResource Include="RootFiles\azure-pipelines.yml" />
+    <EmbeddedResource Include="RootFiles\Clean Bin-Obj.bat" />
+    <EmbeddedResource Include="RootFiles\README.md" />
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>

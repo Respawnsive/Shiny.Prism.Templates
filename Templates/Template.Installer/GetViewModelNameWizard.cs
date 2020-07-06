@@ -42,7 +42,7 @@ namespace Template.Installer
                     replacementsDictionary.Add("$viewmodelName$", ViewModelName);
                 }
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }

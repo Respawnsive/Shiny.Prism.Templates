@@ -13,7 +13,7 @@ namespace $safeprojectname$.Views
             {
                 InitializeComponent();
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 Logger.Write(ex);
             }

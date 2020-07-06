@@ -82,7 +82,7 @@ namespace Template.Mobile.ViewModels
                     DialogsService.HideLoading();
                 }
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 Logger.Write(ex);
             }
@@ -100,7 +100,7 @@ namespace Template.Mobile.ViewModels
                     });
                 }
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 Logger.Write(ex);
             }
@@ -162,7 +162,7 @@ namespace Template.Mobile.ViewModels
                     SelectedMenuItem = MenuItems.Count > 0 ? MenuItems[0] : null;
 
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 DialogsService?.Toast(this["Msg_RedToast_Error_Unknown"]);
                 Logger.Write(ex);

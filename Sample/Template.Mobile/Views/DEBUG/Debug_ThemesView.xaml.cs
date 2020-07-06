@@ -27,7 +27,7 @@ namespace Template.Mobile.Views
 
                 LaunchFakeProgress();
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 Logger.Write(ex);
             }
