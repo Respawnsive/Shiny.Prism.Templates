@@ -72,13 +72,14 @@ namespace $safeprojectname$.ViewModels
             {
                 if (await DialogsService?.ConfirmAsync(this["Msg_Confirm_Disconnect"], this["Msg_Confirm_Title"], this["Msg_Confirm_Ok"], this["Msg_Confirm_Cancel"]))
                 {
-                    DialogsService?.Loading(this["Msg_Loading_Disconnecting"]);
+                    DialogsService.Loading(this["Msg_Loading_Disconnecting"]);
                     await Task.Delay(500);
                     //await DataService.ClearUserDataAsync();
                     SettingsService?.Clear();
                     //_notificationService.Unregister();
                     Logger.Write("LogoutUser", $"Day({DateTime.Now.ToString("yyyy_MM_dd")})");
                     await NavigationService.NavigateAsync($"{nameof(App)}:///{nameof(StartupPage)}");
+                    DialogsService.HideLoading();
                 }
             }
             catch (Exception ex)

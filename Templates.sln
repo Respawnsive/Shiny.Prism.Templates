@@ -3,27 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template.Mobile.iOS", "Sample\Template.Mobile.iOS\Template.Mobile.iOS.csproj", "{B211EEBE-A171-4977-B0D2-AAA9FF876553}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template.Mobile", "Sample\Template.Mobile\Template.Mobile.csproj", "{FDBCA5B6-1604-4494-99B7-A0693064B35C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{568EBD05-FDC0-4B96-B37D-8EC026CF2EAD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template.Resources", "Sample\Template.Resources\Template.Resources.csproj", "{E3C601C5-FDAD-455E-A210-53081B9C1532}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{568EBD05-FDC0-4B96-B37D-8EC026CF2EAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template.Mobile", "Sample\Template.Mobile\Template.Mobile.csproj", "{FDBCA5B6-1604-4494-99B7-A0693064B35C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template.Mobile.iOS", "Sample\Template.Mobile.iOS\Template.Mobile.iOS.csproj", "{B211EEBE-A171-4977-B0D2-AAA9FF876553}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template.Mobile.Droid", "Sample\Template.Mobile.Droid\Template.Mobile.Droid.csproj", "{CE65FBC5-1ED2-4A6C-8663-FC190C8A84CB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{7BFFD29C-9C08-448A-AD8D-D5A5D1AC35EF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolutionTemplate", "Templates\SolutionTemplate\SolutionTemplate.csproj", "{C9675A26-225D-44E6-A0F2-906E44CC6BBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemTemplate_BlankPage", "ItemTemplate_BlankPage\ItemTemplate_BlankPage.csproj", "{DFFEE5D2-4FE4-4636-8631-334A392DFBCD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemTemplate_BlankPage", "Templates\ItemTemplate_BlankPage\ItemTemplate_BlankPage.csproj", "{DFFEE5D2-4FE4-4636-8631-334A392DFBCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template.Installer", "Template.Installer\Template.Installer.csproj", "{E6E12DD7-A7CF-4312-B04F-3B17CB64FF7F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template.Installer", "Templates\Template.Installer\Template.Installer.csproj", "{E6E12DD7-A7CF-4312-B04F-3B17CB64FF7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemTemplate_BlankView", "ItemTemplate_BlankView\ItemTemplate_BlankView.csproj", "{33B05FAB-828F-4481-87F4-F2969FC496A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemTemplate_BlankView", "Templates\ItemTemplate_BlankView\ItemTemplate_BlankView.csproj", "{33B05FAB-828F-4481-87F4-F2969FC496A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemTemplate_BlankTabbedPage", "ItemTemplate_BlankTabbedPage\ItemTemplate_BlankTabbedPage.csproj", "{419A6AAF-C16E-4C71-8B4F-F9217174297C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template.Mobile.Droid", "Sample\Template.Mobile.Droid\Template.Mobile.Droid.csproj", "{CE65FBC5-1ED2-4A6C-8663-FC190C8A84CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemTemplate_BlankTabbedPage", "Templates\ItemTemplate_BlankTabbedPage\ItemTemplate_BlankTabbedPage.csproj", "{419A6AAF-C16E-4C71-8B4F-F9217174297C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -321,12 +321,12 @@ Global
 		{B211EEBE-A171-4977-B0D2-AAA9FF876553} = {568EBD05-FDC0-4B96-B37D-8EC026CF2EAD}
 		{FDBCA5B6-1604-4494-99B7-A0693064B35C} = {568EBD05-FDC0-4B96-B37D-8EC026CF2EAD}
 		{E3C601C5-FDAD-455E-A210-53081B9C1532} = {568EBD05-FDC0-4B96-B37D-8EC026CF2EAD}
+		{CE65FBC5-1ED2-4A6C-8663-FC190C8A84CB} = {568EBD05-FDC0-4B96-B37D-8EC026CF2EAD}
 		{C9675A26-225D-44E6-A0F2-906E44CC6BBD} = {7BFFD29C-9C08-448A-AD8D-D5A5D1AC35EF}
 		{DFFEE5D2-4FE4-4636-8631-334A392DFBCD} = {7BFFD29C-9C08-448A-AD8D-D5A5D1AC35EF}
 		{E6E12DD7-A7CF-4312-B04F-3B17CB64FF7F} = {7BFFD29C-9C08-448A-AD8D-D5A5D1AC35EF}
 		{33B05FAB-828F-4481-87F4-F2969FC496A7} = {7BFFD29C-9C08-448A-AD8D-D5A5D1AC35EF}
 		{419A6AAF-C16E-4C71-8B4F-F9217174297C} = {7BFFD29C-9C08-448A-AD8D-D5A5D1AC35EF}
-		{CE65FBC5-1ED2-4A6C-8663-FC190C8A84CB} = {568EBD05-FDC0-4B96-B37D-8EC026CF2EAD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {00806813-91C1-4731-9FC8-53AEF95192CA}

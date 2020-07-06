@@ -19,7 +19,7 @@ namespace Template.Mobile
             services.RegisterModule<LoggingModule>();
 
             // Add Dialogs
-            //services.RegisterModule<DialogsModule>();
+            services.RegisterModule<DialogsModule>();
 
             // Add APIs
             services.RegisterModule<WebApiModule>();

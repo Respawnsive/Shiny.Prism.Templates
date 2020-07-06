@@ -30,8 +30,8 @@ namespace $safeprojectname$.Helpers
         public const string DynamicBarTextColor = nameof(DynamicBarTextColor);
         public const string DynamicHeaderTextColor = nameof(DynamicHeaderTextColor);
 
-        public const string DynamicTopShadow = nameof(DynamicTopShadow);
-        public const string DynamicBottomShadow = nameof(DynamicBottomShadow);
+        //public const string DynamicTopShadow = nameof(DynamicTopShadow);
+        //public const string DynamicBottomShadow = nameof(DynamicBottomShadow);
 
         public const string DynamicHasShadow = nameof(DynamicHasShadow);
 
@@ -105,8 +105,8 @@ namespace $safeprojectname$.Helpers
 
             SetDynamicResource(DynamicIsVisible, false);
 
-            SetDynamicResource(DynamicTopShadow, ShadowType.None);
-            SetDynamicResource(DynamicBottomShadow, ShadowType.None);
+            //SetDynamicResource(DynamicTopShadow, ShadowType.None);
+            //SetDynamicResource(DynamicBottomShadow, ShadowType.None);
             SetDynamicResource(DynamicHasShadow, false);
 
             SetDynamicResource(DynamicIsTabBlurVisible, false);
@@ -149,8 +149,8 @@ namespace $safeprojectname$.Helpers
 
             SetDynamicResource(DynamicIsVisible, false);
 
-            SetDynamicResource(DynamicTopShadow, isAcrylic ? ShadowType.AcrylicTop : ShadowType.Top);
-            SetDynamicResource(DynamicBottomShadow, ShadowType.Bottom);
+            //SetDynamicResource(DynamicTopShadow, isAcrylic ? ShadowType.AcrylicTop : ShadowType.Top);
+            //SetDynamicResource(DynamicBottomShadow, ShadowType.Bottom);
             SetDynamicResource(DynamicHasShadow, true);
 
             SetDynamicResource(DynamicIsTabBlurVisible, false);
@@ -187,8 +187,8 @@ namespace $safeprojectname$.Helpers
 
             SetDynamicResource(DynamicIsVisible, false);
 
-            SetDynamicResource(DynamicTopShadow, ShadowType.None);
-            SetDynamicResource(DynamicBottomShadow, ShadowType.None);
+            //SetDynamicResource(DynamicTopShadow, ShadowType.None);
+            //SetDynamicResource(DynamicBottomShadow, ShadowType.None);
             SetDynamicResource(DynamicHasShadow, true);
 
             SetDynamicResource(DynamicIsTabBlurVisible, true);
@@ -230,8 +230,8 @@ namespace $safeprojectname$.Helpers
 
             SetDynamicResource(DynamicIsVisible, true);
 
-            SetDynamicResource(DynamicTopShadow, ShadowType.None);
-            SetDynamicResource(DynamicBottomShadow, ShadowType.None);
+            //SetDynamicResource(DynamicTopShadow, ShadowType.None);
+            //SetDynamicResource(DynamicBottomShadow, ShadowType.None);
             SetDynamicResource(DynamicHasShadow, false);
 
             SetDynamicResource(DynamicIsTabBlurVisible, true);

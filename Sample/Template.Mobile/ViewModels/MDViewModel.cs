@@ -72,13 +72,14 @@ namespace Template.Mobile.ViewModels
             {
                 if (await DialogsService?.ConfirmAsync(this["Msg_Confirm_Disconnect"], this["Msg_Confirm_Title"], this["Msg_Confirm_Ok"], this["Msg_Confirm_Cancel"]))
                 {
-                    DialogsService?.Loading(this["Msg_Loading_Disconnecting"]);
+                    DialogsService.Loading(this["Msg_Loading_Disconnecting"]);
                     await Task.Delay(500);
                     //await DataService.ClearUserDataAsync();
                     SettingsService?.Clear();
                     //_notificationService.Unregister();
                     Logger.Write("LogoutUser", $"Day({DateTime.Now.ToString("yyyy_MM_dd")})");
                     await NavigationService.NavigateAsync($"{nameof(App)}:///{nameof(StartupPage)}");
+                    DialogsService.HideLoading();
                 }
             }
             catch (Exception ex)
@@ -93,7 +94,10 @@ namespace Template.Mobile.ViewModels
             {
                 if (item != null && item.IsActive && !String.IsNullOrWhiteSpace(item.NavigationPath))
                 {
-                    await NavigationService.NavigateAsync(item.NavigationPath);
+                    Device.BeginInvokeOnMainThread(async () =>
+                    {
+                        await NavigationService.NavigateAsync(item.NavigationPath);
+                    });
                 }
             }
             catch (Exception ex)
@@ -154,8 +158,8 @@ namespace Template.Mobile.ViewModels
                 //    await NavigationService.NavigateAsync(url);
                 //});
 
-                //if (SelectedMenuItem == null)
-                //    SelectedMenuItem = MenuItems.Count > 0 ? MenuItems[0] : null;
+                if (SelectedMenuItem == null)
+                    SelectedMenuItem = MenuItems.Count > 0 ? MenuItems[0] : null;
 
             }
             catch (Exception ex)
