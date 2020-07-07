@@ -94,6 +94,9 @@
     <PackageReference Include="Prism.Forms.Extended">
       <Version>7.2.0.1054</Version>
     </PackageReference>
+    <PackageReference Include="Prism.Microsoft.DependencyInjection.Extensions">
+      <Version>7.2.0.1054</Version>
+    </PackageReference>
     <PackageReference Include="Prism.Plugin.Popups">
       <Version>7.2.0.1046</Version>
     </PackageReference>
