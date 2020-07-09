@@ -67,6 +67,7 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Renderers\iOSWTTabbedPageRenderer.cs" />
     <Compile Include="Renderers\iOSMaterialStepperRenderer.cs" />
     <Compile Include="Renderers\iOSMaterialDatePickerRenderer.cs" />
     <Compile Include="Renderers\iOSMaterialTimePickerRenderer.cs" />

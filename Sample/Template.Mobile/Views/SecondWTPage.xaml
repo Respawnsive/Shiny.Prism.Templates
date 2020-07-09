@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ctrl:CustomWTTabbedPage x:Class="Template.Mobile.Views.SecondWTPage"
+                         xmlns="http://xamarin.com/schemas/2014/forms"
+                         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                         xmlns:ctrl="clr-namespace:Template.Mobile.CustomCtrl"
+                         xmlns:lazyView="clr-namespace:Prism.Forms.LazyView;assembly=Prism.Forms.LazyView"
+                         xmlns:viewModels="clr-namespace:Template.Mobile.ViewModels;assembly=Template.Mobile"
+                         xmlns:views="clr-namespace:Template.Mobile.Views;assembly=Template.Mobile"
+                         x:Name="this"
+                         Title="{Binding [SecondWTPage_Title]}"
+                         x:DataType="viewModels:SecondWTViewModel">
+
+    <!--  ! Do not forget to RegisterForNavigation for each LazyContentPage dynamicaly generated  -->
+
+    <views:BlankPage />
+    <views:HomePage />
+    <views:BlankPage />
+    <views:BlankPage />
+
+</ctrl:CustomWTTabbedPage>

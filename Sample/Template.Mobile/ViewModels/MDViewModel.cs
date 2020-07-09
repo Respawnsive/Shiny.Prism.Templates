@@ -96,6 +96,11 @@ namespace Template.Mobile.ViewModels
                 {
                     Device.BeginInvokeOnMainThread(async () =>
                     {
+                        if (item.NavigationPath.Equals(nameof(SecondWTPage)))
+                        {
+                            await NavigationService.NavigateAsync(item.NavigationPath, useModalNavigation: true);
+                            return;
+                        }
                         await NavigationService.NavigateAsync(item.NavigationPath);
                     });
                 }
@@ -146,7 +151,7 @@ namespace Template.Mobile.ViewModels
                 {
                     Title = this["WalkThrough_Title"],
                     ItemImageSource = "ic_bug_report.png",
-                    NavigationPath = $"{nameof(WalkThroughPage)}"
+                    NavigationPath = $"{nameof(SecondWTPage)}"
                 });
 #endif
 

@@ -129,6 +129,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Renderers\AndroidWTTabbedPageRenderer.cs" />
     <Compile Include="Services\PlatformThemeService.cs" />
     <Compile Include="Renderers\AndroidMaterialTimePickerRenderer.cs" />
     <Compile Include="Renderers\AndroidMaterialDatePickerRenderer.cs" />
