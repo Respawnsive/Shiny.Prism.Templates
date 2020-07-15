@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.4" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.6" />
     <PackageReference Include="Resizetizer.NT" Version="0.2.0" />
   </ItemGroup>
 
@@ -33,7 +33,7 @@
     <SharedImage Include="Images\Generic_Images\background_blur.png" BaseSize="360, 640" />
     <SharedImage Include="Images\Generic_Images\background_darkblur.png" BaseSize="360, 640" />
 	  <SharedImage Include="Images\Generic_Images\menu_background_dark.png" BaseSize="360, 203" />
-    <SharedImage Include="Images\Generic_Images\menu_background_light.png" BaseSize="360, 203"/>
+    <SharedImage Include="Images\Generic_Images\menu_background_light.png" BaseSize="360, 203" />
     <SharedImage Include="Images\Material_icons\ic_menu.svg" BaseSize="48, 48" TintColor="#FFFFFFFF" />
     <SharedImage Include="Images\Material_icons\ic_exit_to_app.svg" BaseSize="48, 48" TintColor="#FFFFFFFF" />
     <SharedImage Include="Images\Material_icons\ic_add.svg" BaseSize="48, 48" TintColor="#FFFFFFFF" />

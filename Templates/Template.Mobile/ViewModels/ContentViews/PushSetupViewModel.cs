@@ -45,7 +45,7 @@ namespace Template.Mobile.ViewModels
             );
 
             this.UpdateTag = ReactiveCommand.CreateFromTask(
-                () => this.Do(() => _pushManager.TryUpdateTags(this.Tag)),
+                () => this.Do(() => _pushManager.TrySetTags(this.Tag)),
                 this.WhenAny(
                     x => x.Tag,
                     x => x.RegToken,

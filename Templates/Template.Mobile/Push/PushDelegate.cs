@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Shiny.Notifications;
@@ -24,10 +25,10 @@ namespace Template.Mobile.Push
             => Insert("PUSH ENTRY");
 
         public Task OnReceived(IDictionary<string, string> data)
-            => Insert("PUSH RECEIVED");
+            => Insert($"PUSH RECEIVED: { string.Join(',', data.Select(kvp => $"{kvp.Key}: {kvp.Value}"))}");
 
         public Task OnTokenChanged(string token)
-            => Insert("PUSH TOKEN CHANGE");
+            => Insert($"PUSH TOKEN CHANGE: {token}");
 
         Task Insert(string info) => Task.Run(() => Console.WriteLine(info));
     }

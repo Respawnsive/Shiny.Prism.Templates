@@ -77,16 +77,16 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Acr.UserDialogs">
-      <Version>7.1.0.442</Version>
+      <Version>7.1.0.446</Version>
     </PackageReference>
     <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie">
       <Version>3.1.2</Version>
     </PackageReference>
     <PackageReference Include="glidex.forms">
-      <Version>2.0.1.394</Version>
+      <Version>2.1.0.470</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection">
-      <Version>3.1.4</Version>
+      <Version>3.1.6</Version>
     </PackageReference>
     <PackageReference Include="Plugin.CurrentActivity">
       <Version>2.1.0.4</Version>
@@ -104,27 +104,27 @@
       <Version>0.2.0</Version>
     </PackageReference>
     <PackageReference Include="Sharpnado.Presentation.Forms">
-      <Version>1.6.0</Version>
+      <Version>1.7.0</Version>
     </PackageReference>
     <PackageReference Include="Shiny.Core">
-      <Version>1.2.0.1686</Version>
+      <Version>1.2.0.1755</Version>
     </PackageReference>
     <PackageReference Include="Shiny.Logging.AppCenter">
-      <Version>1.2.0.1686</Version>
+      <Version>1.2.0.1755</Version>
     </PackageReference>
     <PackageReference Include="Shiny.Prism">
       <Version>7.2.0.1054</Version>
     </PackageReference>
     <PackageReference Include="Shiny.Push.FirebaseMessaging">
-      <Version>1.2.0.1686-beta</Version>
+      <Version>1.2.0.1755-beta</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Essentials.Interfaces">
       <Version>1.5.3.2</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="4.6.0.847" />
+    <PackageReference Include="Xamarin.Forms" Version="4.7.0.1080" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
     <PackageReference Include="Xamarin.Forms.Visual.Material">
-      <Version>4.6.0.847</Version>
+      <Version>4.7.0.1080</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.GooglePlayServices.Basement">
       <Version>71.1620.2</Version>
