@@ -5,6 +5,7 @@
                     xmlns:ctrl="clr-namespace:Template.Mobile.CustomCtrl"
                     xmlns:dictionaries="clr-namespace:Template.Mobile.Resources.Dictionaries;assembly=Template.Mobile"
                     xmlns:material="clr-namespace:Sharpnado.MaterialFrame;assembly=Sharpnado.MaterialFrame"
+                    xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows"
                     xmlns:tabs="clr-namespace:Sharpnado.Presentation.Forms.CustomViews.Tabs;assembly=Sharpnado.Presentation.Forms"
                     xmlns:views="clr-namespace:Template.Mobile.Views">
 
@@ -17,8 +18,7 @@
 
     <!--  Common Styles - Apply to every Controls(TargetTypes) implicitely  -->
 
-    <Style ApplyToDerivedTypes="True"
-           TargetType="ContentPage">
+    <Style ApplyToDerivedTypes="True" TargetType="ContentPage">
         <Setter Property="Padding">
             <Setter.Value>
                 <OnPlatform x:TypeArguments="Thickness">
@@ -30,18 +30,18 @@
         <Setter Property="BackgroundColor" Value="{DynamicResource DynamicBackgroundColor}" />
     </Style>
 
-    <Style ApplyToDerivedTypes="True"
-           TargetType="NavigationPage">
+    <Style ApplyToDerivedTypes="True" TargetType="NavigationPage">
         <Setter Property="BarBackgroundColor" Value="{DynamicResource DynamicNavigationBarColor}" />
         <Setter Property="BarTextColor" Value="{DynamicResource DynamicBarTextColor}" />
+        <Setter Property="Visual" Value="Material" />
     </Style>
 
-    <Style ApplyToDerivedTypes="True"
-           TargetType="TabbedPage">
+    <Style ApplyToDerivedTypes="True" TargetType="TabbedPage">
         <Setter Property="BarBackgroundColor" Value="{DynamicResource DynamicNavigationBarColor}" />
         <Setter Property="BarTextColor" Value="{DynamicResource DynamicBarTextColor}" />
         <Setter Property="SelectedTabColor" Value="{DynamicResource DynamicBarTextColor}" />
         <Setter Property="UnselectedTabColor" Value="Silver" />
+        <Setter Property="Visual" Value="Material"/>
     </Style>
 
     <Style TargetType="ActivityIndicator">
@@ -81,14 +81,29 @@
         <Setter Property="Visual" Value="Material" />
     </Style>
 
-    <Style ApplyToDerivedTypes="True"
-           TargetType="material:MaterialFrame">
+    <Style ApplyToDerivedTypes="True" TargetType="material:MaterialFrame">
         <Setter Property="MaterialBlurStyle" Value="{DynamicResource DynamicBlurStyle}" />
         <Setter Property="MaterialTheme" Value="{DynamicResource DynamicMaterialTheme}" />
         <Setter Property="LightThemeBackgroundColor" Value="{DynamicResource DynamicLightThemeColor}" />
         <Setter Property="CornerRadius" Value="{DynamicResource DynamicCornerRadius}" />
         <Setter Property="Elevation" Value="{DynamicResource DynamicElevation}" />
         <Setter Property="Padding" Value="16,32" />
+    </Style>
+
+    <Style ApplyToDerivedTypes="True" TargetType="sh:Shadows">
+        <Setter Property="CornerRadius" Value="10" />
+        <Setter Property="Shades">
+            <sh:ImmutableShades>
+                <sh:Shade BlurRadius="10"
+                          Opacity="1"
+                          Offset="10,10"
+                          Color="White" />
+                <sh:Shade BlurRadius="10"
+                          Opacity="1"
+                          Offset="-6, -6"
+                          Color="#19000000" />
+            </sh:ImmutableShades>
+        </Setter>
     </Style>
 
     <Style TargetType="Picker">
@@ -164,8 +179,7 @@
     <!--  Named Styles - Apply explicitely to Target with Style="{StaticResource key}"  -->
 
     <!--  Style for CollectionView States (Grid as first layout in the itemTemplate)  -->
-    <Style x:Key="SelectableCollectionView"
-           TargetType="ctrl:SelectableCellBase">
+    <Style x:Key="SelectableCollectionView" TargetType="ctrl:SelectableCellBase">
         <Setter Property="VisualStateManager.VisualStateGroups">
             <VisualStateGroupList>
                 <VisualStateGroup x:Name="CommonStates">
@@ -205,57 +219,49 @@
         </Setter>
     </Style>-->
 
-    <Style x:Key="TextHeadline"
-           TargetType="Label">
+    <Style x:Key="TextHeadline" TargetType="Label">
         <Setter Property="FontFamily" Value="{StaticResource FontExtraBold}" />
         <Setter Property="TextColor" Value="{DynamicResource DynamicPrimaryTextColor}" />
         <Setter Property="FontSize" Value="{StaticResource TextSizeHeadline}" />
     </Style>
 
-    <Style x:Key="TextTitle"
-           TargetType="Label">
+    <Style x:Key="TextTitle" TargetType="Label">
         <Setter Property="FontFamily" Value="{StaticResource FontBold}" />
         <Setter Property="TextColor" Value="{DynamicResource DynamicPrimaryTextColor}" />
         <Setter Property="FontSize" Value="{StaticResource TextSizeTitle}" />
     </Style>
 
-    <Style x:Key="TextSubheadline"
-           TargetType="Label">
+    <Style x:Key="TextSubheadline" TargetType="Label">
         <Setter Property="FontFamily" Value="{StaticResource FontExtraBold}" />
         <Setter Property="TextColor" Value="{DynamicResource DynamicPrimaryTextColor}" />
         <Setter Property="FontSize" Value="{StaticResource TextSizeSubhead}" />
     </Style>
 
-    <Style x:Key="TextSubhead"
-           TargetType="Label">
+    <Style x:Key="TextSubhead" TargetType="Label">
         <Setter Property="FontFamily" Value="{StaticResource FontSemiBold}" />
         <Setter Property="TextColor" Value="{DynamicResource DynamicPrimaryTextColor}" />
         <Setter Property="FontSize" Value="{StaticResource TextSizeSubhead}" />
     </Style>
 
-    <Style x:Key="TextSubheadSecondary"
-           TargetType="Label">
+    <Style x:Key="TextSubheadSecondary" TargetType="Label">
         <Setter Property="FontFamily" Value="{StaticResource FontSemiBold}" />
         <Setter Property="TextColor" Value="{DynamicResource DynamicSecondaryTextColor}" />
         <Setter Property="FontSize" Value="{StaticResource TextSizeSubhead}" />
     </Style>
 
-    <Style x:Key="TextBody"
-           TargetType="Label">
+    <Style x:Key="TextBody" TargetType="Label">
         <Setter Property="FontFamily" Value="{StaticResource FontRegular}" />
         <Setter Property="TextColor" Value="{DynamicResource DynamicPrimaryTextColor}" />
         <Setter Property="FontSize" Value="{StaticResource TextSizeBody}" />
     </Style>
 
-    <Style x:Key="TextBodySecondary"
-           TargetType="Label">
+    <Style x:Key="TextBodySecondary" TargetType="Label">
         <Setter Property="FontFamily" Value="{StaticResource FontLight}" />
         <Setter Property="TextColor" Value="{DynamicResource DynamicPrimaryTextColor}" />
         <Setter Property="FontSize" Value="{StaticResource TextSizeBody}" />
     </Style>
 
-    <Style x:Key="TextCaption"
-           TargetType="Label">
+    <Style x:Key="TextCaption" TargetType="Label">
         <Setter Property="FontFamily" Value="{StaticResource FontRegular}" />
         <Setter Property="TextColor" Value="{DynamicResource DynamicPrimaryTextColor}" />
         <Setter Property="FontSize" Value="{StaticResource TextSizeCaption}" />
@@ -267,8 +273,7 @@
         <Setter Property="FontSize" Value="{StaticResource TextSizeSmallCaption}" />
     </Style>
 
-    <Style x:Key="TextCaptionSecondary"
-           TargetType="Label">
+    <Style x:Key="TextCaptionSecondary" TargetType="Label">
         <Setter Property="FontFamily" Value="{StaticResource FontLight}" />
         <Setter Property="TextColor" Value="{DynamicResource DynamicPrimaryTextColor}" />
         <Setter Property="FontSize" Value="{StaticResource TextSizeCaption}" />

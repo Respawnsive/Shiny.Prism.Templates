@@ -27,6 +27,10 @@
     <item name="windowActionModeOverlay">true</item>
 
     <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
+
+    <!--<item name="android:elevation">4dp</item>
+    <item name="android:windowContentOverlay">@drawable/actionbar_shadow</item>-->
+    
   </style>
 
   <style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">

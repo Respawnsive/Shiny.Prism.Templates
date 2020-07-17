@@ -3,22 +3,70 @@
                        xmlns="http://xamarin.com/schemas/2014/forms"
                        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                        xmlns:materialFrame="clr-namespace:Sharpnado.MaterialFrame;assembly=Sharpnado.MaterialFrame"
+                       xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows"
                        xmlns:viewModels="clr-namespace:Template.Mobile.ViewModels;assembly=Template.Mobile"
                        xmlns:views="clr-namespace:Template.Mobile.Views;assembly=Template.Mobile"
                        Title="{Binding [HomePage_Title]}"
                        x:DataType="viewModels:HomeViewModel">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Padding="16"
-                         Spacing="16">
+            <StackLayout Spacing="30"
+                         Padding="16"
+                         BackgroundColor="#F1F1F1">
 
                 <materialFrame:MaterialFrame>
                     <StackLayout>
                         <Label Style="{StaticResource TextHeadline}" Text="Welcome to the HomePage !" />
                         <Label Style="{StaticResource TextBody}" Text="Need to customize your page here..." />
-                        <Button Command="{Binding NavigateCmd}" Text="Gooooooooooo" />
+                        <Button Margin="20"
+                                Command="{Binding NavigateCmd}"
+                                Text="Gooooooooooo" />
                     </StackLayout>
                 </materialFrame:MaterialFrame>
+
+                <Grid ColumnSpacing="20" ColumnDefinitions="*,*,*">
+                    <sh:Shadows Grid.Row="0"
+                                Grid.Column="0"
+                                Shades="{sh:NeumorphismShades}">
+                        <Frame BackgroundColor="#F1F1F1"
+                               CornerRadius="10"
+                               HasShadow="False">
+                            <StackLayout>
+                                <Label Style="{StaticResource TextBody}"
+                                       HorizontalTextAlignment="Center"
+                                       Text="Test1" />
+                            </StackLayout>
+                        </Frame>
+                    </sh:Shadows>
+
+                    <sh:Shadows Grid.Row="0"
+                                Grid.Column="1"
+                                Shades="{sh:NeumorphismShades}">
+                        <Frame BackgroundColor="#F1F1F1"
+                               CornerRadius="10"
+                               HasShadow="False">
+                            <StackLayout>
+                                <Label Style="{StaticResource TextBody}"
+                                       HorizontalTextAlignment="Center"
+                                       Text="Test2" />
+                            </StackLayout>
+                        </Frame>
+                    </sh:Shadows>
+
+                    <sh:Shadows Grid.Row="0"
+                                Grid.Column="2"
+                                Shades="{sh:NeumorphismShades}">
+                        <Frame BackgroundColor="#F1F1F1"
+                               CornerRadius="10"
+                               HasShadow="False">
+                            <StackLayout>
+                                <Label Style="{StaticResource TextBody}"
+                                       HorizontalTextAlignment="Center"
+                                       Text="Test3" />
+                            </StackLayout>
+                        </Frame>
+                    </sh:Shadows>
+                </Grid>
 
             </StackLayout>
         </ScrollView>

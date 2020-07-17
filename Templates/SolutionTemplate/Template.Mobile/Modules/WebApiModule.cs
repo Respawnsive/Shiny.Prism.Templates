@@ -36,7 +36,7 @@ namespace $safeprojectname$.Modules
             services.UseRepositoryCache();
 
             // Apizr
-            services.UseApizr<ISampleApiService>();
+            services.UseApizrFor<ISampleApiService>();
         }
     }
 }

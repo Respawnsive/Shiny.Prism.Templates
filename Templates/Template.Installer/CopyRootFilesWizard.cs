@@ -51,6 +51,7 @@ namespace Template.Installer
                 CopyRootFile(SolutionPath, "README.md");
                 CopyRootFile(SolutionPath, "azure-pipelines.yml");
                 CopyRootFile(SolutionPath, "Clean Bin-Obj.bat");
+                CopyRootFile(SolutionPath, "Settings.XamlStyler");
             }
             catch(Exception ex)
             {

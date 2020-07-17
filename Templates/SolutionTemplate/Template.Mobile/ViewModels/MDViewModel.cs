@@ -94,7 +94,10 @@ namespace $safeprojectname$.ViewModels
             {
                 if (item != null && item.IsActive && !String.IsNullOrWhiteSpace(item.NavigationPath))
                 {
-                    await NavigationService.NavigateAsync(item.NavigationPath);
+                    Device.BeginInvokeOnMainThread(async () =>
+                    {
+                        await NavigationService.NavigateAsync(item.NavigationPath);
+                    });
                 }
             }
             catch(Exception ex)
@@ -155,8 +158,8 @@ namespace $safeprojectname$.ViewModels
                 //    await NavigationService.NavigateAsync(url);
                 //});
 
-                //if (SelectedMenuItem == null)
-                //    SelectedMenuItem = MenuItems.Count > 0 ? MenuItems[0] : null;
+                if (SelectedMenuItem == null)
+                    SelectedMenuItem = MenuItems.Count > 0 ? MenuItems[0] : null;
 
             }
             catch(Exception ex)
