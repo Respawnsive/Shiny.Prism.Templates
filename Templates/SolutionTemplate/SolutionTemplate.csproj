@@ -61,6 +61,12 @@
     <Content Include="Template.Mobile.Droid\Renderers\AndroidMaterialDatePickerRenderer.cs" />
     <Content Include="Template.Mobile.Droid\Renderers\AndroidMaterialStepperRenderer.cs" />
     <Content Include="Template.Mobile.Droid\Renderers\AndroidMaterialTimePickerRenderer.cs" />
+    <Content Include="Template.Mobile.Droid\Resources\drawable\actionbar_shadow.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Template.Mobile.Droid\Resources\drawable\appicon.png">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Template.Mobile.Droid\Resources\Resource.designer.cs" />
     <Content Include="Template.Mobile.Droid\Services\PlatformThemeService.cs" />
     <Content Include="Template.Mobile.Droid\SplashActivity.cs" />
@@ -71,7 +77,10 @@
     <Content Include="Template.Mobile.Droid\Resources\layout\Tabbar.xml" />
     <Content Include="Template.Mobile.Droid\Resources\layout\Toolbar.xml" />
     <Content Include="Template.Mobile.Droid\Resources\values\colors.xml" />
-    <Content Include="Template.Mobile.Droid\Resources\values\styles.xml" />
+    <AndroidResource Include="Template.Mobile.Droid\Resources\values\styles.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <Content Include="Template.Mobile.Droid\Template.Mobile.Droid.vstemplate" />
     <Content Include="Template.Mobile.Droid\__TemplateIcon.ico" />
     <Content Include="Template.Mobile.iOS\AppDelegate.cs" />
@@ -138,9 +147,9 @@
     <Content Include="Template.Mobile\Resources\Dictionaries\Fonts.xaml.cs">
       <DependentUpon>Fonts.xaml</DependentUpon>
     </Content>
-    <Content Include="Template.Mobile\Resources\Dictionaries\Styles.xaml.cs">
+    <None Include="Template.Mobile\Resources\Dictionaries\Styles.xaml.cs">
       <DependentUpon>Styles.xaml</DependentUpon>
-    </Content>
+    </None>
     <Content Include="Template.Mobile\Resources\Dictionaries\Values.xaml.cs">
       <DependentUpon>Values.xaml</DependentUpon>
     </Content>
@@ -1191,9 +1200,10 @@
     <Content Include="Template.Mobile\Resources\Dictionaries\Fonts.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Template.Mobile\Resources\Dictionaries\Styles.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Content>
+    <EmbeddedResource Include="Template.Mobile\Resources\Dictionaries\Styles.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <Content Include="Template.Mobile\Resources\Dictionaries\Values.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>

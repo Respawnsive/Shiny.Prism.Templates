@@ -43,7 +43,6 @@
     <PackageReference Include="Prism.Plugin.Popups" Version="7.2.0.1046" />
     <PackageReference Include="ReactiveUI.Fody" Version="11.4.17" />
     <PackageReference Include="Refit.HttpClientFactory" Version="5.1.67" />
-    <PackageReference Include="Resizetizer.NT" Version="0.2.0" />
     <PackageReference Include="Sharpnado.Presentation.Forms" Version="1.7.0" />
     <PackageReference Include="Sharpnado.Shadows" Version="1.0.2" />
     <PackageReference Include="Shiny.Core" Version="1.2.0.1755" />

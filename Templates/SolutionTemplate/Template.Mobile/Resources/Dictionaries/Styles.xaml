@@ -5,6 +5,7 @@
                     xmlns:ctrl="clr-namespace:$safeprojectname$.CustomCtrl"
                     xmlns:dictionaries="clr-namespace:$safeprojectname$.Resources.Dictionaries;assembly=$safeprojectname$"
                     xmlns:material="clr-namespace:Sharpnado.MaterialFrame;assembly=Sharpnado.MaterialFrame"
+                    xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows"
                     xmlns:tabs="clr-namespace:Sharpnado.Presentation.Forms.CustomViews.Tabs;assembly=Sharpnado.Presentation.Forms"
                     xmlns:views="clr-namespace:$safeprojectname$.Views">
 
@@ -34,6 +35,7 @@
            TargetType="NavigationPage">
         <Setter Property="BarBackgroundColor" Value="{DynamicResource DynamicNavigationBarColor}" />
         <Setter Property="BarTextColor" Value="{DynamicResource DynamicBarTextColor}" />
+        <Setter Property="Visual" Value="Material" />
     </Style>
 
     <Style ApplyToDerivedTypes="True"
@@ -42,6 +44,7 @@
         <Setter Property="BarTextColor" Value="{DynamicResource DynamicBarTextColor}" />
         <Setter Property="SelectedTabColor" Value="{DynamicResource DynamicBarTextColor}" />
         <Setter Property="UnselectedTabColor" Value="Silver" />
+        <Setter Property="Visual" Value="Material" />
     </Style>
 
     <Style TargetType="ActivityIndicator">
@@ -89,6 +92,23 @@
         <Setter Property="CornerRadius" Value="{DynamicResource DynamicCornerRadius}" />
         <Setter Property="Elevation" Value="{DynamicResource DynamicElevation}" />
         <Setter Property="Padding" Value="16,32" />
+    </Style>
+
+    <Style ApplyToDerivedTypes="True"
+           TargetType="sh:Shadows">
+        <Setter Property="CornerRadius" Value="10" />
+        <Setter Property="Shades">
+            <sh:ImmutableShades>
+                <sh:Shade BlurRadius="10"
+                          Opacity="1"
+                          Offset="10,10"
+                          Color="White" />
+                <sh:Shade BlurRadius="10"
+                          Opacity="1"
+                          Offset="-6, -6"
+                          Color="#19000000" />
+            </sh:ImmutableShades>
+        </Setter>
     </Style>
 
     <Style TargetType="Picker">
