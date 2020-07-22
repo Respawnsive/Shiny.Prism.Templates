@@ -110,13 +110,13 @@
     <Content Include="Template.Mobile\Converters\InvertBoolConverter.cs" />
     <Content Include="Template.Mobile\Converters\NullToFalseConverter.cs" />
     <Content Include="Template.Mobile\Converters\WithoutExtensionConverter.cs" />
-    <Content Include="Template.Mobile\CustomCtrl\CustomMaterialDatePicker.cs" />
-    <Content Include="Template.Mobile\CustomCtrl\CustomMaterialStepper.cs" />
-    <Content Include="Template.Mobile\CustomCtrl\CustomMaterialTimePicker.cs" />
-    <Content Include="Template.Mobile\CustomCtrl\LoadingView.xaml.cs">
+    <Content Include="Template.Mobile\Controls\CustomMaterialDatePicker.cs" />
+    <Content Include="Template.Mobile\Controls\CustomMaterialStepper.cs" />
+    <Content Include="Template.Mobile\Controls\CustomMaterialTimePicker.cs" />
+    <Content Include="Template.Mobile\Controls\LoadingView.xaml.cs">
       <DependentUpon>LoadingView.xaml</DependentUpon>
     </Content>
-    <Content Include="Template.Mobile\CustomCtrl\SelectableCellBase.xaml.cs">
+    <Content Include="Template.Mobile\Controls\SelectableCellBase.xaml.cs">
       <DependentUpon>SelectableCellBase.xaml</DependentUpon>
     </Content>
     <Content Include="Template.Mobile\Helpers\Logger.cs" />
@@ -1179,10 +1179,10 @@
     <Content Include="Template.Mobile\App.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Template.Mobile\CustomCtrl\LoadingView.xaml">
+    <Content Include="Template.Mobile\Controls\LoadingView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
-    <Content Include="Template.Mobile\CustomCtrl\SelectableCellBase.xaml">
+    <Content Include="Template.Mobile\Controls\SelectableCellBase.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Content>
     <Content Include="Template.Mobile\Resources\Dictionaries\Colors.xaml">

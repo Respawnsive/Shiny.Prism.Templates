@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="Template.Installer.f7004cf8-30c2-4707-b16a-9ca87feebf6c" Version="1.0" Language="en-US" Publisher="Respawnsive" />
-        <DisplayName>Template</DisplayName>
-        <Description>Project and item templates for creating the ultimate mobile app solution</Description>
+        <Identity Id="Shiny.Prism.Templates.Installer.f7004cf8-30c2-4707-b16a-9ca87feebf6c" Version="1.0" Language="en-US" Publisher="Respawnsive" />
+        <DisplayName>Shiny Prism Templates</DisplayName>
+        <Description xml:space="preserve">Templates for Xamarin.Forms mobile app with Shiny and Prism</Description>
         <Icon>RespawnsiveLogo.png</Icon>
         <PreviewImage>RespawnsiveLogo.png</PreviewImage>
         <Tags>Respawnsive, iOS, Android, Xamarin, Xamarin Forms, Prism, Shiny</Tags>

@@ -5,7 +5,7 @@ using System.Windows.Forms;
 using EnvDTE;
 using Microsoft.VisualStudio.TemplateWizard;
 
-namespace Template.Installer
+namespace Shiny.Prism.Templates
 {
     public class GetViewModelNameWizard : IWizard
     {

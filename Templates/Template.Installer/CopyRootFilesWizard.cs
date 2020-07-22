@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 using EnvDTE;
 using Microsoft.VisualStudio.TemplateWizard;
 
-namespace Template.Installer
+namespace Shiny.Prism.Templates
 {
     public class CopyRootFilesWizard : IWizard
     {

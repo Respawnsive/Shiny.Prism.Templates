@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
-    <Name>Respawnsive Ultimate Template</Name>
-    <Description>Respawnsive Ultimate Template (entire solution)</Description>
+    <Name>Shiny Prism Templates (entire solution)</Name>
+    <Description>Templates for Xamarin.Forms mobile app with Shiny and Prism</Description>
     <Icon>RespawnsiveLogo.png</Icon>
-    <TemplateID>Respawnsive.Xamarin.Forms.Prism.Shiny</TemplateID>
+    <TemplateID>Respawnsive.Shiny.Prism.Template</TemplateID>
     <ProjectType>CSharp</ProjectType>
     <LanguageTag>csharp</LanguageTag>
     <PlatformTag>android</PlatformTag>
@@ -25,7 +25,7 @@
     </ProjectCollection>
   </TemplateContent>
   <WizardExtension>
-    <Assembly>Template.Installer, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=35cfebc95b194ff6</Assembly>
-    <FullClassName>Template.Installer.CopyRootFilesWizard</FullClassName>
+    <Assembly>Shiny.Prism.Templates, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=35cfebc95b194ff6</Assembly>
+    <FullClassName>Shiny.Prism.Templates.CopyRootFilesWizard</FullClassName>
   </WizardExtension>
 </VSTemplate>

@@ -101,7 +101,7 @@
     <Compile Update="Views\DEBUG\Debug_ThemesView.xaml.cs">
       <DependentUpon>Debug_ThemesView.xaml</DependentUpon>
     </Compile>
-    <Compile Update="CustomCtrl\LoadingView.xaml.cs">
+    <Compile Update="Controls\LoadingView.xaml.cs">
       <DependentUpon>LoadingView.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\DEBUG\Debug_SamplesView.xaml.cs">
@@ -141,7 +141,7 @@
     <EmbeddedResource Update="Views\MDPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="CustomCtrl\LoadingView.xaml">
+    <EmbeddedResource Update="Controls\LoadingView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\StartupPage.xaml">

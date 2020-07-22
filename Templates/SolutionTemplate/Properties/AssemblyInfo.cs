@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("SolutionTemplate")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Jérôme Liger")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("SolutionTemplate")]
-[assembly: AssemblyCopyright("Copyright © Jérôme Liger 2020")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

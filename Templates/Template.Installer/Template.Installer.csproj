@@ -19,8 +19,8 @@
     <ProjectGuid>{E6E12DD7-A7CF-4312-B04F-3B17CB64FF7F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Template.Installer</RootNamespace>
-    <AssemblyName>Template.Installer</AssemblyName>
+    <RootNamespace>Shiny.Prism.Templates</RootNamespace>
+    <AssemblyName>Shiny.Prism.Templates</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <GeneratePkgDefFile>true</GeneratePkgDefFile>
     <UseCodebase>true</UseCodebase>
