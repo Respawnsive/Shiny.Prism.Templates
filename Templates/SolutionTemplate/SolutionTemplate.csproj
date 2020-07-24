@@ -162,6 +162,7 @@
     <Content Include="Template.Mobile\Services\Settings\App\IAppSettingsService.cs" />
     <Content Include="Template.Mobile\Services\Settings\ISettingsService.cs" />
     <Content Include="Template.Mobile\Services\Settings\SettingsService.cs" />
+    <Compile Include="Template.Mobile\Services\Settings\UnclearableAttribute.cs" />
     <Content Include="Template.Mobile\Startup.cs" />
     <Content Include="Template.Mobile\ViewModels\Bases\ViewModelBase.cs" />
     <Content Include="Template.Mobile\ViewModels\Bases\ViewModelBasePage.cs" />

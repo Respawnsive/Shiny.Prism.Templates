@@ -5,8 +5,11 @@ namespace Template.Mobile.Services
 {
     public interface ISettingsService
     {
+        #region Properties
+
         IAppSettingsService AppSettings { get; }
         CultureInfo SelectedCulture { get; }
+        bool IsAuthenticated { get; }
 
 
         #region Demonstration only - should be removed
@@ -15,10 +18,18 @@ namespace Template.Mobile.Services
         string ClearableString { get; set; }
         string ClearableWithDefaultString { get; set; }
         bool ClearableBool { get; set; }
-        string SecureClearableString { get; set; } 
+        string SecureClearableString { get; set; }
+
+        #endregion 
 
         #endregion
 
-        void Clear();
+        #region Methods
+
+        IObservable<bool> WhenAuthenticationStatusChanged();
+
+        void Clear(); 
+
+        #endregion
     }
 }

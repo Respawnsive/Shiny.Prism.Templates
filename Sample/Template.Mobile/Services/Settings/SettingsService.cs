@@ -25,7 +25,8 @@ namespace Template.Mobile.Services
     {
         #region Fields
 
-        private readonly ISettings _settings; 
+        private readonly ISettings _settings;
+        private readonly ReplaySubject<bool> _authenticationStatusChanged;
 
         #endregion
 
@@ -35,6 +36,10 @@ namespace Template.Mobile.Services
             AppSettings = appSettings;
             SetDefaultValues();
             _settings.Bind(this);
+
+            _authenticationStatusChanged = new ReplaySubject<bool>(1);
+            this.WhenAnyValue(x => x.AuthToken)
+                .Subscribe(_ => _authenticationStatusChanged.OnNext(IsAuthenticated));
         }
 
         #region Properties
@@ -43,6 +48,11 @@ namespace Template.Mobile.Services
 
         [Reactive, DefaultValue(null)]
         public CultureInfo SelectedCulture { get; set; }
+
+        [Reactive]
+        internal string AuthToken { get; set; }
+
+        public bool IsAuthenticated => !string.IsNullOrWhiteSpace(AuthToken);
 
         #region Demonstration only - should be removed
 
@@ -59,13 +69,15 @@ namespace Template.Mobile.Services
         public bool ClearableBool { get; set; }
 
         [Reactive, DefaultValue(null), Secure]
-        public string SecureClearableString { get; set; } 
+        public string SecureClearableString { get; set; }
 
         #endregion
 
         #endregion
 
         #region Methods
+
+        public IObservable<bool> WhenAuthenticationStatusChanged() => _authenticationStatusChanged;
 
         public void Clear()
         {
