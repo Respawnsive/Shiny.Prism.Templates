@@ -25,7 +25,7 @@ namespace $safeprojectname$.Services
         #region Fields
 
         private readonly ISettings _settings;
-        private readonly ReplaySubject<bool> _authenticationStatusChanged;
+        private readonly BehaviorSubject<bool> _authenticationStatusChanged;
 
         #endregion
 
@@ -36,7 +36,7 @@ namespace $safeprojectname$.Services
             SetDefaultValues();
             _settings.Bind(this);
 
-            _authenticationStatusChanged = new ReplaySubject<bool>(1);
+            _authenticationStatusChanged = new BehaviorSubject<bool>(IsAuthenticated);
             this.WhenAnyValue(x => x.AuthToken)
                 .Subscribe(_ => _authenticationStatusChanged.OnNext(IsAuthenticated));
         }
